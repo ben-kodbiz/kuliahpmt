@@ -48,15 +48,15 @@
 
         .header p {
             margin: 10px 0 0 0;
-            font-size: 1.1rem;
             opacity: 0.9;
         }
 
         .stats {
             display: flex;
             justify-content: center;
-            gap: 30px;
-            margin: 20px 0;
+            gap: 40px;
+            margin-top: 20px;
+            flex-wrap: wrap;
         }
 
         .stat {
@@ -66,12 +66,26 @@
         .stat-value {
             font-size: 1.8rem;
             font-weight: 500;
-            color: var(--white);
         }
 
         .stat-label {
-            color: rgba(255,255,255,0.9);
             font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(25, 118, 210, 0.08);
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: rgba(25, 118, 210, 0.15);
         }
 
         .video-grid {
@@ -83,10 +97,10 @@
 
         .video-card {
             background: var(--white);
-            border-radius: 10px;
+            border-radius: 8px;
             overflow: hidden;
             box-shadow: var(--shadow);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .video-card:hover {
@@ -95,18 +109,17 @@
         }
 
         .video-title {
-            padding: 18px 20px 15px;
+            padding: 15px;
             font-weight: 500;
-            font-size: 1.1rem;
-            color: var(--text-primary);
+            font-size: 1.05rem;
             border-bottom: 1px solid var(--divider-color);
         }
 
         .video-embed {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            width: 100%;
             height: 0;
-            overflow: hidden;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
         }
 
         .video-embed iframe {
@@ -118,28 +131,16 @@
             border: none;
         }
 
-        .video-info {
-            padding: 15px 20px;
-            background: var(--secondary-color);
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-            padding: 10px 15px;
+        .video-duration {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 2px 8px;
             border-radius: 4px;
-            background: rgba(25, 118, 210, 0.05);
-        }
-
-        .back-link:hover {
-            background: rgba(25, 118, 210, 0.1);
+            font-size: 0.8rem;
+            z-index: 10;
         }
 
         @media (max-width: 768px) {
@@ -150,2066 +151,588 @@
                 font-size: 1.8rem;
             }
             .stats {
-                flex-direction: column;
-                gap: 10px;
+                gap: 20px;
+            }
+            .stat-value {
+                font-size: 1.5rem;
             }
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <h1>General (khutbah/Debat/Others)</h1>
-        <p>Ustaz Salman</p>
-        <div class="stats">
-            <div class="stat">
-                <div class="stat-value">127</div>
-                <div class="stat-label">Videos</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value">147:00:14</div>
-                <div class="stat-label">Total Duration</div>
+    <div class="container">
+        <div class="header">
+            <h1>General (khutbah/Debat/Others)</h1>
+            <p>A collection of teachings by Ustaz Salman Ali</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">92</div>
+                    <div class="stat-label">Videos</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">4d 10h 54m 2s</div>
+                    <div class="stat-label">Total Duration</div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <a href="../../../index.html" class="back-link">
-        <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
-        Back to Home
-    </a>
+        <a href="../../../index.html" class="back-link">
+            <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+            Back to Home
+        </a>
 
-    <div class="video-grid">
-        <div class="video-card">
-            <div class="video-title">1. 01-08-2025 Ustaz Salman Ali: Khutbah Jumaat - Perang Akhir Zaman & Detik Kebangkitan Umat</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/EBlPihkQvhQ" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    25:30
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">2. 25-07-2025 Ustaz Salman Ali: Khutbah Jumaat - Tawakkal & Redha Yang Paling Tinggi</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/lys0FUQ6VYI" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    18:52
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">3. 11-07-2025 Ustaz Salman Ali: Khutbah Jumaat - Penyakit Yang Menghancurkan Pahala Amalan.</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/DVY5moZPZBY" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    20:46
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">4. 04-07-2025 Ustaz Salman Ali: Khutbah Jumaat - Permulaan Penciptaan Manusia & Janji Iblis</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/bQ1srIeF_M4" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    22:42
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">5. 20-06-2025 Ustaz Salman Ali: Zaman Pemerintahan Muawiyah RA | Bidayah Wa An Nihayah (Siri 1)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/M-ICQM2fdFI" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    45:34
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">6. 30-05-2025 Ustaz Salman Ali: Perkara Yang Diambil Ringan Dalam Rumah Tangga</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/xVhyR4hKKlg" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:28:06
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">7. 16-05-2025 Ustaz Salman Ali: Menelusuri Perjalanan Haji Baginda Rasul ﷺ</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/QP2BuuSq3EI" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:36:48
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">8. 09-05-2025 Ustaz Salman Ali : Amalan Yang Berterusan Sehingga Selepas Kematian.</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/Gbr24cuCT58" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:35:39
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">9. 02-05-2025 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (Siri 39).</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/5MsrKfDDRUM" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:02:57
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">10. 04-04-2025 Ustaz Salman Ali: Adab Terhadap Rasulullah ﷺ | Khutbah Jumaat Di Masjid Karwa, Penang.</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/hdDtxDtPhs8" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    23:23
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">11. 31-03-2025 Ustaz Salman Ali: Khutbah Aidil Fitri 1446 Hijrah / 2025 Masihi Di Masjid Karwa, Penang.</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/JgKoY3avHps" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    21:47
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">12. 28-02-2025 Ustaz Salman Ali: Persediaan Ramadan, Adakah Kita Sudah Bersedia?</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/jr7leHyO3Zg" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:08:36
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">13. 03-01-2025 Ustaz Salman Ali: Isu² Berkaitan Zakat Pendapatan.</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/tM_BiM5R_Qs" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:10:28
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">14. 17-11-2024 Ustaz Mohamad Salman bin Mohamed Ali (KS 12)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/9jMdU2469sc" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    42:25
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">15. 01-11-2024 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (Siri 38)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/yQrvff2_N70" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:07:32
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">16. 18-10-2024 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (Siri 37)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/QGrvNVMrv5s" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:05:16
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">17. 13-09-2024 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (Siri 36)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/1zNRuKB-pxg" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:19:16
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">18. 06-09-2024 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 35)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/oIyf1PPGWvc" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:22:58
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">19. 16-08-2024 Ustaz Salman Ali: Kematian Yang Dicemburui (Khutbah Jumaat).</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/qFYUO1uubHE" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    24:28
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">20. 23-08-2024 Ustaz Salman Ali: Apabila Hidayah Datang Menyapa (Khutbah Jumaat)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/mKE64M4DwnE" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    22:56
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">21. 21-06-2024 Ustaz Salman Ali: Tanda² Kiamat (Siri 1) | Khutbah Jumaat</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/dZPpRjRZSX0" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    43:44
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">22. 17-05-2024 Ustaz Salman Ali: Siri Kenali Imam² Mazhab (Siri 4) - Sejarah Ringkas Imam Abu Hanifah.</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/s_vXQZkvRhs" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:18:52
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">23. 10-04-2024 Ustaz Salman Ali : Khutbah Raya AidilFitri</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/ZxbizprlYPk" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    22:17
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">24. 06-04-2024 Ustaz Salman Ali: Kenali Sifat Allah عفوٌ (AFUWWUN)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/RmRIFZKIZQk" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    44:11
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">25. 16-03-2024 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 32)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/z9hmAM6CzLI" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    56:06
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">26. 01-03-2024 Ustaz Salman Ali: Mengenali Akidah Salaf & Khalaf Serta Manhaj Akidah Imam Empat Mazhab</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/mAXPkhYTClM" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:17:26
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">27. 23-02-2024 Ustaz Salman Ali:  Siri Kenali Imam-Imam Mazhab (Siri 3) - Sejarah Ringkas Imam Malik.</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/imotAohy9dw" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:15:09
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">28. 05-02-2024 Ustaz Salman Ali: Khalq Af'al Al-Ibad Al-Imam Al-Bukhari {Siri 5}</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/ii2EC-TseDU" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    51:32
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">29. 19-01-2024 Ustaz Salman Ali: SoalJAwab Manasik Umrah</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/a_tFPRkFYzQ" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:06:27
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">30. 08-01-2024 Ustaz Salman Ali: Khalq Af'al Al-Ibad Al-Imam Al-Bukhari {Siri 4}</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/EaXWaYm8i0I" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    58:48
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">31. 06-01-2024 Ustaz Salman Ali: Apa Yang Perlu Anda Tahu Tentang Jamak & Qasar.</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/2pM8XbAB6Cg" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:21:05
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">32. 08-12-2023 Ustaz Salman Ali: Siri Kenali Imam² Mazhab -  Sejarah Ringkas Imam Ahmad.</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/cpsvuDz95Vs" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:35:35
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">33. 26-11-2023 Ustaz Salman Ali: Berinteraksi Dengan Al-Sunah (KS11)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/as0mj97ohJU" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    40:50
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">34. 24-11-2023 Ustaz Salman Ali: Siri Kenali Imam² Mazhab - Sejarah Ringkas Imam Asy-Syafi'i.</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/0ms8qNrQEyU" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:32:46
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">35. 10-11-2023 Ustaz Salman Ali: Adab Bergurau Dalam Islam</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/3EwADde7pLo" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:19:22
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">36. 03-11-2023 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 30)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/MFlgZqlNspY" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:21:12
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">37. 27-10-2023 Ustaz Salman Ali: Tanggungjawab Dalam Mencari Ilmu Agama</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/iqfENo_QfAQ" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:32:19
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">38. 20-10-2023 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 29)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/hATVW1UBL7Q" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:20:55
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">39. 16-10-2023 Ustaz Salman Ali: Khalq Af'al Al-Ibad Al-Imam Al-Bukhari {Siri 3}</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/B_OG_4UlOkA" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:05:32
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">40. 11-09-2023 Ustaz Salman Ali: Khalq Af'al Al-Ibad Al-Imam Al-Bukhari {Siri 2}</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/77Z3f7YoOKM" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:10:24
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">41. 28-08-2023 Ustaz Salman Ali: Khalq Af'al Al-Ibad Al-Imam Al-Bukhari {Siri 1}</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/jOYO-aSt6dw" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    57:55
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">42. 19-08-2023 Ustaz Salman Ali & Ustaz Noor Derus: Merungkai Percanggahan Hadis Jariah - Di Mana Allah?</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/OwRof6Dicbs" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    03:16:42
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">43. 28-07-2023 Ustaz Salman Ali: Khutbah Jumaat</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/6X662OVbtf4" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    22:41
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">44. 22-07-2023 Ustaz Salman Ali: Ungkapan Yang Membuka Pintu Kepada Syaitan</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/mUj3Ip1bxoM" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    19:44
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">45. 21-07-2023 Ustaz Salman Ali: Sunnah Sebagai Benteng Menangani Ajaran Sesat | Khutbah Jumaat</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/EJUfyv92MXk" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    22:45
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">46. 07-07-2023 Ustaz Salman Ali: Waspada Tingkah Laku Memuja & Mengkagumi Diri Sendiri | Khutbah Jumaat</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/OZYRMtq5A5I" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    20:40
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">47. 30-06-2023 Ustaz Salman Ali: Ancaman Terhadap Munafik | Khutbah Jumaat</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/wWk5I5_3gYU" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    24:02
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">48. 06-04-2023 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 28)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/DLfIE-MXujw" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    51:07
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">49. 11-02-2023 USTAZ SALMAN ALI VS ARG | Wahabiah: Aliran Sesat Atau Aliran Ahli Sunnah Wal Jamaah HD</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/7m5CkRr0O8Y" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    05:43:05
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">50. 16-12-2022 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 27)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/Hxb7VKMmmKE" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:04:57
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">51. 19-11-2022 Ustaz Salman Ali: Kajian Kitab Syamail Muhammadiyah (Siri 2)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/QMgqL677j-g" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:06:13
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">52. 04-11-2022 Ustaz Salman Ali: Perkahwinan Dan Penceraian - Realiti Kehidupan Salaf.</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/aMASqaD3avU" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:35:51
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">53. 11-11-2022 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 26)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/p190QqjSQLg" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:01:13
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">54. 21-10-2022 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 25)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/Rv_yLYBQHvg" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:13:23
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">55. 08-10-2022 Ustaz Salman Ali: Kajian Kitab Syamail Muhammadiyah (Siri 1)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/49-kPVDB_ew" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:12:02
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">56. 30-09-2022 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 24)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/4wPPCe1p1eI" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:08:36
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">57. 12-08-2022 Dr Rozaimi | Ustaz Salman Ali | Ustaz Hisyam: Khurafat & Tahyul Di Alam Melayu</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/FasAHVZ0Pv4" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:53:13
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">58. 12-08-2022 Ustaz Salman Ali: Bacaan Istimewa Di Dalam Solat</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/QU8eL3tJEcQ" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    19:40
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">59. 07-08-2022 Dr Rozaimi Ramle | Ustaz Salman Ali | Bicara Santai</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/-j4fnZqrmHA" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:46:03
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">60. 30-07-2022 Dr MAZA | Dr Rozaimi | Ust Salman Ali | Ust Rizal Azizan : Penghinaan Terhadap Agama</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/LeFrs3pRjX8" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:42:00
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">61. 22-07-2022 Ustaz Salman Ali : Khutbah Jumaat | Islam Bukan Bahan Gurauan</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/DUeWzzHcBMc" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    20:50
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">62. 10-07-2022 Ustaz Salman Ali: Khutbah Aidil Adha</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/EnZyGArvY-o" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    23:51
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">63. 01-07-2022 Ustaz Salman Ali: Khutbah Jumaat - Pengajaran Kisah Nabi Yusuf.</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/WYUP6V9dEgk" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    19:07
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">64. 25-06-2022 Salman Ali VS Arg: Pemikiran Sheikh Nazim Al-Haqqani - Menurut Ahlus Sunnah Wal Jamaah HD</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/rwTEBSAwlSQ" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    03:57:12
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">65. 03-03-2022 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 23)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/GnVwcTt6Hrc" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:00:04
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">66. 03-02-2022 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 22)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/OcNqZO5CMdw" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:09:27
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">67. 22-01-2022 : Skandal SPRM - Antara Kehancuran Urus Tadbir & Kemurkaan Allah</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/rn7WUdUZKm0" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:42:33
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">68. 20-01-2022 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 21)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/QH9pbQ-EsC0" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:19:31
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">69. 08-10-2021 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 20)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/L_NfXdcgtNA" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:07:14
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">70. 13-05-2021 Ustaz Salman Ali: Khutbah Raya 2021</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/K_2Rh3g8bRA" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    32:48
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">71. 15-04-2021 Ustaz Salman Ali: Puasa Si Penghuni Al-Rayyan</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/Ed2m2zq0Z4w" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:49:23
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">72. 21-03-2021 Ustaz Salman Ali: Bicara Tentang Bomoh, Sihir Dan Syirik | Siri 3 (Harut & Marut).</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/m-8OLn3HAPc" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:12:40
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">73. 26-02-2021 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 19)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/9Uao5Brg6uM" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:01:11
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">74. 19-02-2021 Ustaz Salman Ali: Bicara Tentang Bomoh, Sihir Dan Syirik | Siri 2</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/j39gNEvAncY" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:27:35
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">75. 05-02-2021 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 18)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/x74DLkQy1hI" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:04:46
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">76. 15-01-2021 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 17)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/GY8uMy5rmZU" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:12:08
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">77. 22-10-2020 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 16)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/_wjAZLoxllo" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:15:31
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">78. 08-10-2020 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 15)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/hKn3W-3CQIU" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:06:56
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">79. 01-10-2020 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 14)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/DKaRMMtBE6w" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:11:23
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">80. 22-04-2020 Ustaz Salman Ali:  Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 13)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/dKtqEEnjKpc" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    59:46
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">81. 17-04-2020 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 12)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/156qgOTKH5k" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:12:02
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">82. 09-04-2020 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 11)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/0oFTeMAECDE" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:13:09
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">83. 02-04-2020 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 10)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/VRbJ8f1FrrM" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:21:20
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">84. 26-03-2020 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 9)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/f1pjkgTecSc" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:04:12
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">85. 06-03-2020 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 8)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/PhN3DNWZqb8" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:17:21
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">86. 15-11-2019 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 6)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/zf4ehrn27hw" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:27:59
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">87. 25-10- 2019 Ustaz Salman Ali:  Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 5)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/uFKzYwO5GIo" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    57:43
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">88. 01-03-2019 Ustaz Salman Ali: Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 2)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/UDnHSs4Y56s" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:02:25
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">89. 04-10-2019 Ustaz Salman Ali Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 4)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/O4Grr53l7cw" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    58:14
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">90. 22-03-2019 Ustaz Salman Ali Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 3)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/L7jSWzBXEBk" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:01:31
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">91. 15-02-2019 Ustaz Salman Ali : Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung (siri 1)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/U_Y_3wJPLs8" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:06:51
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">92. 24-07-2020 PKR : Reformasi Yang Belum Mati | Hard Talk (siri 5)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/vyPWamFspEA" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:09:06
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">93. 17-07-2020 INTEGRASI NASIONAL | Realiti Atau Angan-Angan</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/fiaXyYGN5bA" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:20:07
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">94. 10-07-2020 ISMA : Ketuanan Melayu Atau Perkauman  | Hard talk (siri 4)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/Nva03PENc0s" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:04:27
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">95. 25-06-2020 AMANAH : Bukan Telunjuk DAP | Hard talk (siri 3)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/YXIlvZzHaBg" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:11:49
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">96. 18-06-2020 PAS : Berpolitik untuk islam Atau Islam Untuk Berpolitik | Hard talk (siri 2)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/gdaf5iYWoCY" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:09:30
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">97. 11-06-2020 BERSATU : Bersama PN atau PH | Hard talk (siri 1)</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/GYTpG9oUpvw" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    54:58
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">98. 12-05-2020 Ustaz Salman Ali: Pecutan 10 ramadhan terakhir</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/UOSV_CKKSRs" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    43:17
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">99. 07-08-2019 Ustaz Salman Ali: Sejarah Pengorbanan Nabi Allah Ibrahim a.s</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/mz39AExF-lo" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:09:29
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">100. 09-08-2019 Ustaz Salman Ali: Rasulullah Tidak Memboikot Orang Kafir Yang Tidak Memusuhi Islam</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/UzvaMrQE1ZQ" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    15:34
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">101. 11-08-2019 Ustaz Salman Ali: Khutbah Raya Aiduladha</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/8Q-SPAAiPOE" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    27:25
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">102. 27-07-2019 Ustaz Salman Ali: Fitnah terhadap keluarga Nabi saw</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/xavEyirVjfY" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:43:56
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">103. 27-04-2019 Debat Rejam: Ustaz Salman Ali VS Ustaz Wan Ji</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/Fs2HSCG040A" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    02:25:07
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">104. 22-08-2018 Ustaz Salman Ali: Khutbah Aidil Adha 2018</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/eUgwCh1D9o0" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    26:02
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">105. 18-08-2018 Ustaz Salman Ali: Mendepani Cabaran Ekstremisme & Liberalisme</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/3Ri_0iptXaw" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    02:24:35
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">106. 17-08-2018 Ustaz Salman Ali: Negara Islam_Antara Ideal & Realiti</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/TjoM08l05F8" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:18:30
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">107. 29-06-2018 Ustaz Salman Ali: Islam Dan Pemerkasaan Ilmu</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/WPjnOSdshFM" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:44:47
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">108. 12-06-2018 Ustaz Salman Ali: Sejarah Perkembangan Al-Quran</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/IuKBAROKzXA" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:01:56
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">109. 13-07-2017 Ustaz Salman Ali: QATAR | Apa Cerita Yang Terselindung?</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/AFj3gG_v-xU" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:46:45
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">110. 30-06-2017 Ustaz Salman Ali: Peranan Israel Dalam Krisis di Timur Tengah</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/I9xoaAmo-Eo" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:07:48
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">111. 30-06-2017 Ustaz Salman Ali: Khutbah Jumaat</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/DG2cBlO5rr0" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    15:21
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">112. 25-06-2017 Ustaz Salman Ali: Khutbah Raya Aidil Fitri 2017</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/ErvYPa4nqQM" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    17:02
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">113. 21-04-2017 Ustaz Salman Ali: Khutbah Jumaat</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/eFafNs4uLXo" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    12:36
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">114. 16-04-2017 Dr. Rozaimi | Ustaz Salman Ali | Ustaz Kamilin Jamilin</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/avoB-dyXYhs" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    05:02:30
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">115. 22-10-2016 Bahaya Ekstremisme: Ustaz Salman Ali | Ustaz Abu Syafiq</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/dgDNwwMjcOA" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    02:57:18
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">116. 30-07-2016: Forum Perdana Empat Mazhab Fekah</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/Lnbf7go5oQA" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    02:33:12
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">117. 26-08-2015 Ustaz Salman Ali: Sirah Kehidupan Nabi SAW</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/Vp4kpYE_8cQ" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:12:38
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">118. 07-08-2015 Ustaz Salman Ali: Mengingati Kematian</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/4_ZaHoKOiF0" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    24:24
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">119. 31-07-2015 Ustaz Salman Ali: Kisah Taubat Para Sahabat</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/-RGC15q2i4I" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    56:10
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">120. 17-07-2015 Ustaz Salman Ali: Khutbah Aidil Fitri 1436H | Asobiyyah</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/e_1nwD8rlkA" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    31:03
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">121. 17-07-2015 Ustaz Salman Ali: Khutbah Jumaat | Sahabat Nabi, Saad Bin Muadz</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/6h_0CqSJsds" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    27:58
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">122. 12-09-2014 Ustaz Salman Ali: Kisah Tsumamah Bin Utsal & Abdullah Himar</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/LYKNyyw0_d8" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    27:26
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">123. 29-10-2013 ustaz salman ali: tafsir surah al ikhlas</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/1b3KDP8g4Dg" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:12:29
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">124. 28-10-2013 ustaz salman ali: tafsir surah an-naas</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/5AdXrcMTiLU" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    59:13
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">125. 22-10-2013 ustaz salman ali: perjanjian hudaibiyah siri 2</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/mdv5NfUFyeU" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    01:23:46
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">126. 18-10-2013 ustaz salman ali: khutbah jumaat perjanjian hudaibiyah</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/DCCCtZIWrvM" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    38:18
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
-            </div>
-        </div>
-        <div class="video-card">
-            <div class="video-title">127. 15-10-2013 ustaz salman ali: khutbah aiduladha</div>
-            <div class="video-embed">
-                <iframe src="https://www.youtube.com/embed/Zd80SCsM9i4" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
-                    24:36
-                </span>
-                <span>
-                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
-                    N/A
-                </span>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-title">1. 01-08-2025 Ustaz Salman Ali: Khutbah Jumaat - Perang Akhir Zaman & Detik Kebangkitan Umat</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/EBlPihkQvhQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">2. 25-07-2025 Ustaz Salman Ali: Khutbah Jumaat - Tawakkal & Redha Yang Paling Tinggi</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/lys0FUQ6VYI" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">3. 11-07-2025 Ustaz Salman Ali: Khutbah Jumaat - Penyakit Yang Menghancurkan Pahala Amalan.</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/DVY5moZPZBY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">4. 04-07-2025 Ustaz Salman Ali: Khutbah Jumaat - Permulaan Penciptaan Manusia & Janji Iblis</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/bQ1srIeF_M4" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">5. 20-06-2025 Ustaz Salman Ali: Zaman Pemerintahan Muawiyah RA | Bidayah Wa An Nihayah (Siri 1)</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/M-ICQM2fdFI" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">6. 30-05-2025 Ustaz Salman Ali: Perkara Yang Diambil Ringan Dalam Rumah Tangga</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/xVhyR4hKKlg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">7. 16-05-2025 Ustaz Salman Ali: Menelusuri Perjalanan Haji Baginda Rasul ﷺ</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/QP2BuuSq3EI" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">8. 09-05-2025 Ustaz Salman Ali : Amalan Yang Berterusan Sehingga Selepas Kematian.</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Gbr24cuCT58" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">9. 04-04-2025 Ustaz Salman Ali: Adab Terhadap Rasulullah ﷺ | Khutbah Jumaat Di Masjid Karwa, Penang.</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/hdDtxDtPhs8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">10. 31-03-2025 Ustaz Salman Ali: Khutbah Aidil Fitri 1446 Hijrah / 2025 Masihi Di Masjid Karwa, Penang.</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/JgKoY3avHps" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">11. 28-02-2025 Ustaz Salman Ali: Persediaan Ramadan, Adakah Kita Sudah Bersedia?</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/jr7leHyO3Zg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">12. 03-01-2025 Ustaz Salman Ali: Isu² Berkaitan Zakat Pendapatan.</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/tM_BiM5R_Qs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">13. 17-11-2024 Ustaz Mohamad Salman bin Mohamed Ali (KS 12)</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/9jMdU2469sc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">14. 16-08-2024 Ustaz Salman Ali: Kematian Yang Dicemburui (Khutbah Jumaat).</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/qFYUO1uubHE" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">15. 23-08-2024 Ustaz Salman Ali: Apabila Hidayah Datang Menyapa (Khutbah Jumaat)</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/mKE64M4DwnE" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">16. 21-06-2024 Ustaz Salman Ali: Tanda² Kiamat (Siri 1) | Khutbah Jumaat</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/dZPpRjRZSX0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">17. 17-05-2024 Ustaz Salman Ali: Siri Kenali Imam² Mazhab (Siri 4) - Sejarah Ringkas Imam Abu Hanifah.</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/s_vXQZkvRhs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">18. 10-04-2024 Ustaz Salman Ali : Khutbah Raya AidilFitri</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/ZxbizprlYPk" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">19. 06-04-2024 Ustaz Salman Ali: Kenali Sifat Allah عفوٌ (AFUWWUN)</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/RmRIFZKIZQk" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">20. 01-03-2024 Ustaz Salman Ali: Mengenali Akidah Salaf & Khalaf Serta Manhaj Akidah Imam Empat Mazhab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/mAXPkhYTClM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">21. 23-02-2024 Ustaz Salman Ali:  Siri Kenali Imam-Imam Mazhab (Siri 3) - Sejarah Ringkas Imam Malik.</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/imotAohy9dw" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">22. 05-02-2024 Ustaz Salman Ali: Khalq Af'al Al-Ibad Al-Imam Al-Bukhari {Siri 5}</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/ii2EC-TseDU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">23. 19-01-2024 Ustaz Salman Ali: SoalJAwab Manasik Umrah</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/a_tFPRkFYzQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">24. 08-01-2024 Ustaz Salman Ali: Khalq Af'al Al-Ibad Al-Imam Al-Bukhari {Siri 4}</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/EaXWaYm8i0I" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">25. 06-01-2024 Ustaz Salman Ali: Apa Yang Perlu Anda Tahu Tentang Jamak & Qasar.</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/2pM8XbAB6Cg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">26. 08-12-2023 Ustaz Salman Ali: Siri Kenali Imam² Mazhab -  Sejarah Ringkas Imam Ahmad.</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/cpsvuDz95Vs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">27. 26-11-2023 Ustaz Salman Ali: Berinteraksi Dengan Al-Sunah (KS11)</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/as0mj97ohJU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">28. 24-11-2023 Ustaz Salman Ali: Siri Kenali Imam² Mazhab - Sejarah Ringkas Imam Asy-Syafi'i.</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/0ms8qNrQEyU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">29. 10-11-2023 Ustaz Salman Ali: Adab Bergurau Dalam Islam</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/3EwADde7pLo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">30. 27-10-2023 Ustaz Salman Ali: Tanggungjawab Dalam Mencari Ilmu Agama</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/iqfENo_QfAQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">31. 16-10-2023 Ustaz Salman Ali: Khalq Af'al Al-Ibad Al-Imam Al-Bukhari {Siri 3}</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/B_OG_4UlOkA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">32. 11-09-2023 Ustaz Salman Ali: Khalq Af'al Al-Ibad Al-Imam Al-Bukhari {Siri 2}</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/77Z3f7YoOKM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">33. 28-08-2023 Ustaz Salman Ali: Khalq Af'al Al-Ibad Al-Imam Al-Bukhari {Siri 1}</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/jOYO-aSt6dw" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">34. 19-08-2023 Ustaz Salman Ali & Ustaz Noor Derus: Merungkai Percanggahan Hadis Jariah - Di Mana Allah?</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/OwRof6Dicbs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">35. 28-07-2023 Ustaz Salman Ali: Khutbah Jumaat</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/6X662OVbtf4" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">36. 22-07-2023 Ustaz Salman Ali: Ungkapan Yang Membuka Pintu Kepada Syaitan</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/mUj3Ip1bxoM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">37. 21-07-2023 Ustaz Salman Ali: Sunnah Sebagai Benteng Menangani Ajaran Sesat | Khutbah Jumaat</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/EJUfyv92MXk" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">38. 07-07-2023 Ustaz Salman Ali: Waspada Tingkah Laku Memuja & Mengkagumi Diri Sendiri | Khutbah Jumaat</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/OZYRMtq5A5I" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">39. 30-06-2023 Ustaz Salman Ali: Ancaman Terhadap Munafik | Khutbah Jumaat</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/wWk5I5_3gYU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">40. 11-02-2023 USTAZ SALMAN ALI VS ARG | Wahabiah: Aliran Sesat Atau Aliran Ahli Sunnah Wal Jamaah HD</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/7m5CkRr0O8Y" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">41. 19-11-2022 Ustaz Salman Ali: Kajian Kitab Syamail Muhammadiyah (Siri 2)</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/QMgqL677j-g" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">42. 04-11-2022 Ustaz Salman Ali: Perkahwinan Dan Penceraian - Realiti Kehidupan Salaf.</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/aMASqaD3avU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">43. 08-10-2022 Ustaz Salman Ali: Kajian Kitab Syamail Muhammadiyah (Siri 1)</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/49-kPVDB_ew" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">44. 12-08-2022 Dr Rozaimi | Ustaz Salman Ali | Ustaz Hisyam: Khurafat & Tahyul Di Alam Melayu</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/FasAHVZ0Pv4" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">45. 12-08-2022 Ustaz Salman Ali: Bacaan Istimewa Di Dalam Solat</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/QU8eL3tJEcQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">46. 07-08-2022 Dr Rozaimi Ramle | Ustaz Salman Ali | Bicara Santai</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/-j4fnZqrmHA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">47. 30-07-2022 Dr MAZA | Dr Rozaimi | Ust Salman Ali | Ust Rizal Azizan : Penghinaan Terhadap Agama</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/LeFrs3pRjX8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">48. 22-07-2022 Ustaz Salman Ali : Khutbah Jumaat | Islam Bukan Bahan Gurauan</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/DUeWzzHcBMc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">49. 10-07-2022 Ustaz Salman Ali: Khutbah Aidil Adha</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/EnZyGArvY-o" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">50. 01-07-2022 Ustaz Salman Ali: Khutbah Jumaat - Pengajaran Kisah Nabi Yusuf.</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/WYUP6V9dEgk" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">51. 25-06-2022 Salman Ali VS Arg: Pemikiran Sheikh Nazim Al-Haqqani - Menurut Ahlus Sunnah Wal Jamaah HD</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/rwTEBSAwlSQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">52. 22-01-2022 : Skandal SPRM - Antara Kehancuran Urus Tadbir & Kemurkaan Allah</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/rn7WUdUZKm0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">53. 13-05-2021 Ustaz Salman Ali: Khutbah Raya 2021</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/K_2Rh3g8bRA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">54. 15-04-2021 Ustaz Salman Ali: Puasa Si Penghuni Al-Rayyan</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Ed2m2zq0Z4w" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">55. 21-03-2021 Ustaz Salman Ali: Bicara Tentang Bomoh, Sihir Dan Syirik | Siri 3 (Harut & Marut).</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/m-8OLn3HAPc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">56. 19-02-2021 Ustaz Salman Ali: Bicara Tentang Bomoh, Sihir Dan Syirik | Siri 2</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/j39gNEvAncY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">57. 24-07-2020 PKR : Reformasi Yang Belum Mati | Hard Talk (siri 5)</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/vyPWamFspEA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">58. 17-07-2020 INTEGRASI NASIONAL | Realiti Atau Angan-Angan</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/fiaXyYGN5bA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">59. 10-07-2020 ISMA : Ketuanan Melayu Atau Perkauman  | Hard talk (siri 4)</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Nva03PENc0s" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">60. 25-06-2020 AMANAH : Bukan Telunjuk DAP | Hard talk (siri 3)</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/YXIlvZzHaBg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">61. 18-06-2020 PAS : Berpolitik untuk islam Atau Islam Untuk Berpolitik | Hard talk (siri 2)</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/gdaf5iYWoCY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">62. 11-06-2020 BERSATU : Bersama PN atau PH | Hard talk (siri 1)</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/GYTpG9oUpvw" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">63. 12-05-2020 Ustaz Salman Ali: Pecutan 10 ramadhan terakhir</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/UOSV_CKKSRs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">64. 07-08-2019 Ustaz Salman Ali: Sejarah Pengorbanan Nabi Allah Ibrahim a.s</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/mz39AExF-lo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">65. 09-08-2019 Ustaz Salman Ali: Rasulullah Tidak Memboikot Orang Kafir Yang Tidak Memusuhi Islam</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/UzvaMrQE1ZQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">66. 11-08-2019 Ustaz Salman Ali: Khutbah Raya Aiduladha</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/8Q-SPAAiPOE" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">67. 27-07-2019 Ustaz Salman Ali: Fitnah terhadap keluarga Nabi saw</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/xavEyirVjfY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">68. 27-04-2019 Debat Rejam: Ustaz Salman Ali VS Ustaz Wan Ji</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Fs2HSCG040A" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">69. 22-08-2018 Ustaz Salman Ali: Khutbah Aidil Adha 2018</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/eUgwCh1D9o0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">70. 18-08-2018 Ustaz Salman Ali: Mendepani Cabaran Ekstremisme & Liberalisme</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/3Ri_0iptXaw" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">71. 17-08-2018 Ustaz Salman Ali: Negara Islam_Antara Ideal & Realiti</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/TjoM08l05F8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">72. 29-06-2018 Ustaz Salman Ali: Islam Dan Pemerkasaan Ilmu</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/WPjnOSdshFM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">73. 12-06-2018 Ustaz Salman Ali: Sejarah Perkembangan Al-Quran</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/IuKBAROKzXA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">74. 13-07-2017 Ustaz Salman Ali: QATAR | Apa Cerita Yang Terselindung?</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/AFj3gG_v-xU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">75. 30-06-2017 Ustaz Salman Ali: Peranan Israel Dalam Krisis di Timur Tengah</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/I9xoaAmo-Eo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">76. 30-06-2017 Ustaz Salman Ali: Khutbah Jumaat</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/DG2cBlO5rr0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">77. 25-06-2017 Ustaz Salman Ali: Khutbah Raya Aidil Fitri 2017</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/ErvYPa4nqQM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">78. 21-04-2017 Ustaz Salman Ali: Khutbah Jumaat</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/eFafNs4uLXo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">79. 16-04-2017 Dr. Rozaimi | Ustaz Salman Ali | Ustaz Kamilin Jamilin</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/avoB-dyXYhs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">80. 22-10-2016 Bahaya Ekstremisme: Ustaz Salman Ali | Ustaz Abu Syafiq</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/dgDNwwMjcOA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">81. 30-07-2016: Forum Perdana Empat Mazhab Fekah</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Lnbf7go5oQA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">82. 26-08-2015 Ustaz Salman Ali: Sirah Kehidupan Nabi SAW</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Vp4kpYE_8cQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">83. 07-08-2015 Ustaz Salman Ali: Mengingati Kematian</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/4_ZaHoKOiF0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">84. 31-07-2015 Ustaz Salman Ali: Kisah Taubat Para Sahabat</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/-RGC15q2i4I" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">85. 17-07-2015 Ustaz Salman Ali: Khutbah Aidil Fitri 1436H | Asobiyyah</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/e_1nwD8rlkA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">86. 17-07-2015 Ustaz Salman Ali: Khutbah Jumaat | Sahabat Nabi, Saad Bin Muadz</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/6h_0CqSJsds" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">87. 12-09-2014 Ustaz Salman Ali: Kisah Tsumamah Bin Utsal & Abdullah Himar</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/LYKNyyw0_d8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">88. 29-10-2013 ustaz salman ali: tafsir surah al ikhlas</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/1b3KDP8g4Dg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">89. 28-10-2013 ustaz salman ali: tafsir surah an-naas</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/5AdXrcMTiLU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">90. 22-10-2013 ustaz salman ali: perjanjian hudaibiyah siri 2</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/mdv5NfUFyeU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">91. 18-10-2013 ustaz salman ali: khutbah jumaat perjanjian hudaibiyah</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/DCCCtZIWrvM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">92. 15-10-2013 ustaz salman ali: khutbah aiduladha</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Zd80SCsM9i4" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </div>
