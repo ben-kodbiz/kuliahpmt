@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadual Kuliah Ustaz Qarni Edrus - Kuliah-Kuliah from Promedia Tajdid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #1976d2;
+      --primary-dark: #1565c0;
+      --secondary-color: #f5f5f5;
+      --text-primary: #212121;
+      --text-secondary: #757575;
+      --divider-color: #e0e0e0;
+      --success-color: #4caf50;
+      --warning-color: #ff9800;
+      --error-color: #f44336;
+      --white: #ffffff;
+      --shadow: 0 2px 4px rgba(0,0,0,0.1);
+      --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdf6ee;
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      color: var(--white);
+      padding: 1rem;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-icon {
+      font-size: 2rem;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .back-button {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-button:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .ustaz-header {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .ustaz-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 3rem;
+    }
+
+    .ustaz-info {
+      flex: 1;
+    }
+
+    .ustaz-name {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .ustaz-specialization {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .ustaz-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--primary-color);
+    }
+
+    .stat-label {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .content-card {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .disclaimer-box {
+      background-color: #fff3cd;
+      border: 1px solid #ffeaa7;
+      border-left: 4px solid #f39c12;
+      padding: 1rem;
+      margin: 1rem 0 2rem 0;
+      color: #856404;
+      border-radius: 4px;
+    }
+
+    .schedule-image-container {
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem 0;
+    }
+
+    .schedule-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    
+    .info-section {
+      margin: 1.5rem 0;
+    }
+    
+    .info-title {
+      font-size: 1.2rem;
+      color: var(--primary-color);
+      margin: 1.5rem 0 1rem 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--divider-color);
+    }
+
+    .info-list {
+      padding-left: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    .info-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    .info-box {
+      background-color: #e3f2fd;
+      border: 1px solid var(--divider-color);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .ustaz-header {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .ustaz-stats {
+        justify-content: center;
+      }
+      
+      .ustaz-info {
+        text-align: center;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .header-content {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .ustaz-header {
+        padding: 1.5rem;
+      }
+      
+      .container {
+        padding: 0 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <i class="material-icons logo-icon">play_circle_filled</i>
+        <span class="logo-text">Kuliah-Kuliah from Promedia Tajdid</span>
+      </div>
+      <a href="../../../qarni.html" class="back-button">
+        <i class="material-icons">arrow_back</i>
+        Back to Ustaz Qarni
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="ustaz-header">
+      <div class="ustaz-avatar">
+        <i class="material-icons">person</i>
+      </div>
+      <div class="ustaz-info">
+        <h1 class="ustaz-name">Ustaz Qarni Edrus</h1>
+        <p class="ustaz-specialization">Jadual Kuliah dan Ceramah Bulanan</p>
+        <div class="ustaz-stats">
+          <div class="stat">
+            <span class="stat-value">Monthly</span>
+            <span class="stat-label">Schedule</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">Various</span>
+            <span class="stat-label">Topics</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">Updated</span>
+            <span class="stat-label">Regularly</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-card">
+      <h2 class="section-title"><i class="material-icons">event_note</i> Jadual Kuliah Ustaz Qarni Edrus</h2>
+      
+      <div class="disclaimer-box">
+        <p><strong>Perhatian:</strong> Jadual ini adalah jadual am dan mungkin berubah mengikut kesesuaian Ustaz. Ia disediakan untuk rujukan tetapi mungkin tidak sepenuhnya tepat kerana Ustaz boleh membuat perubahan mengikut keselesaan atau ketersediaan beliau.</p>
+      </div>
+      
+      <div class="schedule-image-container">
+        <img src="../../kuliah_qarni.jpg" alt="Jadual Kuliah Ustaz Qarni Edrus" class="schedule-image">
+      </div>
+      
+      <div class="info-section">
+        <h3 class="info-title">Maklumat Lanjut</h3>
+        <p>Jadual ini menunjukkan rancangan kuliah dan ceramah Ustaz Qarni Edrus untuk bulan ini. Kuliah-kuliah ini merangkumi pelbagai topik berkaitan Islam termasuk:</p>
+        <ul class="info-list">
+          <li>Tafsir Al-Quran</li>
+          <li>Hadith dan Sunnah</li>
+          <li>Fiqh dan hukum-hakam Islam</li>
+          <li>Asas-asas Aqidah</li>
+          <li>Sirah Nabawiyah</li>
+          <li>Amalan Sunnah Sehari-hari</li>
+        </ul>
+        <p>Setiap kuliah disediakan dalam bentuk video dan terdapat juga sesi interaktif langsung secara dalam talian. Untuk kemas kini terbaru mengenai jadual kuliah, sila semak platform rasmi Ustaz Qarni Edrus.</p>
+      </div>
+      
+      <div class="info-box">
+        <h4 class="info-title">Cara Mengikuti Kuliah</h4>
+        <p>Anda boleh mengikuti kuliah-kuliah Ustaz Qarni Edrus melalui:</p>
+        <ul class="info-list">
+          <li>Video-video yang disediakan dalam laman ini</li>
+          <li>Playlist rasmi di YouTube</li>
+          <li>Sesi langsung secara dalam talian</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
