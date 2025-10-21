@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tadabbur Surah As-Sajdah - Ustaz Ahmad Hasyimi</title>
+    <style>
+        :root {
+            --primary-color: #1976d2;
+            --primary-dark: #1565c0;
+            --secondary-color: #f5f5f5;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --divider-color: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            background: #f5f7fa; 
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header { 
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white); 
+            padding: 30px 20px; 
+            border-radius: 8px; 
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .header h1 { 
+            margin: 0; 
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .header p { 
+            margin: 10px 0 0 0; 
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats { 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            margin: 20px 0;
+        }
+
+        .stat { 
+            text-align: center; 
+        }
+
+        .stat-value { 
+            font-size: 1.8rem; 
+            font-weight: 500; 
+            color: var(--white);
+        }
+
+        .stat-label { 
+            color: rgba(255,255,255,0.9); 
+            font-size: 0.9rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(25, 118, 210, 0.08);
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: rgba(25, 118, 210, 0.15);
+        }
+
+        .video-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px;
+        }
+
+        .video-card { 
+            background: var(--white); 
+            border-radius: 8px; 
+            overflow: hidden; 
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .video-card:hover { 
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .video-title { 
+            padding: 15px; 
+            font-weight: 500; 
+            font-size: 1.05rem;
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        .video-embed { 
+            position: relative; 
+            width: 100%; 
+            height: 0; 
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        .video-embed iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .video-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .header h1 { 
+                font-size: 1.8rem;
+            }
+            .stats { 
+                gap: 20px;
+            }
+            .stat-value { 
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Tadabbur Surah As-Sajdah</h1>
+            <p>A collection of teachings by Ustaz Ahmad Hasyimi</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">11</div>
+                    <div class="stat-label">Videos</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">09:12:11</div>
+                    <div class="stat-label">Total Duration</div>
+                </div>
+            </div>
+        </div>
+
+        <a href="../../../index.html" class="back-link">
+            <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+            Back to Home
+        </a>
+
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-title">1. 04-01-2024 Ustaz Ahmad Hasyimi : Tadabbur Surah As-Sajdah Siri Pertama</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/I6MfEmGXZKs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">2. 09-01-2024 Ustaz Ahmad Hasyimi :Tadabbur Surah As-Sajdah Siri Ke-3</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/EitF4111S0k" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">3. 08-01-2024 Ustaz Ahmad Hasyimi : Tadabbur Surah As-Sajdah Siri Ke-2</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/0TAS4umitN8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">4. 10-01-2024 Ustaz Ahmad Hasyimi : Tadabbur Surah As-Sajdah Siri Ke-4</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/dPirVFpO2sE" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">5. 11-01-2024 Ustaz Ahmad Hasyimi : Tadabbur Surah As-Sajdah Siri Ke-5</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/22JcVrnA3a8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">6. 15-01-2024 Ustaz Ahmad Hasyimi : Tadabbur Surah As-Sajdah Siri Ke-6</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/PTen1TyecPs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">7. 16-01-2024  Ustaz Ahmad Hasyimi : Tadabbur Surah As-Sajdah Siri Ke-7</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/YaA-q0rAhTo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">8. 17-01-2024 Ustaz Ahmad Hasyimi : Tadabbur Surah As-Sajdah Siri Ke-8</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/nRi1l3KC130" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">9. 18-01-2024 Ustaz Ahmad Hasyimi : Tadabbur Surah As-Sajdah Siri Ke-9</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/cm1Fc2wksek" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">10. 29-01-2024 Ustaz Ahmad Hasyimi : Tadabbur Surah As-Sajdah Siri Ke-10</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/r5gAm5MTSBQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">11. 30-01-2024 Ustaz Ahmad Hasyimi : Tadabbur Surah As-Sajdah Siri Ke-11</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/8ke1GY0mSt0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

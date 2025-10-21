@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ustaz Ahmad Hasyimi - Promedia Tajdid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #1976d2;
+      --primary-dark: #1565c0;
+      --secondary-color: #f5f5f5;
+      --text-primary: #212121;
+      --text-secondary: #757575;
+      --divider-color: #e0e0e0;
+      --success-color: #4caf50;
+      --warning-color: #ff9800;
+      --error-color: #f44336;
+      --white: #ffffff;
+      --shadow: 0 2px 4px rgba(0,0,0,0.1);
+      --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdf6ee;
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      color: var(--white);
+      padding: 1rem;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-icon {
+      font-size: 2rem;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .back-button {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-button:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .ustaz-header {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .ustaz-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 3rem;
+    }
+
+    .ustaz-info {
+      flex: 1;
+    }
+
+    .ustaz-name {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .ustaz-specialization {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .ustaz-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--primary-color);
+    }
+
+    .stat-label {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .tabs {
+      display: flex;
+      background: var(--white);
+      border-bottom: 1px solid var(--divider-color);
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .tab {
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+    }
+
+    .tab:hover {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+    }
+
+    .tab.active {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-image {
+      height: 160px;
+      background-color: var(--secondary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      font-size: 3rem;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .card-description {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .card-stats {
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--divider-color);
+      padding-top: 1rem;
+      margin-top: auto;
+    }
+
+    .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .search-container {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .search-box {
+      display: flex;
+      gap: 1rem;
+    }
+
+    #search {
+      flex: 1;
+      padding: 0.75rem;
+      border: 1px solid var(--divider-color);
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    #search:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+
+    .filter-button {
+      background: var(--primary-color);
+      color: var(--white);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .filter-button:hover {
+      background: var(--primary-dark);
+    }
+
+    .video-list {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .video-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--divider-color);
+    }
+
+    .video-item:last-child {
+      border-bottom: none;
+    }
+
+    .video-thumbnail {
+      width: 120px;
+      height: 90px;
+      background-color: var(--secondary-color);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      flex-shrink: 0;
+    }
+
+    .video-info {
+      flex: 1;
+    }
+
+    .video-title {
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .video-meta {
+      display: flex;
+      gap: 1rem;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .video-duration {
+      background: var(--secondary-color);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+      .ustaz-header {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .ustaz-stats {
+        justify-content: center;
+      }
+      
+      .tabs {
+        flex-wrap: wrap;
+      }
+      
+      .tab {
+        flex: 1;
+        min-width: 33%;
+        padding: 0.8rem 0.5rem;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      
+      .video-item {
+        flex-direction: column;
+      }
+      
+      .video-thumbnail {
+        width: 100%;
+        height: 160px;
+      }
+      
+      .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+      
+      .card-content {
+        padding: 1rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .header-content {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .tabs {
+        flex-direction: column;
+      }
+      
+      .tab {
+        padding: 1rem;
+        border-bottom: 1px solid var(--divider-color);
+        border-radius: 0;
+      }
+      
+      .tab.active {
+        border-bottom: 3px solid var(--primary-color);
+      }
+      
+      .ustaz-header {
+        padding: 1.5rem;
+      }
+      
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .container {
+        padding: 0 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <i class="material-icons logo-icon">play_circle_filled</i>
+        <span class="logo-text">Kuliah-Kuliah from Promedia Tajdid</span>
+      </div>
+      <a href="../index.html" class="back-button">
+        <i class="material-icons">arrow_back</i>
+        Back to Ustaz
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="ustaz-header">
+      <div class="ustaz-avatar">
+        <i class="material-icons">person</i>
+      </div>
+      <div class="ustaz-info">
+        <h1 class="ustaz-name">Ustaz Ahmad Hasyimi</h1>
+        <p class="ustaz-specialization">Specializing in Quranic reflection and Islamic jurisprudence</p>
+        <div class="ustaz-stats">
+          <div class="stat">
+            <span class="stat-value">8</span>
+            <span class="stat-label">Playlists</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">0+</span>
+            <span class="stat-label">Videos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">0+</span>
+            <span class="stat-label">Views</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="playlists">Playlists</div>
+      <div class="tab" data-tab="videos">All Videos</div>
+    </div>
+
+    <!-- Playlists Tab -->
+    <div class="tab-content active" id="playlists-tab">
+      <h2 class="section-title"><i class="material-icons">playlist_play</i> Video Playlists</h2>
+      <div class="grid-container">
+        <!-- Playlist cards will be generated dynamically -->
+      </div>
+    </div>
+
+    <!-- Videos Tab -->
+    <div class="tab-content" id="videos-tab">
+      <div class="search-container">
+        <div class="search-box">
+          <input type="text" id="search" placeholder="Search videos...">
+          <button class="filter-button">Filter</button>
+        </div>
+      </div>
+
+      <h2 class="section-title"><i class="material-icons">video_library</i> All Videos</h2>
+      <div class="video-list">
+        <!-- Video list will be populated dynamically -->
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Tab switching functionality
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs and tab contents
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+        
+        // Add active class to clicked tab
+        tab.classList.add('active');
+        
+        // Show corresponding tab content
+        const tabId = tab.getAttribute('data-tab') + '-tab';
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+
+    // Function to load playlists from metadata
+    async function loadPlaylists() {
+      try {
+        const response = await fetch('ustaz/ahmadhasyimi/all_playlists.json');
+        const data = await response.json();
+        
+        const gridContainer = document.querySelector('.grid-container');
+        gridContainer.innerHTML = ''; // Clear existing content
+        
+        // Define colors and icons for the playlists
+        const colorOptions = [
+          '#e3f2fd', '#e8f5e9', '#fff3e0', '#f3e5f5', '#e0f2f1',
+          '#fbe9e7', '#f1f8e9', '#fff8e1', '#ffebee', '#e1f5fe'
+        ];
+        
+        const iconOptions = [
+          'school', 'menu_book', 'psychology', 'history', 'record_voice_over',
+          'wb_sunny', 'favorite', 'stars', 'format_quote', 'block'
+        ];
+        
+        // Convert object to array of playlists
+        const playlists = Object.entries(data).map(([key, value]) => ({
+          ...value,
+          name: key
+        }));
+        
+        playlists.forEach((playlist, index) => {
+          const color = colorOptions[index % colorOptions.length];
+          const icon = iconOptions[index % iconOptions.length];
+          
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.onclick = () => window.location.href = `ustaz/ahmadhasyimi/${playlist.name}/${playlist.name}_embedded.html`;
+          
+          card.innerHTML = `
+            <div class="card-image" style="background-color: ${color};">
+              <i class="material-icons" style="font-size: 4rem; color: ${getContrastColor(color)};">${icon}</i>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">${playlist.title}</h3>
+              <p class="card-description">Collection of teachings on ${playlist.title.toLowerCase().includes('asma') ? 'divine names' : 
+                playlist.title.toLowerCase().includes('zikir') ? 'remembrance and prayer' : 
+                playlist.title.toLowerCase().includes('surah') ? 'quranic reflection' : 
+                playlist.title.toLowerCase().includes('dosa') ? 'avoiding sins' : 
+                'islamic jurisprudence'}</p>
+              <div class="card-stats">
+                <div class="stat-item">
+                  <i class="material-icons">video_library</i>
+                  <span>${playlist.video_count} Videos</span>
+                </div>
+                <div class="stat-item">
+                  <i class="material-icons">access_time</i>
+                  <span>N/A</span>
+                </div>
+              </div>
+            </div>
+          `;
+          
+          gridContainer.appendChild(card);
+        });
+      } catch (error) {
+        console.error('Error loading playlists:', error);
+        document.querySelector('.grid-container').innerHTML = '<p>Failed to load playlists.</p>';
+      }
+    }
+
+    // Helper function to determine text color based on background
+    function getContrastColor(hexColor) {
+      // Remove the # if present
+      const hex = hexColor.replace('#', '');
+      // Convert to RGB
+      const r = parseInt(hex.substr(0, 2), 16);
+      const g = parseInt(hex.substr(2, 2), 16);
+      const b = parseInt(hex.substr(4, 2), 16);
+      // Calculate brightness
+      const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+      // Return black or white depending on brightness
+      return brightness > 150 ? '#000000' : '#ffffff';
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', loadPlaylists);
+
+    // Search functionality
+    document.getElementById('search').addEventListener('input', function(e) {
+      const searchTerm = e.target.value.toLowerCase();
+      // In a real implementation, this would filter videos based on search term
+      console.log('Searching for:', searchTerm);
+    });
+  </script>
+  
+  <footer style="text-align: center; padding: 2rem; margin-top: 2rem; color: var(--text-secondary); font-size: 0.9rem; border-top: 1px solid var(--divider-color);">
+    <p>Made by <a href="../showcase.html" style="color: var(--primary-color); text-decoration: none; font-weight: 500;">The Kangarian - From Perlis with Passion</a></p>
+  </footer>
+</body>
+</html>

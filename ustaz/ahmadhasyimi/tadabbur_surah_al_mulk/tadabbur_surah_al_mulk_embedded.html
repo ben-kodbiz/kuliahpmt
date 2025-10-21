@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tadabbur Surah Al-Mulk - Ustaz Ahmad Hasyimi</title>
+    <style>
+        :root {
+            --primary-color: #1976d2;
+            --primary-dark: #1565c0;
+            --secondary-color: #f5f5f5;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --divider-color: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            background: #f5f7fa; 
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header { 
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white); 
+            padding: 30px 20px; 
+            border-radius: 8px; 
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .header h1 { 
+            margin: 0; 
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .header p { 
+            margin: 10px 0 0 0; 
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats { 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            margin: 20px 0;
+        }
+
+        .stat { 
+            text-align: center; 
+        }
+
+        .stat-value { 
+            font-size: 1.8rem; 
+            font-weight: 500; 
+            color: var(--white);
+        }
+
+        .stat-label { 
+            color: rgba(255,255,255,0.9); 
+            font-size: 0.9rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(25, 118, 210, 0.08);
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: rgba(25, 118, 210, 0.15);
+        }
+
+        .video-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px;
+        }
+
+        .video-card { 
+            background: var(--white); 
+            border-radius: 8px; 
+            overflow: hidden; 
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .video-card:hover { 
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .video-title { 
+            padding: 15px; 
+            font-weight: 500; 
+            font-size: 1.05rem;
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        .video-embed { 
+            position: relative; 
+            width: 100%; 
+            height: 0; 
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        .video-embed iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .video-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .header h1 { 
+                font-size: 1.8rem;
+            }
+            .stats { 
+                gap: 20px;
+            }
+            .stat-value { 
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Tadabbur Surah Al-Mulk</h1>
+            <p>A collection of teachings by Ustaz Ahmad Hasyimi</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">25</div>
+                    <div class="stat-label">Videos</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">22:37:04</div>
+                    <div class="stat-label">Total Duration</div>
+                </div>
+            </div>
+        </div>
+
+        <a href="../../../index.html" class="back-link">
+            <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+            Back to Home
+        </a>
+
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-title">1. 02-11-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Mulk Siri Ke-2</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/a2qnD5kQF3E" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">2. 01-11-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Pertama</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/WFKVfRXdVuI" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">3. 06-11-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahfi Siri Ke-3</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/BZp9-qX4X8A" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">4. 07-11-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahfi Siri Ke-4</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/8pY59BCqtQ4" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">5. 08-11-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahfi Siri Ke-5</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/VJqxEll8EQg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">6. 20-11-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-7</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/j6iPBH2lx_E" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">7. 21-11-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-8</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/wZfbGTyTKYg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">8. 22-11-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-9</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/rr8nSLFyxZo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">9. 23-11-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-10</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/cF4-DHkiQpM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">10. 27-11-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-11</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/07f0KV7xeXI" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">11. 28-11-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-12</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/cPwCyXJ2YBk" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">12. 29-11-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-13</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/r5hBnffHJTY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">13. 09-11-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-6</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/LNe7eZvSs1s" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">14. 30-11-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-14</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Q8EvAmRnrKU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">15. 04-12-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-15</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/w0lsHI97OeQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">16. 05-12-2023 Ustaz Ahmad Hasyimi: Tadabbur Surah Al-Kahf Siri Ke-16</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/nzTkfpGWxPc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">17. 06-12-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-17</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/HqbaCYr2MkY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">18. 07-12-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-18</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/HwD8hKauZug" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">19. 11-12-2023  Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-19</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/zN9UlxqOEdc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">20. 12-12-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-20</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/MX-fO4XZpWw" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">21. 13-12-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-21</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/ajlqu8H7Sgo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">22. 21-12-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-23</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/I9n9oKcrCKM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">23. 14-12-2023 Ustaz Ahmad Hasyimi : Tadabbur Surah Al-Kahf Siri Ke-22</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/g4-pAgJ7iu8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">24. 02-01-2024 Ustaz Ahmad Hasyimi  Tadabbur Surah Al-Kahfi Siri Ke-24</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/nrYokUDb2T8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">25. 03-01-2024 Ustaz Ahmad Hasyimi :  Tadabbur Surah Al-Kahfi Siri Ke-25</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/54Xt-NoZm6E" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

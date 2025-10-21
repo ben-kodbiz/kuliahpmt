@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syarah 76 Dosa Besar - Ustaz Ahmad Hasyimi</title>
+    <style>
+        :root {
+            --primary-color: #1976d2;
+            --primary-dark: #1565c0;
+            --secondary-color: #f5f5f5;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --divider-color: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            background: #f5f7fa; 
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header { 
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white); 
+            padding: 30px 20px; 
+            border-radius: 8px; 
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .header h1 { 
+            margin: 0; 
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .header p { 
+            margin: 10px 0 0 0; 
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats { 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            margin: 20px 0;
+        }
+
+        .stat { 
+            text-align: center; 
+        }
+
+        .stat-value { 
+            font-size: 1.8rem; 
+            font-weight: 500; 
+            color: var(--white);
+        }
+
+        .stat-label { 
+            color: rgba(255,255,255,0.9); 
+            font-size: 0.9rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(25, 118, 210, 0.08);
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: rgba(25, 118, 210, 0.15);
+        }
+
+        .video-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px;
+        }
+
+        .video-card { 
+            background: var(--white); 
+            border-radius: 8px; 
+            overflow: hidden; 
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .video-card:hover { 
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .video-title { 
+            padding: 15px; 
+            font-weight: 500; 
+            font-size: 1.05rem;
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        .video-embed { 
+            position: relative; 
+            width: 100%; 
+            height: 0; 
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        .video-embed iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .video-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .header h1 { 
+                font-size: 1.8rem;
+            }
+            .stats { 
+                gap: 20px;
+            }
+            .stat-value { 
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Syarah 76 Dosa Besar</h1>
+            <p>A collection of teachings by Ustaz Ahmad Hasyimi</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">68</div>
+                    <div class="stat-label">Videos</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">87:45:50</div>
+                    <div class="stat-label">Total Duration</div>
+                </div>
+            </div>
+        </div>
+
+        <a href="../../../index.html" class="back-link">
+            <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+            Back to Home
+        </a>
+
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-title">1. 31-10-2022 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar Siri Pertama</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/UhMj6BskKqQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">2. 06-11-2022 Ustaz Yasir Ramlee : Syarah Al-Kaba'ir Siri Pertama</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/EYlrtLDVir4" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">3. 28-11-2022 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar  Siri Ke-3</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/LMBx0SWebs8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">4. 13-12-2022 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar Siri Ke-4</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/QVGhMDYwHAU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">5. 14-11-2022 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar Siri Ke-2</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/utqNjdaoDo8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">6. 18-12-2022 Ustaz Yasir Ramlee : Syarah Al-Kaba'ir Siri Ke-2</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/35G9i-zuz6g" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">7. 01-01-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir Siri Ke-3</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/He4ryqSp9h0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">8. 15-01-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir  Siri Ke-4</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/O93R9CT44Ds" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">9. 29-01-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir Siri Ke-5</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/hjE_Xz6Dd0Q" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">10. 06-02-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar Siri Ke-5</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/LV9StIIP9Rc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">11. 05-02-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir Siri Ke-6</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/dDSCrOqGtwo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">12. 13-02-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar Siri Ke-6</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/R-uYfMhOGJg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">13. 19-02-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir Siri Ke-7</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/QGGkAlGbyiI" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">14. 19-13-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/TmLGt1uDIaY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">15. 19-03-2023 Dr. Yasir Ramlee : Syarah Al-Kabair</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/8YRQ2c0OX2I" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">16. 21-05-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir | Dosa Riba</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/fgGv5dsjDmo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">17. 04-06-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir | Dosa Riba</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/K5gudQiJ4Gc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">18. 06-06-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/5E7aUKNvS3U" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">19. 12-06-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/hAk81CUudF8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">20. 07-05-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/BrbmUS3j7nw" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">21. 02-07-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/H7AxKezZ2Xk" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">22. 16-07-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/92K7ZLPq3Bs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">23. 30-07-2023 Dr. Yasir Ramlee : Syarah Al Kaba'ir | Dosa Zina</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/yZXd05SZmjE" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">24. 25-07-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Dosa Tidak Membayar Zakat</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/1BTPItlFiCE" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">25. 31-07-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Derhaka Kepada Ibubapa</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/pwv0Jo9hJdQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">26. 07-08-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Dosa Makan Riba</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/tQfBXYl8Nrc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">27. 06-08-2023 Dr. Yasir Ramlee :Syarah Al-Kaba'ir | Pemimpin Yang Khianat, Zalim& Bertindak Sesuka Hati</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Bpni5Zj73C0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">28. 21-08-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Makan Harta Anak Yatim</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/8yhWbFGY84s" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">29. 04-09-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Dusta Atas Nama Nabi ﷺ</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/sW0eqd6dQyc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">30. 11-09-2023 Ustaz Ahmad Hasyimi :Syarah 76 Dosa Besar | Meninggalkan Puasa Ramadan & Lari Dari Perang</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/b9Xb3QVQxYk" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">31. 03-09-2023 Dr Yasir Ramle : Syarah Al-Kaba'ir</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/s7I7YqeSEs8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">32. 17-09-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/thHhFyohVoE" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">33. 25-09-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Sebahagian Zina Lebih Besar Dari Zina Lain</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/-XsKusDVPh0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">34. 01-10-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/kGX1VBFQn-4" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">35. 09-10-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Pemimpin Yang Zalim</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/ON2pLrxPVUA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">36. 15-10-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/03jVJD6XO34" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">37. 03-10-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar |</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/llSiN4Y6apo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">38. 30-10-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Minum Arak</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/3tly9CMVo7o" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">39. 23-10-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar |</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/DbSjxfAdMVQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">40. 29-10-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir | Riak,Sombong & Takabur</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/vHfJ8I9pzxM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">41. 07-11-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Sombong ,Bangga Diri , Riak & Takabur</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/OZv5bDFzk-8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">42. 20-11-2023 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Sombong , Ujud , Bangga Diri</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/XqeGM5SBdJk" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">43. 17-12-2023 Dr. Yasir Ramlee : Syarah Al-Kaba'ir | Dosa Liwat</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/4ejs9yUB6G4" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">44. 07-01-2024 Dr. Yasir Ramlee : Syarah Al-Kaba'ir | Dosa Qazaf (Menuduh Orang Berzina)</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Gvh9TStpxCg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">45. 29-01-2024 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Menudah Wanita Beriman Melakukan Kejahatan</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/9IP-VQbPVgQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">46. 07-02-2024 Ustaz Ahmad Hasyimi :Syarah 76 Dosa Besar| Khianat & Mengambil Harta Perang Tanpa Izin</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Sibr66dYUZM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">47. 14-02-2024 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Dosa Liwat</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/_Vqvpcfkw0k" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">48. 20-05-2024 Ustaz Ahmad Hasyimi :  76 Dosa Besar | Mencuri & Isbal</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/GLuuLJAkmvA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">49. 19-08-2024 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar Yang Dianggap Remeh | Suka Berbohong @ Menipu</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/uEXDbx1Bj58" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">50. 26-08-2024 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar Dianggap Remeh | Membunuh Diri</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/mMKesOrWLgA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">51. 04-09-2024 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Yang Dianggap Remeh</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/zGKeJUtt4pI" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">52. 09-09-2024 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar Yang Dianggap Remeh</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/uAEukofSENs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">53. 27-09-2024 Ustaz Ahmad Hasyimi : SAyarah 76 Dosa Besar |</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Iy7bgUgJQ18" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">54. 30-09-2024 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Melakukan Kezaliman Kepada Manusia</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/mSy2cG1_llo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">55. 14-10-2024 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Mengungkit Kebaikan Yang Telah Dilakukan</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/2rG2zS-Ali8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">56. 28-10-2024 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar Dianggap Remeh |</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/m7QtIaIOhXY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">57. 11-11-2024 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar Yang Dianggap Remeh | Mengingkari Qadar</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/5gwmsUdwAPk" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">58. 07-10-2024 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Menuntut Ilmu Kerana Allah</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/u0CcwJZV06g" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">59. 11-11-2024 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Mendustakan Qadar</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/j3ewf5gX_fc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">60. 21-10-2024 Ustaz Ahmad Hasyimi : Kepentingan Manhaj Dalam Menuntut Ilmu</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/ZIQJDuu9LUc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">61. 18-11-2024 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar Yang Dianggap Remeh | Mengingkari Qadar</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/etltoYuCi8g" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">62. 25-11-2024 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar  | Mencari-Cari Keburukan Orang ( Tajassasu )</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/kPs4oZRydXk" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">63. 26-05-2025 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Dianggap Remeh</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/f6zn7lQEyM4" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">64. 21-07-2025 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Memutuskan Silaturrahim</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/l3bp2SdYROg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">65. 11-08-2025  Ustaz Ahmad Hasyimi :  Syarah 76 Dosa Besar Dianggap Remeh | Mengadu Domba @ Batu Api</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/dtA72_vBqNU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">66. 27-08-2025 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Memberontak Dgn Senjata & Mengkafir  Perlaku</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/zrn-m0-E9Is" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">67. 08-09-2025  Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar | Menyakiti Orang Muslim</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/UfZooe7RVjQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">68. 22-09-2025 Ustaz Ahmad Hasyimi : Syarah 76 Dosa Besar Dianggap Biasa  | Menyakiti Wali Allah</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/qQv34VL0dR4" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

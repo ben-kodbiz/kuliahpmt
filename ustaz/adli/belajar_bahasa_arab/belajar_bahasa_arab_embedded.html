@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Bahasa Arab - Ustaz Adli</title>
+    <style>
+        :root {
+            --primary-color: #1976d2;
+            --primary-dark: #1565c0;
+            --secondary-color: #f5f5f5;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --divider-color: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: #f5f7fa;
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white);
+            padding: 30px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(25, 118, 210, 0.08);
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: rgba(25, 118, 210, 0.15);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .video-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .video-title {
+            padding: 15px;
+            font-weight: 500;
+            font-size: 1.05rem;
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        .video-embed {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            .stats {
+                gap: 20px;
+            }
+            .stat-value {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Belajar Bahasa Arab</h1>
+            <p>A collection of teachings by Ustaz Adli</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">93</div>
+                    <div class="stat-label">Videos</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">374961d</div>
+                    <div class="stat-label">Total Duration</div>
+                </div>
+            </div>
+        </div>
+
+        <a href="../../../index.html" class="back-link">
+            <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+            Back to Home
+        </a>
+
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-title">1. 15-03-2023 Ustaz Adli Mohd Saad : Syarah Matan Al-Ajurumiyah Siri Pertama</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/7MeUXepEy1Y" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">2. 29-03-2023 Ustaz Adli Mohd Saad : Syarah Al-Ajurumiyah</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/aZ9rPARZ9Hk" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">3. 10-05-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Kitab Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/ud5UxSvxA4Q" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">4. 17-05-2023  Ustaz Adli Mohd Saad : Selangkah Memahami Kitab Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/mgTddbfsOP8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">5. 24-05-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/xHUAoCqYZ_A" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">6. 07-06-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/KubNeFH_Gsw" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">7. 31-05-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/h7_zAWgQhd8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">8. 08-06-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/jMK3q1RUMvo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">9. 14-06-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Ig0rtTCf8QU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">10. 12-07-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/a6RExmOd1Sc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">11. 26-07-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/vgCGukSaP58" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">12. 19-07-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/wD1Lu3UMruI" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">13. 16-08-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/ZH5HN3BgaL4" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">14. 30-08-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/sFmnW9z7MJg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">15. 06-09-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/AyJfmDWIRIA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">16. 09-08-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/y8R6IeRInqI" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">17. 13-09-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/5Nh5tRX2RXg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">18. 27-09-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/TlYLqyv4Tsg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">19. 11-10-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/jITHYn9Wr9M" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">20. 18-10-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/wzUzSN9IdMk" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">21. 04-10-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/M27EjftiXv8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">22. 01-11-2023  Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/UYSvxKMx2Ck" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">23. 25-10-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/qnEIOLtJO30" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">24. 08-11-2023 Ustaz Adli Mohd : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/bgWEvQQ0MLc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">25. 29-11-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/RUC7VylmndA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">26. 06-12-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/l83XElXFEeY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">27. 13-12-2023 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/QRYA9xnUs3g" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">28. 03-01-2024 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/bH0Pjm-rD9o" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">29. 10-01-2024 Ustaz Adli Mohd Saad : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/yduYGKN342M" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">30. 17-01-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/vNpD-V0j3FM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">31. 24-01-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/vdPFmxlTqvo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">32. 31-01-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/jncAmLfR95A" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">33. 21-02-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/mebmEshRabU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">34. 13-03-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/A_Aq_NpUpk8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">35. 18-03-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Qr34_15iO2A" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">36. 17-04-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/guIZuACIDfc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">37. 24-04-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/WA8nUGCrsao" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">38. 27-03-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/OpC2MlCaZM0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">39. 01-05-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/AF1OifS_60s" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">40. 15-05-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/E9Qst96WgxE" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">41. 06-03-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab | Feel Mudhori Yang Tidak Bercamtum</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/DoNlv8kY_0A" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">42. 22-05-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab | Tanda Wawu Sebagai Rafo'</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/n0f_wh0TViA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">43. 05-06-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab | Latihan Mengenai Wawu Menjadi Tanda Rofa</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/DASybXSTq0k" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">44. 29-05-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab | Syarat Bagi  Nama Lima Untuk Di I'rabkan</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/f0P9Kaxax-g" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">45. 26-06-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/F_ymur9MBnM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">46. 03-07-2024  Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/KIVs1YSLdYo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">47. 10-07-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/sJxct1yIur4" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">48. 17-07-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/IbuZUemlWF4" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">49. 31-07-2024  Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/j9GdLO5ZmbM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">50. 07-08-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/fy5nho52AzU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">51. 14-08-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/wkX0-BVxHWs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">52. 21-08-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/B6Gnim5zc_4" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">53. 28-08-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/YrkIan3QOqY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">54. 04-09-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/xHuPBT3UPOY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">55. 11-09-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Yt2-HJ5ezBI" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">56. 25-09-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/v3vTAd7jfJw" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">57. 18-09-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/prW3hpr4Nws" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">58. 09-10-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/0i4x3m1jyQI" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">59. 11-09-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/DJROrOxhGvE" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">60. 23-10-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/KHHDjRg5EGg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">61. 13-11-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/iuHFukIY_BI" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">62. 16-10-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/cm_Rqgv8HzI" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">63. 20-11-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/4VGQi6BhZE4" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">64. 18-12-2024 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/92iyHF-anGs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">65. 08-01-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/-tkaAYfj3rQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">66. 15-01-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/e8HRqDuti7A" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">67. 19-02-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/iB5IOf5TH-k" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">68. 22-01-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/SBmuk3u1ZDE" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">69. 26-02-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/r9V0NENzOko" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">70. 05-03-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab | Latihan</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Zl_TC-9BCV0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">71. 19-03-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/dq77rYA5n2A" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">72. 09-04-2025  Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/mLux6g7PSss" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">73. 23-04-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/aFGYxFxJREc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">74. 16-04-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/oxjMDISKm7s" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">75. 14-05-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/bzhTIFZUKJw" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">76. 21-05-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/k_NYxKik9DM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">77. 28-05-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/SpE_eSf6rU0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">78. 11-06-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/ZdZ7WoIH_I0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">79. 04-06-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/5T7fgI1EFAc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">80. 25-06-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/aZM7U0598QY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">81. 09-07-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/shMuuPxbFag" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">82. 16-07-2025  Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/lr-hTgDeBVA" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">83. 18-06-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/mT6Qj-C_ZFM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">84. 02-07-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/5lSnV-T43_k" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">85. 23-07-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/I2WX9ksyZNQ" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">86. 06-08-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/WINxdZRIPaw" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">87. 30-07-2025  Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/O5U3-ugp4iM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">88. 13-08-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/9ofha7Tu7es" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">89. 20-08-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/gI622gecwgw" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">90. 03-09-2025 Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/yISDY_7apds" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">91. 27-08-2025  Ustaz Adli : Selangkah Memahami Bahasa Arab</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/clfLx5qiMNU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">92. [Private video]</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/cSrAqss8JVU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">93. [Private video]</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/wRN9QLj46Bk" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

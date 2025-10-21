@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syarah Fikih Dalam Berdoa & Zikir - Ustaz Ahmad Hasyimi</title>
+    <style>
+        :root {
+            --primary-color: #1976d2;
+            --primary-dark: #1565c0;
+            --secondary-color: #f5f5f5;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --divider-color: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            background: #f5f7fa; 
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header { 
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white); 
+            padding: 30px 20px; 
+            border-radius: 8px; 
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .header h1 { 
+            margin: 0; 
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .header p { 
+            margin: 10px 0 0 0; 
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats { 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            margin: 20px 0;
+        }
+
+        .stat { 
+            text-align: center; 
+        }
+
+        .stat-value { 
+            font-size: 1.8rem; 
+            font-weight: 500; 
+            color: var(--white);
+        }
+
+        .stat-label { 
+            color: rgba(255,255,255,0.9); 
+            font-size: 0.9rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            background: rgba(25, 118, 210, 0.08);
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: rgba(25, 118, 210, 0.15);
+        }
+
+        .video-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px;
+        }
+
+        .video-card { 
+            background: var(--white); 
+            border-radius: 8px; 
+            overflow: hidden; 
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .video-card:hover { 
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .video-title { 
+            padding: 15px; 
+            font-weight: 500; 
+            font-size: 1.05rem;
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        .video-embed { 
+            position: relative; 
+            width: 100%; 
+            height: 0; 
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        .video-embed iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .video-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .header h1 { 
+                font-size: 1.8rem;
+            }
+            .stats { 
+                gap: 20px;
+            }
+            .stat-value { 
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Syarah Fikih Dalam Berdoa & Zikir</h1>
+            <p>A collection of teachings by Ustaz Ahmad Hasyimi</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">29</div>
+                    <div class="stat-label">Videos</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">25:19:19</div>
+                    <div class="stat-label">Total Duration</div>
+                </div>
+            </div>
+        </div>
+
+        <a href="../../../index.html" class="back-link">
+            <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+            Back to Home
+        </a>
+
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-title">1. 02-09-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-29</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/x5186nXFe3U" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">2. 19-08-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke- 27</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/LyOC82K0IJc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">3. 12-08-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-26</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/0SF5zaZn9-0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">4. 05-08-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-25</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/5eJJCrS_axw" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">5. 26-08-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-28</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Ft7AtSOkBAc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">6. 29-07-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-24</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/6Fxjlh5i90A" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">7. 08-07-2025  Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-23</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Ae1lpox1s90" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">8. 20-05-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-22</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/OPbsdBGIxAs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">9. 27-05-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-21</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/_EBOAxwH9oo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">10. 06-05-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-20</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/LreYc8vPU0c" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">11. 15-04-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-19</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/ZdWJBRSW3y0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">12. 25-03-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-18</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/arXAKKWwEUg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">13. 18-03-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-17</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/9YsGjMVs1-o" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">14. 11-03-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-16</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/FHO3lPxDPcg" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">15. 04-03-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-15</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/oYU3C8Sa-sc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">16. 25-02-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-14</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/JBvanAucZVY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">17. 18-02-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-13</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/1JBzgZxxZQo" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">18. 11-02-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-12</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/z8IAIYknO7s" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">19. 07-01-2025 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-11</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/4IUI4dT0VUs" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">20. 31-12-2024 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-10</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/wIunbxp2-EY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">21. 24-12-2024 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa& Zikir Siri Ke-9</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Btir5kVe884" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">22. 10-12-2024 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-8</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Ncup4EkR5QM" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">23. 26-11-2024 Ustaz Ahmad Hasyimi :  Syarah Fikih Dalam Berdoa & Zikir Siri Ke-7</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/KCeUUMoJXjc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">24. 12-11-2024 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-6</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/813w-91R7kk" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">25. 05-11-2024 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-5</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/85rZgvjAIec" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">26. 29-10-2024 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-4</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/3p83Ycleln0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">27. 22-10-2024 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-3</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/SViWw1BUo-g" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">28. 15-10-2024 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Ke-2</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/SavWB-uklUc" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card">
+                <div class="video-title">29. 08-10-2024 Ustaz Ahmad Hasyimi : Syarah Fikih Dalam Berdoa & Zikir Siri Pertama</div>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/jyxA8BfCo8Y" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
