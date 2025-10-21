@@ -1,0 +1,602 @@
+{
+  "name": "usul_tafsir",
+  "title": "Usul Tafsir : Ustaz Adli Saad",
+  "url": "https://www.youtube.com/playlist?list=PLv_xoi4FGsu99hLBQQz2iTUvB92N2T6Nx",
+  "video_count": 66,
+  "videos": [
+    {
+      "id": "6GyusjtzHic",
+      "title": "07-04-2021  Ustaz Adli Mohd Saad : Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=6GyusjtzHic",
+      "thumbnail": "",
+      "duration": 3947,
+      "upload_date": "",
+      "view_count": 1500
+    },
+    {
+      "id": "MVIyBgvLc0o",
+      "title": "14-04-2021 Ustaz Adli Mohd Saad : Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=MVIyBgvLc0o",
+      "thumbnail": "",
+      "duration": 4128,
+      "upload_date": "",
+      "view_count": 699
+    },
+    {
+      "id": "QXL0wGUyO0A",
+      "title": "21-04-2021 Ustaz Adli Mohd Saad : Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=QXL0wGUyO0A",
+      "thumbnail": "",
+      "duration": 4556,
+      "upload_date": "",
+      "view_count": 484
+    },
+    {
+      "id": "sSmm8wAuCp8",
+      "title": "05-05-2021 Ustaz Adli Mohd Saad : Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=sSmm8wAuCp8",
+      "thumbnail": "",
+      "duration": 4964,
+      "upload_date": "",
+      "view_count": 505
+    },
+    {
+      "id": "CRGm_WL7Xn0",
+      "title": "22-12-2021 Ustaz Adli Mohd Saad : Pengajian Usul Al-Quran",
+      "url": "https://www.youtube.com/watch?v=CRGm_WL7Xn0",
+      "thumbnail": "",
+      "duration": 4333,
+      "upload_date": "",
+      "view_count": 998
+    },
+    {
+      "id": "BdTaHqpZ9Xs",
+      "title": "12-01-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=BdTaHqpZ9Xs",
+      "thumbnail": "",
+      "duration": 4176,
+      "upload_date": "",
+      "view_count": 408
+    },
+    {
+      "id": "WBVbFrINdus",
+      "title": "01-12-2021 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=WBVbFrINdus",
+      "thumbnail": "",
+      "duration": 5766,
+      "upload_date": "",
+      "view_count": 689
+    },
+    {
+      "id": "dXnVdpzdRzA",
+      "title": "24-11-2021  Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=dXnVdpzdRzA",
+      "thumbnail": "",
+      "duration": 4619,
+      "upload_date": "",
+      "view_count": 443
+    },
+    {
+      "id": "tmXWFRZRXJ0",
+      "title": "19-01-2022  Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=tmXWFRZRXJ0",
+      "thumbnail": "",
+      "duration": 4324,
+      "upload_date": "",
+      "view_count": 479
+    },
+    {
+      "id": "74YQ0e40s2M",
+      "title": "09-02-2022  Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=74YQ0e40s2M",
+      "thumbnail": "",
+      "duration": 4832,
+      "upload_date": "",
+      "view_count": 434
+    },
+    {
+      "id": "ilCLhMz5SRA",
+      "title": "15-12-2021 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=ilCLhMz5SRA",
+      "thumbnail": "",
+      "duration": 4560,
+      "upload_date": "",
+      "view_count": 322
+    },
+    {
+      "id": "_AXcazP86zw",
+      "title": "16-02-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=_AXcazP86zw",
+      "thumbnail": "",
+      "duration": 5439,
+      "upload_date": "",
+      "view_count": 535
+    },
+    {
+      "id": "jnQVB09LnfU",
+      "title": "23-02-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=jnQVB09LnfU",
+      "thumbnail": "",
+      "duration": 4229,
+      "upload_date": "",
+      "view_count": 558
+    },
+    {
+      "id": "8vOfxWsCm0c",
+      "title": "02-03-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=8vOfxWsCm0c",
+      "thumbnail": "",
+      "duration": 5798,
+      "upload_date": "",
+      "view_count": 1100
+    },
+    {
+      "id": "gHP5SAYWvhE",
+      "title": "09-03-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=gHP5SAYWvhE",
+      "thumbnail": "",
+      "duration": 4458,
+      "upload_date": "",
+      "view_count": 515
+    },
+    {
+      "id": "4XyyoSXdFHU",
+      "title": "16-03-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=4XyyoSXdFHU",
+      "thumbnail": "",
+      "duration": 4607,
+      "upload_date": "",
+      "view_count": 677
+    },
+    {
+      "id": "Kg8DVGyT5kc",
+      "title": "23-03-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=Kg8DVGyT5kc",
+      "thumbnail": "",
+      "duration": 3713,
+      "upload_date": "",
+      "view_count": 470
+    },
+    {
+      "id": "wHS7C7lSdYo",
+      "title": "30-03-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=wHS7C7lSdYo",
+      "thumbnail": "",
+      "duration": 5031,
+      "upload_date": "",
+      "view_count": 308
+    },
+    {
+      "id": "Xhfkuii6fmE",
+      "title": "13-04-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=Xhfkuii6fmE",
+      "thumbnail": "",
+      "duration": 3786,
+      "upload_date": "",
+      "view_count": 219
+    },
+    {
+      "id": "0u8SX-AIZ9U",
+      "title": "06-04-2022 Ustaz Adli Mohd Saad : Pengajian Ulus Tafsir",
+      "url": "https://www.youtube.com/watch?v=0u8SX-AIZ9U",
+      "thumbnail": "",
+      "duration": 4097,
+      "upload_date": "",
+      "view_count": 311
+    },
+    {
+      "id": "FbrEGxE48Q0",
+      "title": "20-04-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=FbrEGxE48Q0",
+      "thumbnail": "",
+      "duration": 3680,
+      "upload_date": "",
+      "view_count": 284
+    },
+    {
+      "id": "pswXnPkSIKY",
+      "title": "27-04-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=pswXnPkSIKY",
+      "thumbnail": "",
+      "duration": 4598,
+      "upload_date": "",
+      "view_count": 699
+    },
+    {
+      "id": "GdaxCyj3il4",
+      "title": "11-05-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=GdaxCyj3il4",
+      "thumbnail": "",
+      "duration": 5146,
+      "upload_date": "",
+      "view_count": 215
+    },
+    {
+      "id": "fD2SK1dtR-4",
+      "title": "25-05-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir |",
+      "url": "https://www.youtube.com/watch?v=fD2SK1dtR-4",
+      "thumbnail": "",
+      "duration": 4065,
+      "upload_date": "",
+      "view_count": 333
+    },
+    {
+      "id": "Fv2hAppbXJY",
+      "title": "01-06-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=Fv2hAppbXJY",
+      "thumbnail": "",
+      "duration": 4428,
+      "upload_date": "",
+      "view_count": 303
+    },
+    {
+      "id": "Ewr9zXPI3dM",
+      "title": "08-06-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=Ewr9zXPI3dM",
+      "thumbnail": "",
+      "duration": 5831,
+      "upload_date": "",
+      "view_count": 519
+    },
+    {
+      "id": "gvfqYJrxwYk",
+      "title": "15-06-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir | Sebab Berlaku Perbezaan",
+      "url": "https://www.youtube.com/watch?v=gvfqYJrxwYk",
+      "thumbnail": "",
+      "duration": 5229,
+      "upload_date": "",
+      "view_count": 775
+    },
+    {
+      "id": "k9kKKYAlYcE",
+      "title": "22-06-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=k9kKKYAlYcE",
+      "thumbnail": "",
+      "duration": 4253,
+      "upload_date": "",
+      "view_count": 978
+    },
+    {
+      "id": "zRhb3wrZ1RE",
+      "title": "29-06-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=zRhb3wrZ1RE",
+      "thumbnail": "",
+      "duration": 4131,
+      "upload_date": "",
+      "view_count": 766
+    },
+    {
+      "id": "b5YQKXWvDck",
+      "title": "13-07-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=b5YQKXWvDck",
+      "thumbnail": "",
+      "duration": 4137,
+      "upload_date": "",
+      "view_count": 301
+    },
+    {
+      "id": "d0YUANllUrI",
+      "title": "20-07-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=d0YUANllUrI",
+      "thumbnail": "",
+      "duration": 4598,
+      "upload_date": "",
+      "view_count": 405
+    },
+    {
+      "id": "-PU4M-RxOTg",
+      "title": "06-07-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=-PU4M-RxOTg",
+      "thumbnail": "",
+      "duration": 5184,
+      "upload_date": "",
+      "view_count": 210
+    },
+    {
+      "id": "KXCIF3ahOrM",
+      "title": "27-07-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=KXCIF3ahOrM",
+      "thumbnail": "",
+      "duration": 5751,
+      "upload_date": "",
+      "view_count": 505
+    },
+    {
+      "id": "1OqvffyumZM",
+      "title": "03-08-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=1OqvffyumZM",
+      "thumbnail": "",
+      "duration": 4756,
+      "upload_date": "",
+      "view_count": 201
+    },
+    {
+      "id": "PL2hjy5yS2A",
+      "title": "10-08-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=PL2hjy5yS2A",
+      "thumbnail": "",
+      "duration": 4128,
+      "upload_date": "",
+      "view_count": 329
+    },
+    {
+      "id": "1l1Yp9lA9Dk",
+      "title": "24-08-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=1l1Yp9lA9Dk",
+      "thumbnail": "",
+      "duration": 3672,
+      "upload_date": "",
+      "view_count": 192
+    },
+    {
+      "id": "1t7DvVznefo",
+      "title": "17-08-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=1t7DvVznefo",
+      "thumbnail": "",
+      "duration": 5839,
+      "upload_date": "",
+      "view_count": 299
+    },
+    {
+      "id": "_vG8n5H6mzY",
+      "title": "31-08-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=_vG8n5H6mzY",
+      "thumbnail": "",
+      "duration": 4526,
+      "upload_date": "",
+      "view_count": 346
+    },
+    {
+      "id": "4sWBSIXQLf0",
+      "title": "07-09-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=4sWBSIXQLf0",
+      "thumbnail": "",
+      "duration": 5192,
+      "upload_date": "",
+      "view_count": 304
+    },
+    {
+      "id": "fc6fsYEoGLk",
+      "title": "21-09-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=fc6fsYEoGLk",
+      "thumbnail": "",
+      "duration": 4620,
+      "upload_date": "",
+      "view_count": 295
+    },
+    {
+      "id": "K5ftQ6KpY9Y",
+      "title": "28-09-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=K5ftQ6KpY9Y",
+      "thumbnail": "",
+      "duration": 4195,
+      "upload_date": "",
+      "view_count": 178
+    },
+    {
+      "id": "Rhj8_rvA70E",
+      "title": "14-09-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=Rhj8_rvA70E",
+      "thumbnail": "",
+      "duration": 4746,
+      "upload_date": "",
+      "view_count": 300
+    },
+    {
+      "id": "NLZASUQYeio",
+      "title": "05-10-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=NLZASUQYeio",
+      "thumbnail": "",
+      "duration": 5632,
+      "upload_date": "",
+      "view_count": 196
+    },
+    {
+      "id": "u-Q1VX2wAmk",
+      "title": "19-10-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=u-Q1VX2wAmk",
+      "thumbnail": "",
+      "duration": 4375,
+      "upload_date": "",
+      "view_count": 191
+    },
+    {
+      "id": "5DEHRVPSD9A",
+      "title": "12-10-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=5DEHRVPSD9A",
+      "thumbnail": "",
+      "duration": 5366,
+      "upload_date": "",
+      "view_count": 308
+    },
+    {
+      "id": "uzUPX__3Ekk",
+      "title": "26-10-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=uzUPX__3Ekk",
+      "thumbnail": "",
+      "duration": 4236,
+      "upload_date": "",
+      "view_count": 288
+    },
+    {
+      "id": "Dk3Xe5HlA7w",
+      "title": "02-11-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=Dk3Xe5HlA7w",
+      "thumbnail": "",
+      "duration": 5389,
+      "upload_date": "",
+      "view_count": 300
+    },
+    {
+      "id": "I_v3ijxHr7g",
+      "title": "09-11-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=I_v3ijxHr7g",
+      "thumbnail": "",
+      "duration": 5795,
+      "upload_date": "",
+      "view_count": 204
+    },
+    {
+      "id": "WGLCxL2X1rY",
+      "title": "16-11-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=WGLCxL2X1rY",
+      "thumbnail": "",
+      "duration": 4856,
+      "upload_date": "",
+      "view_count": 338
+    },
+    {
+      "id": "4drkmyMesC4",
+      "title": "23-11-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=4drkmyMesC4",
+      "thumbnail": "",
+      "duration": 4418,
+      "upload_date": "",
+      "view_count": 370
+    },
+    {
+      "id": "gOHO7RCkOxM",
+      "title": "24-11-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=gOHO7RCkOxM",
+      "thumbnail": "",
+      "duration": 4165,
+      "upload_date": "",
+      "view_count": 350
+    },
+    {
+      "id": "8s2UGEgg_Tw",
+      "title": "30-11-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=8s2UGEgg_Tw",
+      "thumbnail": "",
+      "duration": 3500,
+      "upload_date": "",
+      "view_count": 162
+    },
+    {
+      "id": "tls9u4s02LU",
+      "title": "07-12-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=tls9u4s02LU",
+      "thumbnail": "",
+      "duration": 4702,
+      "upload_date": "",
+      "view_count": 457
+    },
+    {
+      "id": "Mn5AVvQPLxw",
+      "title": "14-12-2022 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir | Kaedah Pertajrihan",
+      "url": "https://www.youtube.com/watch?v=Mn5AVvQPLxw",
+      "thumbnail": "",
+      "duration": 3620,
+      "upload_date": "",
+      "view_count": 317
+    },
+    {
+      "id": "aftYpSRq0VM",
+      "title": "04-01-2023 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir |",
+      "url": "https://www.youtube.com/watch?v=aftYpSRq0VM",
+      "thumbnail": "",
+      "duration": 4864,
+      "upload_date": "",
+      "view_count": 481
+    },
+    {
+      "id": "Yb4Q8Q2l9j4",
+      "title": "11-01-2023 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir |",
+      "url": "https://www.youtube.com/watch?v=Yb4Q8Q2l9j4",
+      "thumbnail": "",
+      "duration": 3793,
+      "upload_date": "",
+      "view_count": 314
+    },
+    {
+      "id": "Ii8XGWg0UnY",
+      "title": "18-01-2023 Ustaz Adli Mohd Saad : Pengajian  Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=Ii8XGWg0UnY",
+      "thumbnail": "",
+      "duration": 4444,
+      "upload_date": "",
+      "view_count": 123
+    },
+    {
+      "id": "tawHWWrFiNU",
+      "title": "25-01-2023 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir | Penggunaan Perkataan Mengikut Orang Arab",
+      "url": "https://www.youtube.com/watch?v=tawHWWrFiNU",
+      "thumbnail": "",
+      "duration": 3397,
+      "upload_date": "",
+      "view_count": 578
+    },
+    {
+      "id": "qumYbAleFpE",
+      "title": "01-02-2023 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir |",
+      "url": "https://www.youtube.com/watch?v=qumYbAleFpE",
+      "thumbnail": "",
+      "duration": 3300,
+      "upload_date": "",
+      "view_count": 165
+    },
+    {
+      "id": "CeYXUlxtH_0",
+      "title": "08-02-2023 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=CeYXUlxtH_0",
+      "thumbnail": "",
+      "duration": 3416,
+      "upload_date": "",
+      "view_count": 311
+    },
+    {
+      "id": "OCl14p-nVOw",
+      "title": "15-02-2023 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir | Kesepakatan Hukum Dhomir Pada Rujukan",
+      "url": "https://www.youtube.com/watch?v=OCl14p-nVOw",
+      "thumbnail": "",
+      "duration": 5256,
+      "upload_date": "",
+      "view_count": 339
+    },
+    {
+      "id": "LgIc313m9jk",
+      "title": "22-02-2023 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=LgIc313m9jk",
+      "thumbnail": "",
+      "duration": 4625,
+      "upload_date": "",
+      "view_count": 278
+    },
+    {
+      "id": "tXInwkNv0cc",
+      "title": "08-03-2023 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=tXInwkNv0cc",
+      "thumbnail": "",
+      "duration": 4268,
+      "upload_date": "",
+      "view_count": 295
+    },
+    {
+      "id": "KQZchvLEfSg",
+      "title": "23-03-2023 Usatz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=KQZchvLEfSg",
+      "thumbnail": "",
+      "duration": 4648,
+      "upload_date": "",
+      "view_count": 351
+    },
+    {
+      "id": "VFwcG6FoLpQ",
+      "title": "13-04-2023 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=VFwcG6FoLpQ",
+      "thumbnail": "",
+      "duration": 3292,
+      "upload_date": "",
+      "view_count": 343
+    },
+    {
+      "id": "JXzUgaieCB8",
+      "title": "11-05-2023 Ustaz Adli Mohd Saad : Pengajian Usul Tafsir",
+      "url": "https://www.youtube.com/watch?v=JXzUgaieCB8",
+      "thumbnail": "",
+      "duration": 4674,
+      "upload_date": "",
+      "view_count": 664
+    }
+  ]
+}

@@ -1,0 +1,2585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tafsir Al-Quran - Ustaz Fadzil Kamaruddin</title>
+    <style>
+        :root {
+            --primary-color: #4caf50;
+            --primary-dark: #388e3c;
+            --secondary-color: #f5f5f5;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --divider-color: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            background: #f5f7fa; 
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header { 
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white); 
+            padding: 30px 20px; 
+            border-radius: 8px; 
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .header h1 { 
+            margin: 0; 
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .header p { 
+            margin: 10px 0 0 0; 
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats { 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            margin: 20px 0;
+        }
+
+        .stat { 
+            text-align: center; 
+        }
+
+        .stat-value { 
+            font-size: 1.8rem; 
+            font-weight: 500; 
+            color: var(--white);
+        }
+
+        .stat-label { 
+            color: rgba(255,255,255,0.9); 
+            font-size: 0.9rem;
+        }
+
+        .video-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px;
+        }
+
+        .video-card { 
+            background: var(--white); 
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-card:hover { 
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .video-title { 
+            padding: 18px 20px 15px; 
+            font-weight: 500; 
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        .video-embed { 
+            position: relative; 
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0; 
+            overflow: hidden;
+        }
+
+        .video-embed iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: none;
+        }
+
+        .video-info { 
+            padding: 15px 20px; 
+            background: var(--secondary-color);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 4px;
+            background: rgba(76, 175, 80, 0.05);
+        }
+
+        .back-link:hover {
+            background: rgba(76, 175, 80, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .video-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .header h1 { 
+                font-size: 1.8rem;
+            }
+            .stats { 
+                flex-direction: column; 
+                gap: 10px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Tafsir Al-Quran</h1>
+        <p>Ustaz Fadzil Kamaruddin</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">150</div>
+                <div class="stat-label">Videos</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">147:19:18</div>
+                <div class="stat-label">Total Duration</div>
+            </div>
+        </div>
+    </div>
+    
+    <a href="../../../index.html" class="back-link">
+        <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+        Back to Home
+    </a>
+    
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-title">1. 11-10-2017 Ustaz Fadil Kamaruddin : Tafsir Juzuk 'Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/oNhiUh_31Oc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:02:32
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">2. 04-10-2017 Ustaz Fadil : Tafsir Surah An-Nas</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/DSXPfNOnyzY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:09:55
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">3. 27-12-2017  Ustaz Fadil Kamaruddin : Tafsir Juzuk Amma'</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/lel0SOVFeR8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    53:05
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">4. 13-12-2017 Ustaz Fadil Kamaruddin : Tafsir Juzuk Amma'</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/OVZ4wbxxK3Q" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    48:27
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">5. 06-12-2017 Ustaz Fadil Kamaruddin : Tafsir Juzuk 'Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Yd02hTwt_2M" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:55
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">6. 17-01-2018 Ustaz fadil Kamaruddin : Tafsir Juzuk 'Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/IMh5oKWbsxs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">7. 03-01-2018 Ustaz Fadil Kamaruddin : Tafsir juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/twyVrkbuWaM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:51
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">8. 31-01-2018 Ustaz fadil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Fil</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/I1q5oH4zzCI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    46:54
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">9. 10-01-2018  Ustaz fadil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/DKA-shjAVA4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    45:31
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">10. 07-02-2018 Ustaz Fadil Kamaruddin : Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/95aGXECO3Bs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:04:20
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">11. 14-02-2018 Ustaz Fadil Kamaruddin : Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/lmqNICXjEfc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:40
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">12. 21-02-2018 Ustaz Fadil Kamaruddin : Tafsir Juzuk Amma | Surah At-Takatsur</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/QycfcNqj8L8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    54:04
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">13. 11-07-2018 Ustaz Fadil Kamaruddin : Tafsir Al-Quran Surah Al-Alaq</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/C9uoMPuMXQE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    46:09
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">14. 04-07-2018 Ustaz Fadil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Alaq</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/fmxvPiAtOhE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    57:44
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">15. 27-06-2018 Ustaz Fadil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Bayyinah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/byfqPdq2L7A" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    50:57
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">16. 20-06-2018 Ustaz Fadil Kamaruddin : Tafsir Surah Al-Baqarah ayat 49</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Lax67OPbPS4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    53:02
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">17. 01-08-2018 Ustaz Fadil Kamaruddin :Tafsir Al-Quran Juzuk Amma | Surah At-Tin</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/q0WA93M9j68" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    52:55
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">18. 25-07-2018 Ustaz Fadil Kamaruddin : Tafsir Al-Quran Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Nf_WMgCFxBM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:07
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">19. 18-07-2018 Ustaz Fadil Kamaruddin : Tafsir Al-Quran</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/BillZPbWfSM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    54:18
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">20. 03-09-2018 Ustaz Fadil Kamaruddin : Tafsir Juzuk 'Amma | Surah Dhuha</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/91e4OAFLohw" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:29
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">21. 26-09-2018 Ustaz Fadil Kamaruddin : Tafsir Juzuk 'Amma | Surah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/1SD7GwdAL9Q" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:46
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">22. 10-10-2018 Ustaz Fadil Kamaruddin :Tafsir Juzuk 'Amma | Surah Dhuha</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/4nPUdQdzl98" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:04:32
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">23. 24-10-2018 Ustaz Fadil Kamaruddin : Tafsir Juzuk .Amma | Surah Al-Lay</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/nJTsOrqNGwo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:04
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">24. 17-10-2018 Ustaz Fadil Kamaruddin : Tafsir Juzuk 'Amma | Surah Ad-Dhuha</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Woy3IdgNXKE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">25. 09-01-2019 Ustaz Fadil Kamaruddin : Tafsir Juzuk 'Amma | Surah Al-Fajr</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/EkTcgIzYXyM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    57:20
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">26. 02-01-2019 Ustaz Fadil Kamaruddin : Tafsir Juzuk 'Amma | Surah Al-Balad</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/rxDyQOcJ3dU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    57:29
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">27. 26-12-2018 Ustaz Fadil Kamaruddin :</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/J2ghTeKOIFE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    48:09
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">28. 19-12-2018 Ustaz Fadil Kamaruddin :</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/yJfdmN0nT4k" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:28
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">29. 12-12-2018 Ustaz Fadil Kamaruddin : Tafsir Juzuk 'Amma | Surah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/JKfERzubahs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:37
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">30. 28-11-2018 Ustaz Fadil Kamaruddin : Tafsir Juzuk 'Amma | Surah Asy-Syam</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/4gW81JOtbdw" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    47:23
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">31. 07-11-2018 Ustaz Fadil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Lay</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/jDcuSpl8y_g" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:17
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">32. 23-01-2019 Ustaz Fadil Kamaruddin : Tafsir Juzuk 'Amma | Surah Al-Fajr</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/MNmCsGcDr7o" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    53:47
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">33. 11-12-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/DUwz13yQ47I" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:03:03
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">34. 02-10-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk ' Amma | Surah Al-Insyiqaq</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/wODjAiNiX98" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:29
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">35. 22-01-2020 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma | Surah Al-Takwir</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/rJyvPgkq4QM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:18
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">36. 09-10-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Ju6g623InTc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:17
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">37. 12-06-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/NCao04hyjcc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:29
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">38. 05-02-2020 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma | Surah 'Abasa</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/3ZuM800EvqQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    54:58
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">39. 19-02-2020 Ustaz Fadzil Kamaruddin: Tafsir Juzuk 'Amma | Surah 'Abasa</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/BaC4IpJtiZU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:13
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">40. 12-02-2020 Ustaz Fadzil Kamaruddin : Tafsir Juzuk "Amma | Surah "Abasa</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/WpDPGZjep9w" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    57:19
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">41. 25-09-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/MbYHmn1KgCo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    57:26
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">42. 18-12-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk "Amma | Surah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/mnjdpqY2Ev8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:03:45
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">43. 18-09-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/nFSdrZKp0ts" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:51
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">44. 13-11-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/z7MYk_29J80" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">45. 11-09-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/dzHKJHTM8-c" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:02:10
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">46. 08-01-2020 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Takwir</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/DaEjOY0Pgio" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    57:32
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">47. 30-10-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/GbzvX7ts3mk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:21
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">48. 01-01-2020 Ustaz Fazdil Kamaruddin : Tafsir Juzuk Amma | Surah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/vheqkFqpgd8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">49. 06-11-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma | Surah Al-Mutaffifin</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/XlQkina5Lss" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:54
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">50. 24-07-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/OMTnVawm5ko" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    57:58
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">51. 17-07-2019 Ustaz Fadzil Kamuruddin : Tafsir Juzuk 'Amma | Surah Al-Buruj</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ViaV6oX3uio" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:45
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">52. 10-07-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma | Surah Al-Buruj</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Tmfzfuk9Ots" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:31
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">53. 26-06-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma | Surah Tariq</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/WVTSWyInW14" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:26
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">54. 03-07-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma | Surah Tariq</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/yKF5b1Wk9z8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    54:52
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">55. 19-06-2019 Ustaz Fadzil Kamaruddin :Tafsir Juzuk 'Amma | Surah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/CFBUF9bJstk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:25
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">56. 23-10-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/bxvWqjiWMbU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:37
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">57. 04-12-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/dgKqdNpv0gE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">58. 11-03-2020 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma | Surah An-Nazi'at</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ao80COHfriM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:25
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">59. 26-02-2020 Ustaz Fadzil Kamaruddin : Tafsir Juzuk "Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Yu7xQ8pgWW4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:21
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">60. 16-10-2019 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/3Nx5Ch_oYV0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:41
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">61. 04-03-2020 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/XIrPr-j6XZE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:00
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">62. 18-03-2020 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/S8Sjo6pR_5w" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:07
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">63. 07-10-2020 UStaz Fadzil Kamaruddin : Tafsir Juzuk 'Amma | Surah Naziát</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Zmumc1rKTh0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:03:38
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">64. 07-04-2021 Ustaz Fadzil Kamaruddin : Tafsir Juzuk "Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/sEjBShlj1UA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:36
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">65. 29-12-2021 Ustaz Fadzil Kamaruddin : Syarah Tafsir Juzuk Amma | Surah Al-Fajr</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/9kLCsr1jkGs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:04:53
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">66. 05-01-2022  Ustaz Fadzil Kamaruddin : Syarah Tafsir Juzuk Amma | Surah Al-Fajr</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/GMaYGp2R0yA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:03:02
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">67. 12-01-2022 Ustaz Fadzil Kamaruddin : Syarah Tafsir Juzuk Amma | Surah Al-Fajr</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/_90-SiJ9KDs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:02:16
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">68. 19-01-2022 Ustaz Fadzil Kamaruddin : Syarah Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/JxX-Tbs6WTg" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:34
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">69. 26-01-2022 Ustaz Fadzil Kamaruddin : Syarah Tafsir Juzuk Amma | Al-Ghasyiyah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/iWCjq9lONrQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:09
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">70. 24-11-2021 Ustaz Fadzil Kamaruddin : Syarah Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/P99IuEQgsGE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:51
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">71. 09-02-2022  Ustaz Fadzil Kamaruddin : Syarah Tafsir Juzuk Amma | Surah Al-Ghasiyah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/oCaF1R3FgXs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:50
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">72. 22-12-2021 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/nyeYh0vWdSk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:32
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">73. 16-02-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Ghasyiyah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/iJLnYgmWg6g" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:57
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">74. 15-12-2021 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/1VVewuL_PXE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:05:33
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">75. 01-12-2021 Ustaz Fadzil Kamaruddin | Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/fTS5QiPtwI8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:06:18
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">76. 23-02-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Ghasyiyah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/7pA_pxBqdFM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:36
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">77. 02-03-2022  Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Ghasyiyah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/37HvKBmvuRA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:35
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">78. 09-03-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Ghasyiyah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/VWnRfYg1cEc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:27
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">79. 16-03-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Ghasyiyah & Surah A'la</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/MMohLgYAp7g" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:45
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">80. 23-03-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-A'la</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/7NIQ8-Z4DG0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:14
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">81. 08-12-2021 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/1wZ1JFHfZ7k" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:42
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">82. 13-04-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-A'la</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/GxQOHIhT3CM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    50:17
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">83. 20-04-20222 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-A'la</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/dC0i1RYr8pQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    54:51
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">84. 27-04-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-A'la</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/830bfWvWSS0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    43:53
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">85. 11-05-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-A'la</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/CIzIz2TvTsE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:46
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">86. 18-05-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzak Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/6e1yI79Gkn4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:56
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">87. 25-05-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Buruj</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ZWeHa12_32E" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:34
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">88. 01-06-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Buruj</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/GWZomeNuvv4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:02:14
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">89. 08-06-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/RD7_G8BpmEg" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    53:11
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">90. 15-06-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/cKuLqU8MFps" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:11:18
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">91. 22-06-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Inshiqaq</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ZNLQAOcDnOI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:42
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">92. 29-06-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Inshiqaq</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/xpbVJnYCVdc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:27
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">93. 17-08-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Inshiqaq</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/lTJcnQLHIkE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:03
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">94. 24-08-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Mutaffifin</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/tasFjSlY78E" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:14
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">95. 31-08-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Rf3grLt4yZU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:31
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">96. 07-09-2022 Ustaz Fadzil Kamaruddin : Syarah Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/_BfdCImFpLI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:56
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">97. 21-09-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/eECesGGiH4g" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:21
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">98. 14-09-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/NUHhL3Dn-ew" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:19
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">99. 05-10-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/KZIkRU1umgI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:50
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">100. 19-10-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Infitar</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/MLG01R6dpBQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    41:13
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">101. 12-10-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Al-Infitar</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ZG5wZnpn2Jc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:39
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">102. 26-10-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/IwaMtpDfd1c" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:03:04
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">103. 02-11-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/5FA3g4Qa6IU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:53
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">104. 09-11-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/GBRTqmoI_FQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:37
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">105. 16-11-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/smvLKgc_9zY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:56
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">106. 23-11-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/JJcJ-mShcPg" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:07
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">107. 30-11-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/eWAL_GOeZns" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:54
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">108. 07-12-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Abasa</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/w48fASRjFGQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    54:07
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">109. 14-12-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Abasa</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/xJMtWRYQ_0A" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:35
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">110. 21-12-2022 Ustaz Fadhil Kamaruddin : Tafsir Juzuk Amma | Surah Abasa</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/g-9o34O1lQ8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    54:50
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">111. 28-12-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah Abasa</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/XUjjtkVFbPU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:36
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">112. 04-01-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah An-Nazi'at</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ANH2lyPRizQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:18
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">113. 11-01-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah An-Nazi'at</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/zJ6mxuqpkDo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:36
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">114. 18-01-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah An-Nazi'at</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/viMrJi6jT5M" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:03:13
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">115. 25-01-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah An-Nazi'at</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/l8BvnRk5UI0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:52
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">116. 01-02-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/qJMLYW2QZmo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:48
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">117. 08-02-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/V_V9X0N1qW4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:22
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">118. 15-02-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/DvSpPXaz0Nc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:17
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">119. 01-03-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Lbu7lx7kLMc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:25
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">120. 08-03-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/-W57q8lDrUI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:14
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">121. 15-03-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Kisah Nabi Musa A.S</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/91CfKXQM2m4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:59
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">122. 22-03-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Kisah Nabi Musa a.s</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/npAdWA0xH8c" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:07:49
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">123. 10-05-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/VdxjyUWJ1iU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:03:59
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">124. 17-05-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/cm80C6sZFKQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:22
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">125. 24-05-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/5c-prZ-O0AY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:34
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">126. 31-05-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/J1WVUrLEvBY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:10
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">127. 16-02-2022 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/73u1GkhbGG4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:58
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">128. 02-08-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/pa7eDmpnMi8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    48:47
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">129. 16-08-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah An-Naba'</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/DLOWQUJgHZ0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:31
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">130. 23-08-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma |</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/PA1FpmUrSUw" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:58
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">131. 09-08-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/5rKFshwHokE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    54:25
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">132. 30-08-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma | Surah An-Naba</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/cYsU7UKhwPo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:03:34
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">133. 06-09-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk Amma</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/rHqj5fH0wFk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:48
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">134. Tafsir Juzuk 29 | Surah Al-Mursalat</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/aDbPeRgGwUU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:48:23
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">135. 20-09-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 29 | Surah Al-Mursalat</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/9fhNyRR2Bp0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:25
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">136. 27-09-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 29 | Surah Al-Mursalat</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/8A0g8z40ByY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:14
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">137. 04-10-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 29 | Surah Al-Mursalat</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/RNTX0LjBDWg" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:51
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">138. 11-10-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 29 | Surah Al-Mursalat</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/V0gnijazFBU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:25
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">139. 18-10-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 29 | Surah Al-Insan</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/FpyvptG1EfU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:13
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">140. 22-11-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 29 | Surah Al-Insan</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ya_KT1EhoxU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:02
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">141. 08-11-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 29 | Surah Al-Insan</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/lDYLFO51mM8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:31
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">142. 29-11-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 29 | Surah Al-Qiyamah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/tGdre7d0xh0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:05:53
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">143. 06-12-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 29 | Surah Al-Qiyamah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/d_06ZjntKi8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:04:04
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">144. 20-12-2023 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 29 | Surah Al-Qiyamah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/T0mZIUcrhNc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:30
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">145. 03-01-2024 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 29 | Surah Al-Qiyamah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/M3t41ct7Jms" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:31
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">146. 10-01-2024 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 29 | Surah Al-Qiyamah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/h-mzj_Bopss" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    57:27
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">147. 24-04-2024 Ustaz Fadzil : Tafsir Juzuk 29 | Surah Al-Muzzammil</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/p_1ur17LDsU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    52:09
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">148. 01-05-2024 Ustaz Fadzil : Tafsir Juzuk 29 | Surah Al-Muzzammil Ayat 17</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/HrJi7Gz4MR4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:04:29
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">149. 29-05-2024 Ustaz Fadzil : Tafsir Juzuk 29 | Surah Jin Ayat 6</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/3WgOz0_hP0k" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:05
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">150. 08-08-2025 Ustaz Fadzil : Tadabbur Surah Ar-Rahman Ayat Pertama</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/aB8VcTHICDI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:06:45
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

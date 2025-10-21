@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadis 40 Imam Nawawi - Ustaz Salman</title>
+    <style>
+        :root {
+            --primary-color: #1976d2;
+            --primary-dark: #1565c0;
+            --secondary-color: #f5f5f5;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --divider-color: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: #f5f7fa;
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white);
+            padding: 30px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: var(--white);
+        }
+
+        .stat-label {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.9rem;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .video-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .video-title {
+            padding: 18px 20px 15px;
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        .video-embed {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-info {
+            padding: 15px 20px;
+            background: var(--secondary-color);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 4px;
+            background: rgba(25, 118, 210, 0.05);
+        }
+
+        .back-link:hover {
+            background: rgba(25, 118, 210, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            .stats {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Hadis 40 Imam Nawawi</h1>
+        <p>Ustaz Salman</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">41</div>
+                <div class="stat-label">Videos</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">37:31:37</div>
+                <div class="stat-label">Total Duration</div>
+            </div>
+        </div>
+    </div>
+
+    <a href="../../../index.html" class="back-link">
+        <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+        Back to Home
+    </a>
+
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-title">1. Hadis 40 Imam Nawawi: Pengenalan & Bab Niat (Part1) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/X44CZTx0iMA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:01
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">2. Hadis 40 Imam Nawawi: Bab Islam, Iman & Ehsan (Part 2) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/mpS9Gg0O2Kc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">3. Hadis 40 Imam Nawawi: Hadis Ke3 Bab Rukun Islam - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/mlaRyQtMHdk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:07:58
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">4. Hadis 40 ke -4 : Proses Kejadian Manusia Dan Keluasan Ilmu Allah - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/zqdhWqW9di8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:02:11
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">5. Hadis 40 Imam Nawawi : Hadis ke 5- Mengadakan Sesuatu dalam Agama - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/1L346SwQ6Wk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:12:03
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">6. Hadis 40 Imam Nawawi: Hadis ke 6 Soal Halal Haram itu jelas - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/dNlcxD4-IvQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:15:59
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">7. Hadis 40 An Nawawi: Hadis 7 Agama Itu Nasihat - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/58jZH8YeAms" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:10:32
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">8. Hadis 40 Imam Nawawi: Hadis ke 9 Perintah & larangan Rasulullah - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/4rr4GyhJKMI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:22:36
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">9. Hadis 40 Imam Nawawi:  Hadis ke 10 - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/uEcDK3hTSAo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:20:19
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">10. Hadis 40 Imam Nawawi: Hadis ke 11 - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/vmEq0MrWqto" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:27:39
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">11. Hadis 40 Imam Nawawi: Hadis ke 12 - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/fcK8sp4jL2Y" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:06:29
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">12. Hadis 40 Imam Nawawi: Hadis ke 13 - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/6xs6EXSCVYY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:17:36
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">13. Hadis 40 Imam Nawawi Hadis ke 14 - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/pbgbTm64OFo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:07:57
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">14. Hadis 40 Imam Nawawi Hadis ke 15 - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/3zI6_rNL8rE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:08:32
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">15. Hadis 40 Imam Nawawi:  Hadis ke 17 - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/MVpb-gg3LOk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    57:29
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">16. Hadis 40 Imam Nawawi Hadis ke 18 - Ustaz Salman Ali (Part 2 of 2)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/kjY_V18E9Rs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    34:31
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">17. Hadis 40 Imam Nawawi Hadis ke 18 - Ustaz Salman Ali (Part 1 of 2)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/54enZl6eJ1U" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:25
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">18. Hadis 40 Imam Nawawi Hadis ke 19 (Part 1) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/iiS6DPPXNjs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:18
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">19. Hadis 40 Imam Nawawi Hadis ke 19 (Part 2) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/L11xBePOUkY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    13:53
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">20. Hadis 40 Imam Nawawi:  Hadis ke 20 - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/yTVGw9WH-JM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:18
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">21. Hadis 40 Imam Nawawi : Hadis ke 21 - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/s_RyYoNpGeg" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:07:30
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">22. Hadis 40 Imam Nawawi : Hadis ke 22 - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/p3iFS_0hsps" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    50:50
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">23. Hadis 40 Imam Nawawi : Hadis ke 23 - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Q-0RpWEPFHY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:13:49
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">24. Hadis 40 Imam Nawawi Hadis ke 24 (Part 1) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Etrfsdb6bm0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:20
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">25. Hadis 40 Imam Nawawi Hadis ke 24 (Part 2) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/N6cG35k3new" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    41:07
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">26. Hadis 40 Imam Nawawi Hadis ke 24 (Part 3) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/jSEhjO_Ti4Y" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:25
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">27. Hadis 40 Imam Nawawi Hadis ke 24 (Part 4) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/5z_RZjS6eqI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    11:29
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">28. Hadis 40 An Nawawi Hadis 25 - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Hn0i0GqjHpY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:10:34
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">29. Hadis 40 An Nawawi : Hadis 26 - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/9tNmI9jEUBY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:08:26
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">30. Hadis 40 An Nawawi Hadis 27 - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/aPFSVguflDY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:17:25
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">31. Hadis 40 Imam Nawawi Hadis ke 28 (Part 1) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/OYrCjYbkkbM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">32. Hadis 40 Imam Nawawi Hadis ke 28 (Part 2) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/FPko8qRPS3I" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    26:51
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">33. Hadis 40 Imam Nawawi Hadis ke 29 (Part 1) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/_Z8aRy27ZRg" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:22
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">34. Hadis 40 Imam Nawawi Hadis ke 29 (Part 2) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/hx-NZEaZMcE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    15:20
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">35. Hadis 40 Imam Nawawi Hadis ke 29 (Part 3) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/8F6mNEQgwKg" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:15:14
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">36. Hadis 40 Imam Nawawi Hadis ke 30 (Part 1) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/-J8nVQ_crTY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:23
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">37. Hadis 40 Imam Nawawi Hadis ke 30 (Part 2) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/jx-_2iV9LXQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    29:21
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">38. Hadis 40 Imam Nawawi Hadis ke 32 (Part 1) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/4gCcot9ABSc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:23
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">39. Hadis 40 Imam Nawawi Hadis ke 32 (Part 2) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/WAJeO1RhHck" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    14:44
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">40. Hadis 40 Imam Nawawi Hadis ke 33 (Part 1) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/gPD06GGpkl4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">41. Hadis 40 Imam Nawawi Hadis ke 33 (Part 2) - Ustaz Salman Ali</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/zRRfGH8N5gk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    23:06
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

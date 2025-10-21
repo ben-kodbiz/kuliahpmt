@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitab Mukhtasar Minhajul Qasidin - Ustaz Qarni Edrus</title>
+    <style>
+        :root {
+            --primary-color: #1976d2;
+            --primary-dark: #1565c0;
+            --secondary-color: #f5f5f5;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --divider-color: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            background: #f5f7fa; 
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header { 
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white); 
+            padding: 30px 20px; 
+            border-radius: 8px; 
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .header h1 { 
+            margin: 0; 
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .header p { 
+            margin: 10px 0 0 0; 
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats { 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            margin: 20px 0;
+        }
+
+        .stat { 
+            text-align: center; 
+        }
+
+        .stat-value { 
+            font-size: 1.8rem; 
+            font-weight: 500; 
+            color: var(--white);
+        }
+
+        .stat-label { 
+            color: rgba(255,255,255,0.9); 
+            font-size: 0.9rem;
+        }
+
+        .video-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px;
+        }
+
+        .video-card { 
+            background: var(--white); 
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-card:hover { 
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .video-title { 
+            padding: 18px 20px 15px; 
+            font-weight: 500; 
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        .video-embed { 
+            position: relative; 
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0; 
+            overflow: hidden;
+        }
+
+        .video-embed iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: none;
+        }
+
+        .video-info { 
+            padding: 15px 20px; 
+            background: var(--secondary-color);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 4px;
+            background: rgba(25, 118, 210, 0.05);
+        }
+
+        .back-link:hover {
+            background: rgba(25, 118, 210, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .video-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .header h1 { 
+                font-size: 1.8rem;
+            }
+            .stats { 
+                flex-direction: column; 
+                gap: 10px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Kitab Mukhtasar Minhajul Qasidin</h1>
+        <p>Ustaz Qarni Edrus</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">32</div>
+                <div class="stat-label">Videos</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">32:09:08</div>
+                <div class="stat-label">Total Duration</div>
+            </div>
+        </div>
+    </div>
+    
+    <a href="../../../index.html" class="back-link">
+        <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+        Back to Home
+    </a>
+    
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-title">1. [SIRI 1] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/zEDNLHctp1o" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:20
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">2. [SIRI 2] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Mhe-5s2fLDo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:54
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">3. [SIRI 3] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/PHgFsGzxh1M" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:45
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">4. [SIRI 4] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/jhSG0iZ1l0k" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:50
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">5. [SIRI 5] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/IuxxqY7MJi8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:08:31
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">6. [SIRI 6] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/eXoNUmLX_9A" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:06:07
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">7. [SIRI 7] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/qO0k88DwFEI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    54:30
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">8. [SIRI 8] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/U5sPWwenc1U" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:17:33
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">9. [SIRI 9] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Mzd7ezaB11Y" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:02:41
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">10. [SIRI 10] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/WtYAEbe9qj0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:06:54
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">11. [SIRI 11] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/9DpF0qJgc8E" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:16
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">12. [SIRI 12] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/clibO1yWJTQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:02:17
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">13. [SIRI 13] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/i2-HD4cY5Hs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    48:52
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">14. [SIRI 14] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/oFsUK0iyVSI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:34
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">15. [SIRI 15] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/L5Y5WN_VC_o" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    53:28
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">16. [SIRI 16] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/WgY8GPDU1RQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:06:57
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">17. [SIRI 17] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/D2N63wLqwC0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:12:22
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">18. [SIRI 18] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/acSt6YgegK4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:08:41
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">19. [SIRI 19] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/j6wpwHURcqk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:57
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">20. [SIRI 20] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/0iQWYViZ-j8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    28:51
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">21. [SIRI 20] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/fn0x5HyYHS0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    23:13
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">22. [SIRI 21] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/XsyEGeBWlBo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:08:00
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">23. [Kuliah Maghrib] Khitan | Ustaz Rozi An-Narusi</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/sh9bWTMYSQ4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:03:29
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">24. [SIRI 22] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/8lfB-7khQi0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:08:21
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">25. [SIRI 19] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/GTbpc3dq4_o" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:17
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">26. [SIRI 21] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/PIM47eY7p5w" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:52
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">27. [SIRI 23] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/xFwQf_hskHc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:02:37
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">28. [SIRI 24] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Z34NkVpLJF0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:10:08
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">29. [SIRI 23] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/1uU7CQWjDhI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:30
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">30. [SIRI 25] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/C7PRuOAtyLE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:05:46
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">31. [Kuliah Maghrib] Kisah Sai’d Bin A’amir al-Jumahiy | Ustaz Nor Azariza Mohd Alawi</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/fS3TTtyGRAM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:56
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">32. [Kuliah Maghrib] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ggJu0fQ2Pdw" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:39
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

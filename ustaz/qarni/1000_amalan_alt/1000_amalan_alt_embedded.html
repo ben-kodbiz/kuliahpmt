@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1000 Amalan Sunnah (Alt) - Ustaz Qarni Edrus</title>
+    <style>
+        :root {
+            --primary-color: #1976d2;
+            --primary-dark: #1565c0;
+            --secondary-color: #f5f5f5;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --divider-color: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            background: #f5f7fa; 
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header { 
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white); 
+            padding: 30px 20px; 
+            border-radius: 8px; 
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .header h1 { 
+            margin: 0; 
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .header p { 
+            margin: 10px 0 0 0; 
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats { 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            margin: 20px 0;
+        }
+
+        .stat { 
+            text-align: center; 
+        }
+
+        .stat-value { 
+            font-size: 1.8rem; 
+            font-weight: 500; 
+            color: var(--white);
+        }
+
+        .stat-label { 
+            color: rgba(255,255,255,0.9); 
+            font-size: 0.9rem;
+        }
+
+        .video-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px;
+        }
+
+        .video-card { 
+            background: var(--white); 
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-card:hover { 
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .video-title { 
+            padding: 18px 20px 15px; 
+            font-weight: 500; 
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        .video-embed { 
+            position: relative; 
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0; 
+            overflow: hidden;
+        }
+
+        .video-embed iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: none;
+        }
+
+        .video-info { 
+            padding: 15px 20px; 
+            background: var(--secondary-color);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 4px;
+            background: rgba(25, 118, 210, 0.05);
+        }
+
+        .back-link:hover {
+            background: rgba(25, 118, 210, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .video-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .header h1 { 
+                font-size: 1.8rem;
+            }
+            .stats { 
+                flex-direction: column; 
+                gap: 10px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>1000 Amalan Sunnah (Alt)</h1>
+        <p>Ustaz Qarni Edrus</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">34</div>
+                <div class="stat-label">Videos</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">27:48:25</div>
+                <div class="stat-label">Total Duration</div>
+            </div>
+        </div>
+    </div>
+    
+    <a href="../../../index.html" class="back-link">
+        <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+        Back to Home
+    </a>
+    
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-title">1. (🔴LIVE) 15-06-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 3)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Da6-BPqXShA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:36
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">2. (🔴LIVE) 16-06-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 4)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/DBMEdQJwFnE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    50:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">3. 18-05-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 2)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/WlyscS_fMI4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    43:34
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">4. 18-05-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 1)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/fCgSv0griu8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:25
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">5. 16-06-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 4)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/N14NsoHSWkU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    50:10
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">6. 15-06-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 3)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/8127AEzVn54" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:16
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">7. (🔴LIVE) 20-07-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 5)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/mMrCapJsYpM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:46
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">8. (🔴LIVE) 21-07-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 6)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/zuaiq8L-a9E" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    37:56
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">9. 20-07-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 5)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/fuhmsbxQLRY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:43
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">10. (🔴LIVE) 17-08-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 7)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/F_5TEbI00sM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:11
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">11. (🔴LIVE) 18-08-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 8)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/CadxPovb7t8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    42:26
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">12. (🔴LIVE) 21-09-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 9)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/TtjRHy-jhgk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    46:41
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">13. (🔴LIVE) 19-10-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 11)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/RRUw-Pfo-wo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    46:16
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">14. (🔴LIVE) 20-10-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 12)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/FbQL_eaFZn0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    47:54
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">15. (🔴LIVE) 16-11-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 13)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/QyWj5YUVT2Y" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:06
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">16. (🔴LIVE) 17-11-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 14)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/q-OcSXPoRVQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    38:46
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">17. (🔴LIVE) 21-12-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 15)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/SJOQjSdJ0FI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:06
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">18. (🔴LIVE) 22-12-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 16)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/h6BYSGKkkYo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    44:41
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">19. (🔴LIVE) 18-01-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 17)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/pleeSg3nM6M" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    54:01
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">20. (🔴LIVE) 19-01-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 18)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/uB_7wm9qyzQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    40:06
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">21. (🔴LIVE) 15-02-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 19)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Tzn7du8KWF0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:51
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">22. (🔴LIVE) 16-02-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 20)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/iTbhdCnFZNg" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    46:41
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">23. (🔴LIVE) 19-04-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 21)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/bKhuRpVrpuA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    46:10
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">24. (🔴LIVE) 20-04-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 22)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/HwYAPbxHtHM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    37:47
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">25. (🔴LIVE) 17-05-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 23)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/oaMVJo9uazo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:01
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">26. (🔴LIVE) 18-05-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 24)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/xOj8_2O2SnM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    47:23
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">27. (🔴LIVE) 21-06-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 25)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/-V9CR6AQhbE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:07
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">28. (🔴LIVE) 22-06-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 26)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/32GpTomSiJU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:11
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">29. (🔴LIVE) 19-07-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 27)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/7GE5Pjn_-wg" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:14
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">30. (🔴LIVE) 20-07-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 28)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/yHkbFakTQgs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    47:00
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">31. (🔴LIVE) 16-08-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 29)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/T318bMKWtLs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    47:11
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">32. (🔴LIVE) 17-08-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 30)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/1bU9OmGeK64" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    57:36
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">33. (🔴LIVE) 20-09-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 31)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/nICCCTdDTU0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    47:12
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">34. (🔴LIVE) 21-09-2025 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 32)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/TdZrJcDSw6E" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    40:57
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

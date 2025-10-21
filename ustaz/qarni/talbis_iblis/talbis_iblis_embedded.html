@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitab Talbis Iblis - Ustaz Qarni Edrus</title>
+    <style>
+        :root {
+            --primary-color: #1976d2;
+            --primary-dark: #1565c0;
+            --secondary-color: #f5f5f5;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --divider-color: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            background: #f5f7fa; 
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header { 
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white); 
+            padding: 30px 20px; 
+            border-radius: 8px; 
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .header h1 { 
+            margin: 0; 
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .header p { 
+            margin: 10px 0 0 0; 
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats { 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            margin: 20px 0;
+        }
+
+        .stat { 
+            text-align: center; 
+        }
+
+        .stat-value { 
+            font-size: 1.8rem; 
+            font-weight: 500; 
+            color: var(--white);
+        }
+
+        .stat-label { 
+            color: rgba(255,255,255,0.9); 
+            font-size: 0.9rem;
+        }
+
+        .video-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px;
+        }
+
+        .video-card { 
+            background: var(--white); 
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-card:hover { 
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .video-title { 
+            padding: 18px 20px 15px; 
+            font-weight: 500; 
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        .video-embed { 
+            position: relative; 
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0; 
+            overflow: hidden;
+        }
+
+        .video-embed iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: none;
+        }
+
+        .video-info { 
+            padding: 15px 20px; 
+            background: var(--secondary-color);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 4px;
+            background: rgba(25, 118, 210, 0.05);
+        }
+
+        .back-link:hover {
+            background: rgba(25, 118, 210, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .video-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .header h1 { 
+                font-size: 1.8rem;
+            }
+            .stats { 
+                flex-direction: column; 
+                gap: 10px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Kitab Talbis Iblis</h1>
+        <p>Ustaz Qarni Edrus</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">62</div>
+                <div class="stat-label">Videos</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">56:52:32</div>
+                <div class="stat-label">Total Duration</div>
+            </div>
+        </div>
+    </div>
+    
+    <a href="../../../index.html" class="back-link">
+        <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+        Back to Home
+    </a>
+    
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-title">1. [SIRI 1] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/3xdh8VRVpic" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:45
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">2. [SIRI 2] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/YxI39D7LwQQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:15:27
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">3. [SIRI 3] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/LUbMJ9Ok-SI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:05:33
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">4. [SIRI 4] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ciA0zaMlMC0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:11:39
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">5. [SIRI 5] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/jYie4_8JtzY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:03:16
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">6. [SIRI 6] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/rZ3oyw04Wu0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:14
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">7. [SIRI 7] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/_643ynCpTeY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:19
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">8. [SIRI 8] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus (Bahagian 1)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/jeCkbxqBLa0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    38:05
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">9. [SIRI 8] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus (Bahagian 2)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/U5ZMHI5uJBM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    20:20
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">10. [SIRI 9] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/tYfmyGYMKZk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:03
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">11. [SIRI 10] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/QXRNQf6xQd4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:05:35
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">12. [SIRI 11] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/k84MpCqDFh8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:14
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">13. [SIRI 12] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/YZc8RJfMFkw" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:15
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">14. [SIRI 13] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Pfs9RmjrGUg" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:09
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">15. [SIRI 14] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Dh4D6-pJCdQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:13:47
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">16. [SIRI 15] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/mZh8A1jdYcs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:02:40
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">17. [SIRI 16] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/VBB706LdDJE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:01
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">18. [SIRI 17] Kitab Talbis Iblis: Membongkar Ajaran Sesat Batiniah | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/6EOIHMcGvWI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:08:50
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">19. [SIRI 18] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/7pMO0zMHar4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">20. [SIRI 19] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/GTbpc3dq4_o" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:17
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">21. [SIRI 20] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/9AZwdpYc3rU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    53:22
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">22. [SIRI 21] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/PIM47eY7p5w" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:52
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">23. [SIRI 22] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/JCcuRwasqtA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    57:09
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">24. [SIRI 23] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/1uU7CQWjDhI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:30
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">25. [SIRI 24] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/tg-yg-VReEs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:31
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">26. [SIRI 25] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/N4jvXv8fUaM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:31
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">27. [SIRI 26] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ixl1bxN6wwA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    44:13
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">28. [SIRI 27] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus (Bahagian 1)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/LWVqis8SPhU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    06:44
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">29. [SIRI 27] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus (Bahagian 2)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/XxER_K2oN6M" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    47:42
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">30. [SIRI 28] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ddgdhiaI8VI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:00:13
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">31. [SIRI 29] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ZZRj2Yz6y5U" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    25:49
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">32. [SIRI 30] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus (Bahagian 1)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Hmsu4rgA5ZM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    21:45
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">33. [SIRI 30] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus (Bahagian 2)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/gqwWtPrtp7U" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    38:58
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">34. [SIRI 31] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/SVbOPAlkNE8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:04:33
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">35. [SIRI 32] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/7yOMZ79jt2I" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:57
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">36. [SIRI 33] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/rQj0DDxag0w" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:36
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">37. [SIRI 34] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/pHQm8HSzAzo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    52:22
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">38. [SIRI 35] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/hjbziGdOrC0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:16
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">39. [SIRI 37] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/2aCc_K95x-0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:34
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">40. [SIRI 38] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus (Bahagian 1)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/TiO5GIEt7aU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    15:43
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">41. [SIRI 38] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus (Bahagian 2)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/OeTSoU8dRU8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    38:27
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">42. [SIRI 39] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/4Y9yMX2tc0I" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    52:07
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">43. [SIRI 40] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/WxoEALp8BkQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:31
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">44. [SIRI 41] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/CFWlG8zoYlU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:48
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">45. [SIRI 42] Kitab Talbis Iblis | Ustaz Ahmad Al-Qarni Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/b9BYH1W8Gcg" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:25:56
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">46. [SIRI 46] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ib4f452_uaw" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:21:03
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">47. [SIRI 47] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/eaGaCXuMYzY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:11:41
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">48. [SIRI 48] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/oxgf86Xf6ZQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:07:49
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">49. [SIRI 49] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/j4aBB7wFvZA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:03:05
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">50. [SIRI 50] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/aZo7gatjs4U" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:58
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">51. [SIRI 51] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Z8pKl0AOrgI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:10
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">52. [SIRI 52] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/-cQsPy-cQl4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:02:16
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">53. [SIRI 53] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/7FxR-jFacYE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    54:28
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">54. [SIRI 54] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/v3z3lZs77SI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:11:45
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">55. [SIRI 55] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/_UvQS8K7UG0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    54:08
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">56. [SIRI 56] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/UzLUATT8BPE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:45
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">57. [SIRI 57] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/kZEZwFTllr0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    58:48
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">58. [SIRI 58] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/YhEhht2v52k" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    50:04
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">59. [SIRI 59] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/82bnHZ5vnxs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    48:51
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">60. [SIRI 60] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Rz467EldyY4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    57:06
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">61. [SIRI 61] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/lLar2xzQvOw" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:03:13
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">62. [SIRI 62] Kitab Talbis Iblis | Ustaz Syed Mohd Azwan Bin Yahya</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/EJNBhHAffgg" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    50:20
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

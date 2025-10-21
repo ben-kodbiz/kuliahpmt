@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manhaj Aqidah Imam Syafie - Ustaz Qarni Edrus</title>
+    <style>
+        :root {
+            --primary-color: #1976d2;
+            --primary-dark: #1565c0;
+            --secondary-color: #f5f5f5;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --divider-color: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            background: #f5f7fa; 
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header { 
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white); 
+            padding: 30px 20px; 
+            border-radius: 8px; 
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .header h1 { 
+            margin: 0; 
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .header p { 
+            margin: 10px 0 0 0; 
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats { 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            margin: 20px 0;
+        }
+
+        .stat { 
+            text-align: center; 
+        }
+
+        .stat-value { 
+            font-size: 1.8rem; 
+            font-weight: 500; 
+            color: var(--white);
+        }
+
+        .stat-label { 
+            color: rgba(255,255,255,0.9); 
+            font-size: 0.9rem;
+        }
+
+        .video-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px;
+        }
+
+        .video-card { 
+            background: var(--white); 
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-card:hover { 
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .video-title { 
+            padding: 18px 20px 15px; 
+            font-weight: 500; 
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        .video-embed { 
+            position: relative; 
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0; 
+            overflow: hidden;
+        }
+
+        .video-embed iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: none;
+        }
+
+        .video-info { 
+            padding: 15px 20px; 
+            background: var(--secondary-color);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 4px;
+            background: rgba(25, 118, 210, 0.05);
+        }
+
+        .back-link:hover {
+            background: rgba(25, 118, 210, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .video-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .header h1 { 
+                font-size: 1.8rem;
+            }
+            .stats { 
+                flex-direction: column; 
+                gap: 10px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Manhaj Aqidah Imam Syafie</h1>
+        <p>Ustaz Qarni Edrus</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">50</div>
+                <div class="stat-label">Videos</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">42:53:01</div>
+                <div class="stat-label">Total Duration</div>
+            </div>
+        </div>
+    </div>
+    
+    <a href="../../../index.html" class="back-link">
+        <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+        Back to Home
+    </a>
+    
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-title">1. 24-07-2022 Ustaz Qarni Edrus : Manhaj Aqidah Imam Asy Syafie</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/bJQ1Xjw0IXo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    50:56
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">2. 2-10-2022 Ustaz Qarni Edrus : Manhaj Aqidah Imam Syafie</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Ue0MmJAQqbA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    50:14
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">3. 09-10-2022 Ustaz Qarni Edrus : Manhaj Aqidah Imam Syafie</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/MoUDDAW_Zks" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    46:02
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">4. 08-1-2023 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie (Membangunkan Masjid Di Atas Kuburan)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/R5ec4eTCRk8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    53:57
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">5. 15-1-2023 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/fEkBa4gGWkA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    52:43
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">6. 05-2-2023 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie (Mendirikan Masjid Di Atas Kuburan)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/9kYLsjLgkI4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    53:14
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">7. 12-2-2023 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie (Bersumpah Kepada Selain Allah)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/6e3uNqvAFWw" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    50:46
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">8. 7-5-2023 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/nwQwD-CDxdA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    53:26
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">9. 21-5-2023 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie (Perbahasan Syafaat)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/VsUQTLrFVxE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:01
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">10. 11-6-2023 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/P_nmMs_57B8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:46
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">11. 13-08-2023 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie (m/s 375, Tauhid Asma' wa Sifat)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/v6aPXYAtiG0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    53:58
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">12. 10-09-2023 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/J-S7dCOtxD4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    48:26
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">13. (🔴LIVE) 24-09-2023 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie (m/s 471, Keutamaan Nabi Muhammad)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/gNrewGNFVHE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:50
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">14. 1 Oktober 2023 "MANHAJ AQIDAH IMAM SYAFIE" Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/g4xR4hD9E2I" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    47:17
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">15. 8 Oktober 2023 KITAB “MANHAJ AQIDAH IMAM SYAFIE” Ustaz Ahmad Al-Qarni Bin Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/jCMxmoTtXS8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:40
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">16. (🔴LIVE) 15-10-2023 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie (m/s 427, Sifat Tangan Allah)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/XWeJFn_vU60" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    53:37
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">17. 5 November 2023“MANHAJ AQIDAH IMAM SYAFIE”Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/M_QIxyZBSXs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    45:41
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">18. (🔴LIVE) 12-11-2023 Ustaz Qarni Edrus: Manhaj Aqidah Imam Asy-Syafie.</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/_xfh6dsteQw" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    53:11
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">19. 26 November 2023“MANHAJ AQIDAH IMAM SYAFIE.Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/z8WU2fiQvNE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:51
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">20. (🔴LIVE) 03-12-2023 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie (Sifat Allah Yg Ke-9, Jari-Jemari)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Pj4EPfmuGl4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    53:43
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">21. 10 Disember 2023“MANHAJ AQIDAH IMAM SYAFIE”Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/XUuL1JteayE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    52:21
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">22. 24 Disember 2023 “MANHAJ AQIDAH IMAM SYAFIE” Ustaz Ahmad Al-Qarni Bin Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/mbMxtJhllPc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    52:06
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">23. (🔴LIVE) 07-01-2024 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie (m/s 444, Sifat Ke-11, Ilmu Allah)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/cjdsjfR3hT4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    53:58
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">24. (🔴LIVE) 14-01-2024 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie (Sifat Ilmu Allah, m/s 447)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/F_qc8pFIyJM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:36
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">25. (🔴LIVE) 11-02-2024 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/yq2HkActmiI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:07
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">26. (🔴LIVE) 25-02-2024 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/pIyjvro-fHk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    54:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">27. 25 Februari 2024,“MANHAJ AQIDAH IMAM SYAFIE”Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/jm-90EduARA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    44:26
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">28. 11-02-2024 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Prv7b6sDht8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    55:03
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">29. 25-02-2024 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/OrdsPpUFlDM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    48:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">30. 28 April 2024,“MANHAJ AQIDAH IMAM SYAFIE”Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/xqmnhIgBiMo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    48:46
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">31. 10 Mei 2024,“40 HADITH DOSA MUAMALAT YANG DIREMEHKAN”Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/2vKm7v6emEk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    48:41
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">32. 2 Jun 2024, “MANHAJ AQIDAH IMAM SYAFIE”Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/M9jUSz30YZI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:15
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">33. 9 Jun 2024“MANHAJ AQIDAH IMAM SYAFIE”Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/TLo-UyxDuzk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    50:35
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">34. (🔴LIVE) 23-06-2024 Ustaz Qarni Edrus- Manhaj Aqidah Imam Syafie</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/cK-O-Y-ubvc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:01:36
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">35. 7 Julai 2024“MANHAJ AQIDAH IMAM SYAFIE🔸Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Nqn8JRLdIcU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:05
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">36. 28 Julai 2024 “MANHAJ AQIDAH IMAM SYAFIE”Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Bk-TQXbtgIM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:11
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">37. 15 September 2024 "MANHAJ AQIDAH IMAM SYAFIE" Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/oxsVih5RvL8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    50:31
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">38. 29 September 2024,MANHAJ AQIDAH IMAM SYAFIE”Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/YGuAcBkVYkQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    37:46
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">39. 6 Oktober 2024 KITAB “MANHAJ AQIDAH IMAM SYAFIE” Ustaz Ahmad Al-Qarni Bin Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/D3mdP8HAikc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    45:51
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">40. 13 Oktober 2024,“MANHAJ AQIDAH IMAM SYAFIE”Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/PoBqbShmcR4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    47:55
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">41. 27 Oktober 2024,“MANHAJ AQIDAH IMAM SYAFIE”Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/npWpp23rRcQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    54:11
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">42. 3 November 2024, “MANHAJ AQIDAH IMAM SYAFIE”Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/UJT3EsAhGKw" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:15
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">43. 10 November 2024 KITAB “MANHAJ AQIDAH IMAM SYAFIE” Ustaz Ahmad Al-Qarni Bin Edrus</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/A0r1XQJGNro" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    50:06
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">44. (🔴LIVE) 24-11-2024 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/EGeB525PI18" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    42:17
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">45. 1 Disember 2024,“MANHAJ AQIDAH IMAM SYAFIE”Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/0CqFjU773G8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:20
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">46. 8 Disember 2024,“MANHAJ AQIDAH IMAM SYAFIE”Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/jHC8zTy_6UU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    52:26
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">47. (🔴LIVE) 08-12-2024 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/lDmfCGEfU_s" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    57:29
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">48. (🔴LIVE) 05-01-2025 Ustaz Qarni Edrus: Bantahan Terhadap Golongan Sufi Yang Melampau !</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/L9zsd9eImtQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    53:23
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">49. 5 Januari 2025,“MANHAJ AQIDAH IMAM SYAFIE”Ustaz Ahmad Al-Qarni</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/TKpE-vAU6GA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:41
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">50. (🔴LIVE) 12-01-2025 Ustaz Qarni Edrus - Manhaj Aqidah Imam Syafie</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/dOFF9zXrZPs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:57
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ustaz Adli Mohd Saad: Ta'ifah Al-Mansurah - Ustaz Adli Mohd Saad</title>
+    <style>
+        :root {
+            --primary-color: #9c27b0;
+            --primary-dark: #7b1fa2;
+            --secondary-color: #f5f5f5;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --divider-color: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            background: #f5f7fa; 
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header { 
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white); 
+            padding: 30px 20px; 
+            border-radius: 8px; 
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .header h1 { 
+            margin: 0; 
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .header p { 
+            margin: 10px 0 0 0; 
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats { 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            margin: 20px 0;
+        }
+
+        .stat { 
+            text-align: center; 
+        }
+
+        .stat-value { 
+            font-size: 1.8rem; 
+            font-weight: 500; 
+            color: var(--white);
+        }
+
+        .stat-label { 
+            color: rgba(255,255,255,0.9); 
+            font-size: 0.9rem;
+        }
+
+        .video-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px;
+        }
+
+        .video-card { 
+            background: var(--white); 
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-card:hover { 
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .video-title { 
+            padding: 18px 20px 15px; 
+            font-weight: 500; 
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        .video-embed { 
+            position: relative; 
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0; 
+            overflow: hidden;
+        }
+
+        .video-embed iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: none;
+        }
+
+        .video-info { 
+            padding: 15px 20px; 
+            background: var(--secondary-color);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 4px;
+            background: rgba(156, 39, 176, 0.05);
+        }
+
+        .back-link:hover {
+            background: rgba(156, 39, 176, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .video-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .header h1 { 
+                font-size: 1.8rem;
+            }
+            .stats { 
+                flex-direction: column; 
+                gap: 10px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Ustaz Adli Mohd Saad: Ta'ifah Al-Mansurah</h1>
+        <p>Ustaz Adli Mohd Saad</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">26</div>
+                <div class="stat-label">Videos</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">48:20:48</div>
+                <div class="stat-label">Total Duration</div>
+            </div>
+        </div>
+    </div>
+    
+    <a href="../../../index.html" class="back-link">
+        <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+        Back to Home
+    </a>
+    
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-title">1. 30-07-2022 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 1)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Cvo1Zyk4v9U" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:31:02
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">2. 27-08-2022 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 2)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/WOvgHBdwpnU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:57:03
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">3. 24-09-2022 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 3)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/cNVCOAQFiJQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:14:09
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">4. 29-10-2022 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 4)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/IHHosx2V--c" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:24:53
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">5. 26-11-2022 Ustaz Adli Mohd Saad: A'lam As-Sunnah Al-Mansyurah (Siri 5)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/pFPN0H99BZ4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:31:53
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">6. 17-12-2022 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 6)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/pYJGEjnlY8s" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:06:22
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">7. 28-01-2023 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 7)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/LSClHcQRta4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:13:20
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">8. 25-02-2023 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 8)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/3eC2N9kBUcM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:16:05
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">9. 27-05-2023 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 9)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/uajtB3Z_PHY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:30:05
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">10. 24-06-2023 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 10)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/e_w1Rlq1FPA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:06:59
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">11. 25-11-2023 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 11)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/CFz62-GBRWk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:24:38
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">12. 30-12-2023 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 12)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/fjm_Lcp_IX0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:42:51
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">13. 24-02-2024 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 13)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/JV9zQQpM0D8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:51:19
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">14. 27-04-2024 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 14)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/JuJy82nLzf4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:27:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">15. 25-05-2024 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 15)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/FM_4Y7YBOts" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:21:56
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">16. 29-06-2024 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 16)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/bg4ttP0O5Bw" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:02:11
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">17. 27-07-2024 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 17)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/RJS_D9GF-Bw" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:14:43
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">18. 28-09-2024 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 18)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Xx9vqwpIyOA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:34:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">19. 26-10-2024 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 19)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/I6Nlb0xDUt4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:39:29
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">20. 28-12-2024 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 20)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/22On8sre930" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:09:32
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">21. 22-02-2025 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 21)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/hSOCHDRLP6o" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:47:22
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">22. 24-05-2025 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 22)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/7qCxIGbhzIY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:30:26
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">23. 28-06-2025 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 23)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/a1RM4uswvNQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:26:40
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">24. 26-07-2025 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 24)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/uGHpo_1PSP8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:08:56
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">25. 30-08-2025 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 25)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/8qv5XMx9bAQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:42:31
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">26. 27-09-2025 Ustaz Adli Mohd Saad: A’lam As-Sunnah Al-Mansyurah (Siri 26)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/XgPyeEaf3bM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:24:35
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

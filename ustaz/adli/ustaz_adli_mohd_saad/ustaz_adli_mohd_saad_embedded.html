@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ustaz Adli Mohd Saad - Ustaz Adli Mohd Saad</title>
+    <style>
+        :root {
+            --primary-color: #9c27b0;
+            --primary-dark: #7b1fa2;
+            --secondary-color: #f5f5f5;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --divider-color: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            background: #f5f7fa; 
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header { 
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white); 
+            padding: 30px 20px; 
+            border-radius: 8px; 
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .header h1 { 
+            margin: 0; 
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .header p { 
+            margin: 10px 0 0 0; 
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats { 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            margin: 20px 0;
+        }
+
+        .stat { 
+            text-align: center; 
+        }
+
+        .stat-value { 
+            font-size: 1.8rem; 
+            font-weight: 500; 
+            color: var(--white);
+        }
+
+        .stat-label { 
+            color: rgba(255,255,255,0.9); 
+            font-size: 0.9rem;
+        }
+
+        .video-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px;
+        }
+
+        .video-card { 
+            background: var(--white); 
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-card:hover { 
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .video-title { 
+            padding: 18px 20px 15px; 
+            font-weight: 500; 
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        .video-embed { 
+            position: relative; 
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0; 
+            overflow: hidden;
+        }
+
+        .video-embed iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: none;
+        }
+
+        .video-info { 
+            padding: 15px 20px; 
+            background: var(--secondary-color);
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 4px;
+            background: rgba(156, 39, 176, 0.05);
+        }
+
+        .back-link:hover {
+            background: rgba(156, 39, 176, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .video-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .header h1 { 
+                font-size: 1.8rem;
+            }
+            .stats { 
+                flex-direction: column; 
+                gap: 10px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Ustaz Adli Mohd Saad</h1>
+        <p>Ustaz Adli Mohd Saad</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">44</div>
+                <div class="stat-label">Videos</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">92:07:05</div>
+                <div class="stat-label">Total Duration</div>
+            </div>
+        </div>
+    </div>
+    
+    <a href="../../../index.html" class="back-link">
+        <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+        Back to Home
+    </a>
+    
+    <div class="video-grid">
+        <div class="video-card">
+            <div class="video-title">1. 01-02-2020 Ustaz Adli Mohd Saad : Daurah Ilmu | Syarah Kitab ''Ulasan Lengkap Tawassul ''Sesi Ke-2</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/NFoxSWjxouU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:38:01
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">2. 01-02-2020 Ustaz Adli Mohd Saad : Daurah Ilmu | Syarah Kitab ''Ulasan Lengkap Tawassul '' Sesi 1</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/L1-rpYHFIzo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    41:56
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">3. 16-11-2019 Ustaz Adli Mohd Saad : Syarah Tanda-Tanda Kiamat</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/xaeZG4skKFs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:22:33
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">4. 29-09-2019 Ustaz Adli Mohd Saad : Syarah Qowaidul Mutsla</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/HKPhUESwHYk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:07:32
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">5. 09-11-2019 Ustaz Adli Mohd Saad : Syarah Kitab Membantah Kesesatan Anti -Hadis</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/jj90lXqTQY4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:46:22
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">6. 01-12-2019 Ustaz Adli Mohd Saad : Syarah Akidah Ahli Sunnah Wal Jamaah imam Al-Humaydi</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/7OpG2be6H7A" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:25:11
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">7. 18-01-2020 Ustaz Adli Mohd Saad : Tanda Kiamat Yang Shahih</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/cxVFTW7QVrU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    51:12
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">8. 11-04-2021 Ustaz Adli Mohd Saad : Daurah Fiqh Puasa Siri Pertama</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Dt1bEGdTHrQ" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:35:59
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">9. 18-04-2021 Ustaz Adli Mohd Saad : Daurah Fiqh Puasa Siri Kedua</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/tiqbwfHHGfY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    03:57:57
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">10. 02-01-2022 Ustaz Adli Mohd Saad :Tajuk Pilihan Mengenai Aqidah Kepercayaan Imam Fiqh Yang Empat(2.1)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/s1WZcvOaIxk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:26:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">11. 02-01-2022 Ustaz Adli Mohd Saad :Tajuk Pilihan Mengenai Aqidah Kepercayaan Imam Fiqh Yang Empat(2.2)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/sl7hGsN-vow" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:33:17
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">12. 04-12-2021 Ustaz Adli Mohd Saad :Tajuk Pilihan Mengenai Aqidah Kepercayaan Imam Fiqh Yang Empat(1.1)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/NoK_yDGCSTM" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:45:29
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">13. 04-12-2021 Ustaz Adli Mohd Saad :Tajuk Pilihan Mengenai Aqidah Kepercayaan Imam Fiqh Yang Empat(1.2)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/pegwUeofJ4o" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:24:44
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">14. 31-01-2022 Ustaz Adli Mohd Saad: Penyucian Jiwa (Siri 1)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/vHpgtSGfouA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    49:10
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">15. 01-02-2022 Ustaz Adli Mohd Saad: Penyucian Jiwa (Siri 2)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/bxnt8_Qo3dw" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    59:52
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">16. 02-02-2022 Ustaz Adli Mohd Saad: Penyucian Jiwa (Siri 3)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/Rxwa_AqmtpI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    56:22
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">17. 03-04-2022 Ustaz Adli Mohd Saad : Daurah Ilmiah | Perbahasan Mengenai Hukum-Hakam Puasa Sesi Pertama</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/yPL9UwrpjBc" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    36:16
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">18. 03-04-2022 Ustaz Adli Mohd Saad : Daurah Ilmiah | Perbahasan Mengenai Hukum-Hakam Puasa Sesi Ke-2</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/rkxZn_tlrJw" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:35:16
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">19. 05-11-2022 Ustaz Adli Mohd Saad : Mengapa Perlu Beragama ??</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/0lUMxmdvRB4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:40:20
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">20. 01-01-2023 Ustaz Adli Mohd Saad : Bantahan Ulama Kurun ke-6 Terhadap Ahli Sufi Yang Melampau! Sesi 1</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/mdmLEFvYfS4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:12:31
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">21. 01-01-2023 Ustaz Adli Mohd Saad : Bantahan Ulama Kurun ke-6 Terhadap Ahli Sufi Yang Melampau! Sesi 2</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/O9i8BYx2fZI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:45:02
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">22. 18-02-2023 Ustaz Adli Mohd Saad :  Daurah Ilmiah | Israk & Mikraj Sesi Ke-3</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/MnNFAH9JtZk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:57:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">23. 18-03-2023 Ustaz Adli Mohd Saad : Daurah Ilmuah | Aqidah Islam Manhaj Salaf Sesi Ke-3</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/jJ1q436_6-A" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:55:04
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">24. 19-03-2023 Ustaz Adli Mohd Saad : Daurah Ilmiah | Aqidah Islam Manhaj Salaf Sesi Ke-7</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/IKDqR-FRRT4" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:39:21
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">25. 05-08-2023 Ustaz Adli Mohd Saad : Daurah Usul Fiqh Asas Penting Perundangan Islam Sesi Keempat</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/sMdHKQ87FY8" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:17:56
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">26. 04-11-2023 Ustaz Adli Mohd Saad : Daurah Fiqh Semasa Sesi Ke-3</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/IDD8R5hwFqY" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:39:06
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">27. 20-01-2024 Ustaz Adli Mohd Saad: Peristiwa Akhir Zaman - Antara Takwilan Dengan Imaginasi (4)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ANY2TFSSzvo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    03:11:27
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">28. 28-01-2024 Ustaz Adli : Kisah-Kisah 4 Imam Mazhab</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/AlLjF3m-CzE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    37:12
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">29. 04-02-2024 Ustaz Adli Mohd Saad: Daurah Pengukuhan Meneladani Sifat Solat Nabi ﷺ (Sesi 1).</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/i5m19FcP3Pg" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    04:11:45
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">30. 04-02-2024 Ustaz Adli Mohd Saad: Daurah Pengukuhan Meneladani Sifat Solat Nabi ﷺ (Sesi 2).</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ePStGmPCSlI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    03:01:44
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">31. 10-03-2024 Ustaz Adli Mohd Saad: Hukum - Hakam & Sunnah Dalam Ramadan (Sesi 1)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/d9NpFxo_PXk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:27:22
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">32. 10-03-2024 Ustaz Adli Mohd Saad: Hukum - Hakam & Sunnah Dalam Ramadan (Sesi 2)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/gZCdYhMBPxE" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:29:00
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">33. 07-09-2024 Ustaz Adli :Daurah Analisi Hujah Ahli Sufi Hadhramaut Berkaitan Tauhid Sesi Ke-2</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/LKK2vfA-mBo" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:33:24
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">34. 12-01-2025 Ustaz Adli : Himpunan Risalah Aqidah 4 Mazhab Alhi Sunnah wa Al-Jamaah Sesi Ke-4</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/6MXAea8uh54" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:26:09
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">35. 16-02-2025 Ustaz Adli : Daurah Kitab Aqidah Salaf & Para Ahli Hadis Sesi Ke-4</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/AcZTWzdg_cs" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    03:07:06
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">36. 01-03-2025 Ustaz Adli : Daurah Hukum Hakam Berkaitan Puasa & Ramadan Siri Pertama</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/q8Bk-XutbUk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:09:30
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">37. 01-03-2025 Ustaz Adli : Daurah Hukum Hakam Berkaitan Puasa & Ramadan Siri Ke- 2</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/wBERV4Is4LI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:53:52
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">38. 01-03-2025 Ustaz Adli : Daurah Hukum Hakam Berkaitan Puasa & Ramadan Siri Ke- 3</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/zAN6d7SWLU0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:53:46
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">39. 15-06-2025 Ustaz Adli : Tafsir Surah Qaf</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/iwycOzVGmBA" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:11:49
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">40. 21-06-2025 Ustaz Adli : Daurah Menjawab Tuduhan Syeikh Said Fudah Terhadap Syeikh Ibn Taimiyah Sesi2</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/SRklVB503xk" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:07:04
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">41. 21-06-2025 Ustaz Adli : Daurah Menjawab Tuduhan Syeikh Said Fudah Terhadap Syeikh Ibn Taimiyah Sesi1</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/tUnedN6Q8R0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:40:34
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">42. 14-06-2025 Ustaz Adli Mohd Saad: Kepentingan Mengamal Zikir Pagi & Petang Mengikut Sunnah</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/EIYk-dI6_iU" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:08:25
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">43. 16-08-2025 Ustaz Adli : Kajian Pandangan Golongan Ahbash Mengkafirkan Orang Dgn Zahir Nas Sifat (3)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/OzEdFTV7E5c" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    02:38:52
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-title">44. 16-08-2025 Ustaz Adli : Kajian Pandangan Golongan Ahbash Mengkafirkan Orang Dgn Zahir Nas Sifat (4)</div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/qWA51EL-oDI" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i>
+                    01:37:47
+                </span>
+                <span>
+                    <i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i>
+                    N/A
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

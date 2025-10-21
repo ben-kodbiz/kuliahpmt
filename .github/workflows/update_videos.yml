@@ -1,0 +1,27 @@
+name: Update YouTube Videos (yt-dlp)
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install yt-dlp
+        run: sudo apt-get update && sudo apt-get install -y yt-dlp
+
+      - name: Run video updater
+        run: python3 scripts/update_videos_ytdlp.py
+
+      - name: Commit & push changes
+        run: |
+          git config user.name "PromediaBot"
+          git config user.email "actions@github.com"
+          git add data/*.json
+          git commit -m "Auto-update YouTube videos (yt-dlp)" || echo "No changes"
+          git push

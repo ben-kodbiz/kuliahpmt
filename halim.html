@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ustaz Halim Hassan - Promedia Tajdid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #ff9800;
+      --primary-dark: #f57c00;
+      --secondary-color: #f5f5f5;
+      --text-primary: #212121;
+      --text-secondary: #757575;
+      --divider-color: #e0e0e0;
+      --success-color: #4caf50;
+      --warning-color: #ff9800;
+      --error-color: #f44336;
+      --white: #ffffff;
+      --shadow: 0 2px 4px rgba(0,0,0,0.1);
+      --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdf6ee;
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      color: var(--white);
+      padding: 1rem;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-icon {
+      font-size: 2rem;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .back-button {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-button:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .ustaz-header {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .ustaz-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 3rem;
+    }
+
+    .ustaz-info {
+      flex: 1;
+    }
+
+    .ustaz-name {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .ustaz-specialization {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .ustaz-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--primary-color);
+    }
+
+    .stat-label {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .tabs {
+      display: flex;
+      background: var(--white);
+      border-bottom: 1px solid var(--divider-color);
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .tab {
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+    }
+
+    .tab:hover {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+    }
+
+    .tab.active {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-image {
+      height: 160px;
+      background-color: var(--secondary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      font-size: 3rem;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .card-description {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .card-stats {
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--divider-color);
+      padding-top: 1rem;
+      margin-top: auto;
+    }
+
+    .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .search-container {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .search-box {
+      display: flex;
+      gap: 1rem;
+    }
+
+    #search {
+      flex: 1;
+      padding: 0.75rem;
+      border: 1px solid var(--divider-color);
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    #search:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+
+    .filter-button {
+      background: var(--primary-color);
+      color: var(--white);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .filter-button:hover {
+      background: var(--primary-dark);
+    }
+
+    .video-list {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .video-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--divider-color);
+    }
+
+    .video-item:last-child {
+      border-bottom: none;
+    }
+
+    .video-thumbnail {
+      width: 120px;
+      height: 90px;
+      background-color: var(--secondary-color);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      flex-shrink: 0;
+    }
+
+    .video-info {
+      flex: 1;
+    }
+
+    .video-title {
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .video-meta {
+      display: flex;
+      gap: 1rem;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .video-duration {
+      background: var(--secondary-color);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+      .ustaz-header {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .ustaz-stats {
+        justify-content: center;
+      }
+      
+      .tabs {
+        flex-wrap: wrap;
+      }
+      
+      .tab {
+        flex: 1;
+        min-width: 33%;
+        padding: 0.8rem 0.5rem;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      
+      .video-item {
+        flex-direction: column;
+      }
+      
+      .video-thumbnail {
+        width: 100%;
+        height: 160px;
+      }
+      
+      .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+      
+      .card-content {
+        padding: 1rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .header-content {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .tabs {
+        flex-direction: column;
+      }
+      
+      .tab {
+        padding: 1rem;
+        border-bottom: 1px solid var(--divider-color);
+        border-radius: 0;
+      }
+      
+      .tab.active {
+        border-bottom: 3px solid var(--primary-color);
+      }
+      
+      .ustaz-header {
+        padding: 1.5rem;
+      }
+      
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .container {
+        padding: 0 0.5rem;
+      }
+    }
+  </style>
+</head>
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <i class="material-icons logo-icon">play_circle_filled</i>
+        <span class="logo-text">Promedia Tajdid</span>
+      </div>
+      <a href="index.html" class="back-button">
+        <i class="material-icons">arrow_back</i>
+        Back to Ustaz
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="ustaz-header">
+      <div class="ustaz-avatar">
+        <i class="material-icons">person</i>
+      </div>
+      <div class="ustaz-info">
+        <h1 class="ustaz-name">Ustaz Halim Hassan</h1>
+        <p class="ustaz-specialization">Specializing in traditional Islamic medicine and cultural practices</p>
+        <div class="ustaz-stats">
+          <div class="stat">
+            <span class="stat-value" id="totalVideos">99</span>
+            <span class="stat-label">Videos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" id="totalPlaylists">5</span>
+            <span class="stat-label">Playlists</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">8K+</span>
+            <span class="stat-label">Views</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="playlists">Playlists</div>
+      <div class="tab" data-tab="videos">All Videos</div>
+      <div class="tab" data-tab="about">About</div>
+    </div>
+
+    <!-- Playlists Tab -->
+    <div class="tab-content active" id="playlists-tab">
+      <h2 class="section-title"><i class="material-icons">playlist_play</i> Video Playlists</h2>
+      <div class="grid-container" id="playlists-container">
+        <!-- Playlists will be loaded dynamically -->
+      </div>
+    </div>
+
+    <!-- Videos Tab -->
+    <div class="tab-content" id="videos-tab">
+      <div class="search-container">
+        <div class="search-box">
+          <input type="text" id="search" placeholder="Search videos...">
+          <button class="filter-button">Filter</button>
+        </div>
+      </div>
+
+      <h2 class="section-title"><i class="material-icons">video_library</i> All Videos</h2>
+      <div class="grid-container" id="videos-container">
+        <!-- Videos will be loaded dynamically -->
+      </div>
+    </div>
+
+    <!-- About Tab -->
+    <div class="tab-content" id="about-tab">
+      <div class="video-list">
+        <h2 class="section-title"><i class="material-icons">person</i> About Ustaz Halim Hassan</h2>
+        <p>Ustaz Halim Hassan is a respected Islamic scholar who specializes in traditional Islamic medicine and Malay cultural practices from an Islamic perspective. With extensive knowledge of both classical Islamic texts and traditional Malay customs, he bridges the gap between historical practices and contemporary Islamic guidance.</p>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Areas of Expertise</h3>
+        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+          <li>Traditional Islamic Medicine</li>
+          <li>Malay Cultural Practices</li>
+          <li>Islamic Perspective on Customs</li>
+          <li>Herbal Remedies in Islam</li>
+          <li>Historical Islamic Practices</li>
+        </ul>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Teaching Methodology</h3>
+        <p>Ustaz Halim takes a holistic approach to Islamic education, combining classical scholarship with cultural sensitivity. His methodology includes:</p>
+        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+          <li>Historical analysis of traditional practices</li>
+          <li>Islamic legal rulings on cultural customs</li>
+          <li>Integration of prophetic medicine (Tibb al-Nabawi)</li>
+          <li>Practical applications for contemporary life</li>
+          <li>Cultural preservation within Islamic boundaries</li>
+        </ul>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Notable Contributions</h3>
+        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+          <li>"Perubatan Tradisional & Adat Resam Orang Melayu" Series</li>
+          <li>Research on Islamic perspectives of Malay customs</li>
+          <li>Educational programs on prophetic medicine</li>
+          <li>Lectures on cultural preservation in Islam</li>
+          <li>Publications on traditional Islamic remedies</li>
+        </ul>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Philosophy</h3>
+        <p>Ustaz Halim believes in preserving beneficial cultural practices while ensuring they remain within Islamic boundaries. He emphasizes the importance of understanding the wisdom behind traditional practices and applying them appropriately in modern times while maintaining strict adherence to Islamic principles.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Sample data - in a real implementation, this would be loaded from the all_playlists.json file
+    const playlistData = {
+      "perubatan_tradisional_dan_adat_resam_orang_melayu": {
+        "name": "perubatan_tradisional_dan_adat_resam_orang_melayu",
+        "title": "Ustaz Halim Hassan: Perubatan Tradisional Dan Adat Resam Orang Melayu",
+        "url": "https://www.youtube.com/playlist?list=PLv_xoi4FGsu8vaDF8BN63grv7fOAiu4XI",
+        "video_count": 17,
+        "color": "#fff3e0",
+        "icon": "healing"
+      },
+      "menilai_tarikat_dan_kesufian": {
+        "name": "menilai_tarikat_dan_kesufian",
+        "title": "2025 Ustaz Halim Hassan: Menilai Tarikat Dan Kesufian Dengan Syariat Allah",
+        "url": "https://www.youtube.com/playlist?list=PLv_xoi4FGsu_xmB5KRbY9F1W0jlgH0Axk",
+        "video_count": 8,
+        "color": "#e8f5e9",
+        "icon": "account_balance"
+      },
+      "pengajian_mustolahul_hadis": {
+        "name": "pengajian_mustolahul_hadis",
+        "title": "2012 Ustaz Halim Hassan, Pengajian Mustolahul Hadis",
+        "url": "https://www.youtube.com/playlist?list=PLMYfcjZnGL4c73v9aQLd3-RoUZyE5Kx6j",
+        "video_count": 8,
+        "color": "#e3f2fd",
+        "icon": "menu_book"
+      },
+      "ustaz_halim_hasan_2013": {
+        "name": "ustaz_halim_hasan_2013",
+        "title": "Ustaz Halim Hassan 2013 - From Kay Hassan",
+        "url": "https://www.youtube.com/playlist?list=PLavKqP1ocCf1cUqdrffbNj1abwt2FPRM_",
+        "video_count": 60,
+        "color": "#f3e5f5",
+        "icon": "history"
+      },
+      "manasik_umrah": {
+        "name": "manasik_umrah",
+        "title": "Manasik Umrah",
+        "url": "https://www.youtube.com/playlist?list=PLoabBUZneY54e9VVgXGUqhSx6oavZ2djD",
+        "video_count": 6,
+        "color": "#e0f7fa",
+        "icon": "location_city"
+      }
+    };
+    
+    // Tab switching functionality
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs and tab contents
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+        
+        // Add active class to clicked tab
+        tab.classList.add('active');
+        
+        // Show corresponding tab content
+        const tabId = tab.getAttribute('data-tab') + '-tab';
+        document.getElementById(tabId).classList.add('active');
+        
+        // Load content based on tab
+        if (tabId === 'playlists-tab') {
+          loadPlaylists();
+        } else if (tabId === 'videos-tab') {
+          loadAllVideos();
+        }
+      });
+    });
+    
+    // Load playlists dynamically
+    function loadPlaylists() {
+      const container = document.getElementById('playlists-container');
+      container.innerHTML = '';
+      
+      for (const [key, playlist] of Object.entries(playlistData)) {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.onclick = () => window.location.href = `ustaz/halim/${playlist.name}/${playlist.name}_embedded.html`;
+        
+        card.innerHTML = `
+          <div class="card-image" style="background-color: ${playlist.color};">
+            <i class="material-icons" style="font-size: 4rem; color: #ff9800;">${playlist.icon}</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">${playlist.title}</h3>
+            <p class="card-description">Playlist with ${playlist.video_count} videos</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>${playlist.video_count} Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">link</i>
+                <span>YouTube</span>
+              </div>
+            </div>
+          </div>
+        `;
+        
+        container.appendChild(card);
+      }
+    }
+    
+    // Load all videos dynamically
+    function loadAllVideos() {
+      // In a real implementation, this would gather all videos from all playlists
+      // For now, we'll show a message directing to the specific playlists
+      const container = document.getElementById('videos-container');
+      container.innerHTML = `
+        <div class="video-item" style="padding: 2rem; text-align: center; grid-column: 1 / -1;">
+          <div class="video-info">
+            <h3 class="video-title">All Videos Access</h3>
+            <p style="margin: 1rem 0; color: var(--text-secondary);">Browse all ${getTotalVideoCount()} videos from Ustaz Halim Hassan's playlists.</p>
+            <p style="margin: 1rem 0; color: var(--text-secondary);">Select a specific playlist from the Playlists tab to view its videos.</p>
+          </div>
+        </div>
+      `;
+    }
+    
+    // Get total video count
+    function getTotalVideoCount() {
+      let total = 0;
+      for (const [key, playlist] of Object.entries(playlistData)) {
+        total += playlist.video_count;
+      }
+      return total;
+    }
+    
+    // Update stats
+    document.getElementById('totalVideos').textContent = getTotalVideoCount();
+    document.getElementById('totalPlaylists').textContent = Object.keys(playlistData).length;
+    
+    // Initialize playlist tab content if it's active
+    if (document.querySelector('.tab.active').getAttribute('data-tab') === 'playlists') {
+      loadPlaylists();
+    }
+    
+    // Search functionality
+    document.getElementById('search').addEventListener('input', function(e) {
+      const searchTerm = e.target.value.toLowerCase();
+      // In a real implementation, this would filter videos based on search term
+      console.log('Searching for:', searchTerm);
+    });
+  </script>
+</body>
+</html>

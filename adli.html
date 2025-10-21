@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ustaz Adli Mohd Saad - Promedia Tajdid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #9c27b0;
+      --primary-dark: #7b1fa2;
+      --secondary-color: #f5f5f5;
+      --text-primary: #212121;
+      --text-secondary: #757575;
+      --divider-color: #e0e0e0;
+      --success-color: #4caf50;
+      --warning-color: #ff9800;
+      --error-color: #f44336;
+      --white: #ffffff;
+      --shadow: 0 2px 4px rgba(0,0,0,0.1);
+      --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdf6ee;
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      color: var(--white);
+      padding: 1rem;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-icon {
+      font-size: 2rem;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .back-button {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-button:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .ustaz-header {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .ustaz-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 3rem;
+    }
+
+    .ustaz-info {
+      flex: 1;
+    }
+
+    .ustaz-name {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .ustaz-specialization {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .ustaz-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--primary-color);
+    }
+
+    .stat-label {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .tabs {
+      display: flex;
+      background: var(--white);
+      border-bottom: 1px solid var(--divider-color);
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .tab {
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+    }
+
+    .tab:hover {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+    }
+
+    .tab.active {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-image {
+      height: 160px;
+      background-color: var(--secondary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      font-size: 3rem;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .card-description {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .card-stats {
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--divider-color);
+      padding-top: 1rem;
+      margin-top: auto;
+    }
+
+    .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .search-container {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .search-box {
+      display: flex;
+      gap: 1rem;
+    }
+
+    #search {
+      flex: 1;
+      padding: 0.75rem;
+      border: 1px solid var(--divider-color);
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    #search:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+
+    .filter-button {
+      background: var(--primary-color);
+      color: var(--white);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .filter-button:hover {
+      background: var(--primary-dark);
+    }
+
+    .video-list {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .video-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--divider-color);
+    }
+
+    .video-item:last-child {
+      border-bottom: none;
+    }
+
+    .video-thumbnail {
+      width: 120px;
+      height: 90px;
+      background-color: var(--secondary-color);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      flex-shrink: 0;
+    }
+
+    .video-info {
+      flex: 1;
+    }
+
+    .video-title {
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .video-meta {
+      display: flex;
+      gap: 1rem;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .video-duration {
+      background: var(--secondary-color);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+      .ustaz-header {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .ustaz-stats {
+        justify-content: center;
+      }
+      
+      .tabs {
+        flex-wrap: wrap;
+      }
+      
+      .tab {
+        flex: 1;
+        min-width: 33%;
+        padding: 0.8rem 0.5rem;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      
+      .video-item {
+        flex-direction: column;
+      }
+      
+      .video-thumbnail {
+        width: 100%;
+        height: 160px;
+      }
+      
+      .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+      
+      .card-content {
+        padding: 1rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .header-content {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .tabs {
+        flex-direction: column;
+      }
+      
+      .tab {
+        padding: 1rem;
+        border-bottom: 1px solid var(--divider-color);
+        border-radius: 0;
+      }
+      
+      .tab.active {
+        border-bottom: 3px solid var(--primary-color);
+      }
+      
+      .ustaz-header {
+        padding: 1.5rem;
+      }
+      
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .container {
+        padding: 0 0.5rem;
+      }
+    }
+  </style>
+</head>
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <i class="material-icons logo-icon">play_circle_filled</i>
+        <span class="logo-text">Promedia Tajdid</span>
+      </div>
+      <a href="index.html" class="back-button">
+        <i class="material-icons">arrow_back</i>
+        Back to Ustaz
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="ustaz-header">
+      <div class="ustaz-avatar">
+        <i class="material-icons">person</i>
+      </div>
+      <div class="ustaz-info">
+        <h1 class="ustaz-name">Ustaz Adli Mohd Saad</h1>
+        <p class="ustaz-specialization">Specializing in Islamic creed and methodology</p>
+        <div class="ustaz-stats">
+          <div class="stat">
+            <span class="stat-value">43+</span>
+            <span class="stat-label">Videos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">9</span>
+            <span class="stat-label">Playlists</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">15K+</span>
+            <span class="stat-label">Views</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="playlists">Playlists</div>
+      <div class="tab" data-tab="videos">All Videos</div>
+      <div class="tab" data-tab="about">About</div>
+    </div>
+
+    <!-- Playlists Tab -->
+    <div class="tab-content active" id="playlists-tab">
+      <h2 class="section-title"><i class="material-icons">playlist_play</i> Video Playlists</h2>
+      <div class="grid-container">
+        <div class="card" onclick="window.location.href='ustaz/adli/aqidah_islam_manhaj_salaf/aqidah_islam_manhaj_salaf_embedded.html'">
+          <div class="card-image" style="background-color: #f3e5f5;">
+            <i class="material-icons" style="font-size: 4rem; color: #9c27b0;">psychology</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Aqidah Islam Manhaj Salaf</h3>
+            <p class="card-description">Islamic creed following the methodology of the Salaf</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>43 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>35h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/adli/usul_tafsir/usul_tafsir_embedded.html'">
+          <div class="card-image" style="background-color: #e8f5e9;">
+            <i class="material-icons" style="font-size: 4rem; color: #4caf50;">menu_book</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Usul Tafsir</h3>
+            <p class="card-description">Principles of Quranic exegesis</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>66 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>52h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/adli/al_itisham_imam_assyatiibi/al_itisham_imam_assyatiibi_embedded.html'">
+          <div class="card-image" style="background-color: #fff3e0;">
+            <i class="material-icons" style="font-size: 4rem; color: #ff9800;">school</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Al-I'tisham, Karya Imam Asy-Syatibi</h3>
+            <p class="card-description">Study of "Al-I'tisham" by Imam Asy-Syatibi</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>20 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>18h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/adli/taisir_mustolah_al_hadith/taisir_mustolah_al_hadith_embedded.html'">
+          <div class="card-image" style="background-color: #e3f2fd;">
+            <i class="material-icons" style="font-size: 4rem; color: #1976d2;">library_books</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Taisir Mustolah al-Hadith</h3>
+            <p class="card-description">Hadith terminology made easy</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>11 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>9h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/adli/aqidah_4_imam_mazhab/aqidah_4_imam_mazhab_embedded.html'">
+          <div class="card-image" style="background-color: #fce4ec;">
+            <i class="material-icons" style="font-size: 4rem; color: #e91e63;">account_balance</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Aqidah 4 Imam Mazhab</h3>
+            <p class="card-description">Creed of the four Islamic schools of jurisprudence</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>20 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>16h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/adli/mengikuti_nabi_dua_wahyu/mengikuti_nabi_dua_wahyu_embedded.html'">
+          <div class="card-image" style="background-color: #f3e5f5;">
+            <i class="material-icons" style="font-size: 4rem; color: #9c27b0;">person_pin</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Mengikuti Nabi ﷺ Di Bawah Skop Dua Wahyu</h3>
+            <p class="card-description">Following Prophet Muhammad under Quran and Sunnah</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>30 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>24h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/adli/sifat_solat_nabi/sifat_solat_nabi_embedded.html'">
+          <div class="card-image" style="background-color: #e8f5e9;">
+            <i class="material-icons" style="font-size: 4rem; color: #4caf50;">local_mosque</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Sifat Solat Nabi</h3>
+            <p class="card-description">Method of prayer of Prophet Muhammad ﷺ</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>19 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>15h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/adli/taifah_al_mansurah/taifah_al_mansurah_embedded.html'">
+          <div class="card-image" style="background-color: #fff3e0;">
+            <i class="material-icons" style="font-size: 4rem; color: #ff9800;">group</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Ta'ifah Al-Mansurah</h3>
+            <p class="card-description">The supported group concept in Islam</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>26 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>21h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/adli/ustaz_adli_mohd_saad/ustaz_adli_mohd_saad_embedded.html'">
+          <div class="card-image" style="background-color: #e3f2fd;">
+            <i class="material-icons" style="font-size: 4rem; color: #1976d2;">collections_bookmark</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Ustaz Adli Mohd Saad</h3>
+            <p class="card-description">General collection of teachings and lectures</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>44 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>35h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- Videos Tab -->
+    <div class="tab-content" id="videos-tab">
+      <div class="search-container">
+        <div class="search-box">
+          <input type="text" id="search" placeholder="Search videos...">
+          <button class="filter-button">Filter</button>
+        </div>
+      </div>
+
+      <h2 class="section-title"><i class="material-icons">video_library</i> All Videos</h2>
+      <div class="video-list">
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">22-06-2023 Ustaz Adli Mohd Saad: Aqidah Islam Manhaj Salaf (Siri 1)</h3>
+            <div class="video-meta">
+              <span>1 year ago</span>
+              <span>•</span>
+              <span class="video-duration">1:15:30</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">20-06-2023 Ustaz Adli Mohd Saad: Aqidah Islam Manhaj Salaf (Siri 2)</h3>
+            <div class="video-meta">
+              <span>1 year ago</span>
+              <span>•</span>
+              <span class="video-duration">1:22:15</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">18-06-2023 Ustaz Adli Mohd Saad: Aqidah Islam Manhaj Salaf (Siri 3)</h3>
+            <div class="video-meta">
+              <span>1 year ago</span>
+              <span>•</span>
+              <span class="video-duration">1:18:40</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">16-06-2023 Ustaz Adli Mohd Saad: Aqidah Islam Manhaj Salaf (Siri 4)</h3>
+            <div class="video-meta">
+              <span>1 year ago</span>
+              <span>•</span>
+              <span class="video-duration">1:25:20</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">14-06-2023 Ustaz Adli Mohd Saad: Aqidah Islam Manhaj Salaf (Siri 5)</h3>
+            <div class="video-meta">
+              <span>1 year ago</span>
+              <span>•</span>
+              <span class="video-duration">1:12:45</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">12-06-2023 Ustaz Adli Mohd Saad: Aqidah Islam Manhaj Salaf (Siri 6)</h3>
+            <div class="video-meta">
+              <span>1 year ago</span>
+              <span>•</span>
+              <span class="video-duration">1:19:30</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">10-06-2023 Ustaz Adli Mohd Saad: Aqidah Islam Manhaj Salaf (Siri 7)</h3>
+            <div class="video-meta">
+              <span>1 year ago</span>
+              <span>•</span>
+              <span class="video-duration">1:28:15</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">08-06-2023 Ustaz Adli Mohd Saad: Aqidah Islam Manhaj Salaf (Siri 8)</h3>
+            <div class="video-meta">
+              <span>1 year ago</span>
+              <span>•</span>
+              <span class="video-duration">1:15:20</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">06-06-2023 Ustaz Adli Mohd Saad: Aqidah Islam Manhaj Salaf (Siri 9)</h3>
+            <div class="video-meta">
+              <span>1 year ago</span>
+              <span>•</span>
+              <span class="video-duration">1:21:35</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">04-06-2023 Ustaz Adli Mohd Saad: Aqidah Islam Manhaj Salaf (Siri 10)</h3>
+            <div class="video-meta">
+              <span>1 year ago</span>
+              <span>•</span>
+              <span class="video-duration">1:17:40</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Tab -->
+    <div class="tab-content" id="about-tab">
+      <div class="video-list">
+        <h2 class="section-title"><i class="material-icons">person</i> About Ustaz Adli Mohd Saad</h2>
+        <p>Ustaz Adli Mohd Saad is a distinguished Islamic scholar specializing in Islamic creed (Aqidah) and methodology (Manhaj). With extensive knowledge of classical Islamic texts and contemporary challenges, he provides clear and practical guidance on Islamic beliefs and their application in modern life.</p>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Areas of Expertise</h3>
+        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+          <li>Islamic Creed (Aqidah)</li>
+          <li>Methodology of the Salaf (Manhaj Salaf)</li>
+          <li>Principles of Quranic Exegesis (Usul Tafsir)</li>
+          <li>Hadith Terminology (Mustolah al-Hadith)</li>
+          <li>Islamic Jurisprudence (Fiqh)</li>
+        </ul>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Teaching Methodology</h3>
+        <p>Ustaz Adli employs a systematic and scholarly approach to Islamic education. His methodology includes:</p>
+        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+          <li>Rooted in classical Islamic texts and scholarly consensus</li>
+          <li>Clear explanations of complex theological concepts</li>
+          <li>Practical application of Islamic principles</li>
+          <li>Balanced approach between tradition and contemporary relevance</li>
+          <li>Emphasis on understanding the wisdom behind Islamic rulings</li>
+        </ul>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Notable Contributions</h3>
+        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+          <li>"Aqidah Islam Manhaj Salaf" Comprehensive Series</li>
+          <li>"Usul Tafsir" Extensive Commentary Series</li>
+          <li>"Al-I'tisham" Commentary by Imam Asy-Syatibi</li>
+          <li>Lectures on the Four Schools of Islamic Jurisprudence</li>
+          <li>Educational programs on hadith methodology</li>
+        </ul>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Philosophy</h3>
+        <p>Ustaz Adli believes in returning to the pure methodology of the Salaf (early generations of Muslims) while remaining relevant to contemporary challenges. He emphasizes the importance of sound creed as the foundation of a Muslim's faith and practice, advocating for a balanced approach that combines scholarly rigor with practical applicability.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Tab switching functionality
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs and tab contents
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+        
+        // Add active class to clicked tab
+        tab.classList.add('active');
+        
+        // Show corresponding tab content
+        const tabId = tab.getAttribute('data-tab') + '-tab';
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+
+    // Function to show videos for a specific playlist
+    function showVideos(playlistId) {
+      // In a real implementation, this would load videos for the selected playlist
+      alert(`Loading videos for playlist: ${playlistId}`);
+      // Switch to videos tab
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+      document.querySelector('.tab[data-tab="videos"]').classList.add('active');
+      document.getElementById('videos-tab').classList.add('active');
+    }
+
+    // Search functionality
+    document.getElementById('search').addEventListener('input', function(e) {
+      const searchTerm = e.target.value.toLowerCase();
+      // In a real implementation, this would filter videos based on search term
+      console.log('Searching for:', searchTerm);
+    });
+  </script>
+</body>
+</html>

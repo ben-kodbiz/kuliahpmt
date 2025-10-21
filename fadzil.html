@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ustaz Fadzil Kamaruddin - Promedia Tajdid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4caf50;
+      --primary-dark: #388e3c;
+      --secondary-color: #f5f5f5;
+      --text-primary: #212121;
+      --text-secondary: #757575;
+      --divider-color: #e0e0e0;
+      --success-color: #4caf50;
+      --warning-color: #ff9800;
+      --error-color: #f44336;
+      --white: #ffffff;
+      --shadow: 0 2px 4px rgba(0,0,0,0.1);
+      --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdf6ee;
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      color: var(--white);
+      padding: 1rem;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-icon {
+      font-size: 2rem;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .back-button {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-button:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .ustaz-header {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .ustaz-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 3rem;
+    }
+
+    .ustaz-info {
+      flex: 1;
+    }
+
+    .ustaz-name {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .ustaz-specialization {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .ustaz-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--primary-color);
+    }
+
+    .stat-label {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .tabs {
+      display: flex;
+      background: var(--white);
+      border-bottom: 1px solid var(--divider-color);
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .tab {
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+    }
+
+    .tab:hover {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+    }
+
+    .tab.active {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-image {
+      height: 160px;
+      background-color: var(--secondary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      font-size: 3rem;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .card-description {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .card-stats {
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--divider-color);
+      padding-top: 1rem;
+      margin-top: auto;
+    }
+
+    .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .search-container {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .search-box {
+      display: flex;
+      gap: 1rem;
+    }
+
+    #search {
+      flex: 1;
+      padding: 0.75rem;
+      border: 1px solid var(--divider-color);
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    #search:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+
+    .filter-button {
+      background: var(--primary-color);
+      color: var(--white);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .filter-button:hover {
+      background: var(--primary-dark);
+    }
+
+    .video-list {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .video-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--divider-color);
+    }
+
+    .video-item:last-child {
+      border-bottom: none;
+    }
+
+    .video-thumbnail {
+      width: 120px;
+      height: 90px;
+      background-color: var(--secondary-color);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      flex-shrink: 0;
+    }
+
+    .video-info {
+      flex: 1;
+    }
+
+    .video-title {
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .video-meta {
+      display: flex;
+      gap: 1rem;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .video-duration {
+      background: var(--secondary-color);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+      .ustaz-header {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .ustaz-stats {
+        justify-content: center;
+      }
+      
+      .tabs {
+        flex-wrap: wrap;
+      }
+      
+      .tab {
+        flex: 1;
+        min-width: 33%;
+        padding: 0.8rem 0.5rem;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      
+      .video-item {
+        flex-direction: column;
+      }
+      
+      .video-thumbnail {
+        width: 100%;
+        height: 160px;
+      }
+      
+      .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+      
+      .card-content {
+        padding: 1rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .header-content {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .tabs {
+        flex-direction: column;
+      }
+      
+      .tab {
+        padding: 1rem;
+        border-bottom: 1px solid var(--divider-color);
+        border-radius: 0;
+      }
+      
+      .tab.active {
+        border-bottom: 3px solid var(--primary-color);
+      }
+      
+      .ustaz-header {
+        padding: 1.5rem;
+      }
+      
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .container {
+        padding: 0 0.5rem;
+      }
+    }
+  </style>
+</head>
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <i class="material-icons logo-icon">play_circle_filled</i>
+        <span class="logo-text">Promedia Tajdid</span>
+      </div>
+      <a href="index.html" class="back-button">
+        <i class="material-icons">arrow_back</i>
+        Back to Ustaz
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="ustaz-header">
+      <div class="ustaz-avatar">
+        <i class="material-icons">person</i>
+      </div>
+      <div class="ustaz-info">
+        <h1 class="ustaz-name">Ustaz Fadzil Kamaruddin</h1>
+        <p class="ustaz-specialization">Expert in Quranic exegesis and Islamic jurisprudence</p>
+        <div class="ustaz-stats">
+          <div class="stat">
+            <span class="stat-value">150+</span>
+            <span class="stat-label">Videos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">3</span>
+            <span class="stat-label">Playlists</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">25K+</span>
+            <span class="stat-label">Views</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="playlists">Playlists</div>
+      <div class="tab" data-tab="videos">All Videos</div>
+      <div class="tab" data-tab="about">About</div>
+    </div>
+
+    <!-- Playlists Tab -->
+    <div class="tab-content active" id="playlists-tab">
+      <h2 class="section-title"><i class="material-icons">playlist_play</i> Video Playlists</h2>
+      <div class="grid-container">
+        <div class="card" onclick="window.location.href='ustaz/fadzil/tafsir_al_quran/tafsir_al_quran_embedded.html'">
+          <div class="card-image" style="background-color: #e8f5e9;">
+            <i class="material-icons" style="font-size: 4rem; color: #4caf50;">menu_book</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Tafsir Al-Quran</h3>
+            <p class="card-description">Comprehensive Quranic exegesis with linguistic analysis</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>150 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>120h+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/fadzil/ustaz_fadzil_kamaruddin/ustaz_fadzil_kamaruddin_embedded.html'">
+          <div class="card-image" style="background-color: #fff3e0;">
+            <i class="material-icons" style="font-size: 4rem; color: #ff9800;">school</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Ustaz Fadzil Kamaruddin</h3>
+            <p class="card-description">General collection of teachings and lectures</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>39 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>32h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- View All Collections -->
+        <div class="card" onclick="window.location.href='ustaz/fadzil/index.html'">
+          <div class="card-image" style="background-color: #e1f5fe;">
+            <i class="material-icons" style="font-size: 4rem; color: #03a9f4;">view_list</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">View All Fadzil Collections</h3>
+            <p class="card-description">Complete list of all playlists and videos by Ustaz Fadzil</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>189 Total Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">folder</i>
+                <span>2 Playlists</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Videos Tab -->
+    <div class="tab-content" id="videos-tab">
+      <div class="search-container">
+        <div class="search-box">
+          <input type="text" id="search" placeholder="Search videos...">
+          <button class="filter-button">Filter</button>
+        </div>
+      </div>
+
+      <h2 class="section-title"><i class="material-icons">video_library</i> All Videos</h2>
+      <div class="video-list">
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">11-10-2017 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'amma' Surah Al-Falaq</h3>
+            <div class="video-meta">
+              <span>7 years ago</span>
+              <span>•</span>
+              <span class="video-duration">1:25:30</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">10-10-2017 Ustaz Fadzil Kamaruddin : Tafsir Juzuk 'amma' Surah An-Nas</h3>
+            <div class="video-meta">
+              <span>7 years ago</span>
+              <span>•</span>
+              <span class="video-duration">1:18:45</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">09-10-2017 Ustaz Fadzil Kamaruddin : Tafsir Surah Al-Ikhlas</h3>
+            <div class="video-meta">
+              <span>7 years ago</span>
+              <span>•</span>
+              <span class="video-duration">1:32:10</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">08-10-2017 Ustaz Fadzil Kamaruddin : Tafsir Surah Al-Falaq</h3>
+            <div class="video-meta">
+              <span>7 years ago</span>
+              <span>•</span>
+              <span class="video-duration">1:28:20</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">07-10-2017 Ustaz Fadzil Kamaruddin : Tafsir Surah An-Nas</h3>
+            <div class="video-meta">
+              <span>7 years ago</span>
+              <span>•</span>
+              <span class="video-duration">1:22:45</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">06-10-2017 Ustaz Fadzil Kamaruddin : Tafsir Surah Al-Ikhlas (Part 2)</h3>
+            <div class="video-meta">
+              <span>7 years ago</span>
+              <span>•</span>
+              <span class="video-duration">1:15:30</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">05-10-2017 Ustaz Fadzil Kamaruddin : Tafsir Surah Al-Falaq (Part 2)</h3>
+            <div class="video-meta">
+              <span>7 years ago</span>
+              <span>•</span>
+              <span class="video-duration">1:20:15</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">04-10-2017 Ustaz Fadzil Kamaruddin : Tafsir Surah An-Nas (Part 2)</h3>
+            <div class="video-meta">
+              <span>7 years ago</span>
+              <span>•</span>
+              <span class="video-duration">1:17:40</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">03-10-2017 Ustaz Fadzil Kamaruddin : Tafsir Surah Al-Ikhlas (Part 3)</h3>
+            <div class="video-meta">
+              <span>7 years ago</span>
+              <span>•</span>
+              <span class="video-duration">1:27:25</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">02-10-2017 Ustaz Fadzil Kamaruddin : Tafsir Surah Al-Falaq (Part 3)</h3>
+            <div class="video-meta">
+              <span>7 years ago</span>
+              <span>•</span>
+              <span class="video-duration">1:19:30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Tab -->
+    <div class="tab-content" id="about-tab">
+      <div class="video-list">
+        <h2 class="section-title"><i class="material-icons">person</i> About Ustaz Fadzil Kamaruddin</h2>
+        <p>Ustaz Fadzil Kamaruddin is a renowned Islamic scholar specializing in Quranic exegesis (Tafsir) and Islamic jurisprudence (Fiqh). With a deep understanding of Arabic linguistics and classical Islamic texts, he has made significant contributions to Islamic education through his comprehensive and methodical approach to Quranic interpretation.</p>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Areas of Expertise</h3>
+        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+          <li>Quranic Exegesis (Tafsir)</li>
+          <li>Arabic Linguistics</li>
+          <li>Classical Islamic Texts</li>
+          <li>Islamic Jurisprudence (Fiqh)</li>
+          <li>Prophetic Traditions (Hadith)</li>
+        </ul>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Teaching Methodology</h3>
+        <p>Ustaz Fadzil employs a rigorous academic approach combined with practical application. His tafsir sessions are characterized by:</p>
+        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+          <li>Linguistic analysis of Arabic text</li>
+          <li>Historical context of revelation</li>
+          <li>Integration of classical commentaries</li>
+          <li>Practical lessons for contemporary life</li>
+          <li>Comparative analysis of different scholarly opinions</li>
+        </ul>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Notable Contributions</h3>
+        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+          <li>Comprehensive Tafsir Series covering the entire Quran</li>
+          <li>Detailed commentary on Surah Ar-Rahman</li>
+          <li>Educational programs on Islamic jurisprudence</li>
+          <li>Lectures on Arabic grammar for Quranic understanding</li>
+          <li>Publications on classical Islamic texts</li>
+        </ul>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Recognition</h3>
+        <p>Ustaz Fadzil is widely recognized for his scholarly approach to Quranic studies and his ability to make complex topics accessible to students of all levels. His work has contributed significantly to the field of contemporary Islamic education.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Tab switching functionality
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs and tab contents
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+        
+        // Add active class to clicked tab
+        tab.classList.add('active');
+        
+        // Show corresponding tab content
+        const tabId = tab.getAttribute('data-tab') + '-tab';
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+
+    // Function to show videos for a specific playlist
+    function showVideos(playlistId) {
+      // In a real implementation, this would load videos for the selected playlist
+      alert(`Loading videos for playlist: ${playlistId}`);
+      // Switch to videos tab
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+      document.querySelector('.tab[data-tab="videos"]').classList.add('active');
+      document.getElementById('videos-tab').classList.add('active');
+    }
+
+    // Search functionality
+    document.getElementById('search').addEventListener('input', function(e) {
+      const searchTerm = e.target.value.toLowerCase();
+      // In a real implementation, this would filter videos based on search term
+      console.log('Searching for:', searchTerm);
+    });
+  </script>
+</body>
+</html>

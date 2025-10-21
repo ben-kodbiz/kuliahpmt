@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Ustaz Adli Collections - Promedia Tajdid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #9c27b0;
+            --primary-dark: #7b1fa2;
+            --secondary-color: #f5f5f5;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --divider-color: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            background: #f5f7fa; 
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .header { 
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white); 
+            padding: 30px 20px; 
+            border-radius: 8px; 
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .header h1 { 
+            margin: 0; 
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .header p { 
+            margin: 10px 0 0 0; 
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stats { 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            margin: 20px 0;
+        }
+
+        .stat { 
+            text-align: center; 
+        }
+
+        .stat-value { 
+            font-size: 1.8rem; 
+            font-weight: 500; 
+            color: var(--white);
+        }
+
+        .stat-label { 
+            color: rgba(255,255,255,0.9); 
+            font-size: 0.9rem;
+        }
+
+        .grid-container { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
+            gap: 25px; 
+        }
+
+        .card { 
+            background: var(--white); 
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover { 
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .card-image { 
+            height: 180px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 4rem;
+            color: var(--white);
+        }
+
+        .card-content { 
+            padding: 20px; 
+        }
+
+        .card-title { 
+            font-size: 1.3rem; 
+            font-weight: 500; 
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        .card-description { 
+            color: var(--text-secondary); 
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .card-stats { 
+            display: flex; 
+            justify-content: space-between; 
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--divider-color);
+            padding-top: 15px;
+        }
+
+        .stat-item { 
+            display: flex; 
+            align-items: center; 
+            gap: 5px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 4px;
+            background: rgba(156, 39, 176, 0.05);
+        }
+
+        .back-link:hover {
+            background: rgba(156, 39, 176, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .grid-container { 
+                grid-template-columns: 1fr; 
+            }
+            .header h1 { 
+                font-size: 1.8rem;
+            }
+            .stats { 
+                flex-direction: column; 
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Ustaz Adli Mohd Saad Collections</h1>
+        <p>Complete Playlist Library</p>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">9</div>
+                <div class="stat-label">Playlists</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">323</div>
+                <div class="stat-label">Total Videos</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">260h+</div>
+                <div class="stat-label">Total Duration</div>
+            </div>
+        </div>
+    </div>
+    
+    <a href="../../index.html" class="back-link">
+        <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+        Back to Home
+    </a>
+    
+    <div class="grid-container">
+        <div class="card" onclick="window.location.href='usul_tafsir/usul_tafsir_embedded.html'">
+            <div class="card-image" style="background-color: #4caf50;">
+                <i class="material-icons" style="font-size: 4rem; color: white;">menu_book</i>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Usul Tafsir : Ustaz Adli Saad</h3>
+                <p class="card-description">Principles of Quranic exegesis</p>
+                <div class="card-stats">
+                    <div class="stat-item">
+                        <i class="material-icons">video_library</i>
+                        <span>66 Videos</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="material-icons">access_time</i>
+                        <span>52h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz_adli_mohd_saad/ustaz_adli_mohd_saad_embedded.html'">
+            <div class="card-image" style="background-color: #1976d2;">
+                <i class="material-icons" style="font-size: 4rem; color: white;">collections_bookmark</i>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Ustaz Adli Mohd Saad</h3>
+                <p class="card-description">General collection of teachings and lectures</p>
+                <div class="card-stats">
+                    <div class="stat-item">
+                        <i class="material-icons">video_library</i>
+                        <span>44 Videos</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="material-icons">access_time</i>
+                        <span>35h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='aqidah_islam_manhaj_salaf/aqidah_islam_manhaj_salaf_embedded.html'">
+            <div class="card-image" style="background-color: #9c27b0;">
+                <i class="material-icons" style="font-size: 4rem; color: white;">psychology</i>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Aqidah Islam Manhaj Salaf</h3>
+                <p class="card-description">Islamic creed following the methodology of the Salaf</p>
+                <div class="card-stats">
+                    <div class="stat-item">
+                        <i class="material-icons">video_library</i>
+                        <span>43 Videos</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="material-icons">access_time</i>
+                        <span>35h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='mengikuti_nabi_dua_wahyu/mengikuti_nabi_dua_wahyu_embedded.html'">
+            <div class="card-image" style="background-color: #9c27b0;">
+                <i class="material-icons" style="font-size: 4rem; color: white;">person_pin</i>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Mengikuti Nabi ﷺ Di Bawah Skop Dua Wahyu</h3>
+                <p class="card-description">Following Prophet Muhammad under Quran and Sunnah</p>
+                <div class="card-stats">
+                    <div class="stat-item">
+                        <i class="material-icons">video_library</i>
+                        <span>30 Videos</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="material-icons">access_time</i>
+                        <span>24h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='taifah_al_mansurah/taifah_al_mansurah_embedded.html'">
+            <div class="card-image" style="background-color: #ff9800;">
+                <i class="material-icons" style="font-size: 4rem; color: white;">group</i>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Ta'ifah Al-Mansurah</h3>
+                <p class="card-description">The supported group concept in Islam</p>
+                <div class="card-stats">
+                    <div class="stat-item">
+                        <i class="material-icons">video_library</i>
+                        <span>26 Videos</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="material-icons">access_time</i>
+                        <span>21h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='aqidah_4_imam_mazhab/aqidah_4_imam_mazhab_embedded.html'">
+            <div class="card-image" style="background-color: #e91e63;">
+                <i class="material-icons" style="font-size: 4rem; color: white;">account_balance</i>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Aqidah 4 Imam Mazhab</h3>
+                <p class="card-description">Creed of the four Islamic schools of jurisprudence</p>
+                <div class="card-stats">
+                    <div class="stat-item">
+                        <i class="material-icons">video_library</i>
+                        <span>20 Videos</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="material-icons">access_time</i>
+                        <span>16h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='al_itisham_imam_assyatiibi/al_itisham_imam_assyatiibi_embedded.html'">
+            <div class="card-image" style="background-color: #ff9800;">
+                <i class="material-icons" style="font-size: 4rem; color: white;">school</i>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Al-I'tisham, Karya Imam Asy-Syatibi</h3>
+                <p class="card-description">Study of "Al-I'tisham" by Imam Asy-Syatibi</p>
+                <div class="card-stats">
+                    <div class="stat-item">
+                        <i class="material-icons">video_library</i>
+                        <span>20 Videos</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="material-icons">access_time</i>
+                        <span>18h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='sifat_solat_nabi/sifat_solat_nabi_embedded.html'">
+            <div class="card-image" style="background-color: #4caf50;">
+                <i class="material-icons" style="font-size: 4rem; color: white;">local_mosque</i>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Sifat Solat Nabi</h3>
+                <p class="card-description">Method of prayer of Prophet Muhammad ﷺ</p>
+                <div class="card-stats">
+                    <div class="stat-item">
+                        <i class="material-icons">video_library</i>
+                        <span>19 Videos</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="material-icons">access_time</i>
+                        <span>15h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='taisir_mustolah_al_hadith/taisir_mustolah_al_hadith_embedded.html'">
+            <div class="card-image" style="background-color: #1976d2;">
+                <i class="material-icons" style="font-size: 4rem; color: white;">library_books</i>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Taisir Mustolah al-Hadith</h3>
+                <p class="card-description">Hadith terminology made easy</p>
+                <div class="card-stats">
+                    <div class="stat-item">
+                        <i class="material-icons">video_library</i>
+                        <span>11 Videos</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="material-icons">access_time</i>
+                        <span>9h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

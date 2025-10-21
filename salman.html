@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ustaz Salman Ali - Promedia Tajdid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #2196f3;
+      --primary-dark: #1976d2;
+      --secondary-color: #f5f5f5;
+      --text-primary: #212121;
+      --text-secondary: #757575;
+      --divider-color: #e0e0e0;
+      --success-color: #4caf50;
+      --warning-color: #ff9800;
+      --error-color: #f44336;
+      --white: #ffffff;
+      --shadow: 0 2px 4px rgba(0,0,0,0.1);
+      --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdf6ee;
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      color: var(--white);
+      padding: 1rem;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-icon {
+      font-size: 2rem;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .tabs {
+      display: flex;
+      background: var(--white);
+      border-bottom: 1px solid var(--divider-color);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 70px;
+      z-index: 90;
+    }
+
+    .tab {
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+    }
+
+    .tab:hover {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+    }
+
+    .tab.active {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-image {
+      height: 160px;
+      background-color: var(--secondary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      font-size: 3rem;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .card-description {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .card-stats {
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--divider-color);
+      padding-top: 1rem;
+      margin-top: auto;
+    }
+
+    .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-title i {
+      color: var(--primary-color);
+    }
+
+    .hero {
+      background: linear-gradient(rgba(33, 150, 243, 0.9), rgba(25, 118, 210, 0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%232196F3"/><circle cx="20" cy="20" r="5" fill="%23ffffff" opacity="0.1"/><circle cx="50" cy="50" r="8" fill="%23ffffff" opacity="0.1"/><circle cx="80" cy="80" r="6" fill="%23ffffff" opacity="0.1"/></svg>');
+      color: var(--white);
+      padding: 3rem 1rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      opacity: 0.9;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background: var(--white);
+      color: var(--primary-color);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--white);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .instructions {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .instructions h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .instructions ul {
+      padding-left: 1.5rem;
+    }
+
+    .instructions li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: var(--text-primary);
+      color: var(--white);
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-section a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer-section a:hover {
+      color: var(--white);
+      text-decoration: underline;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 2rem;
+      margin-top: 2rem;
+      border-top: 1px solid #444;
+      color: #aaa;
+    }
+
+    .playlist-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .playlist-card {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .playlist-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .playlist-image {
+      height: 160px;
+      background-color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 4rem;
+    }
+
+    .playlist-stats {
+      padding: 1rem;
+      background: var(--secondary-color);
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .tabs {
+        overflow-x: auto;
+        top: 120px;
+      }
+      
+      .tab {
+        white-space: nowrap;
+      }
+      
+      .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+      
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+      }
+      
+      .playlist-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <i class="material-icons logo-icon">play_circle_filled</i>
+        <span class="logo-text">Promedia Tajdid</span>
+      </div>
+      <nav>
+        <a href="index.html" class="btn btn-outline">Back to Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h1>Ustaz Salman Ali</h1>
+    <p>Islamic Scholar specializing in Seerah, Hadith, and Islamic history</p>
+    <div class="hero-buttons">
+      <a href="#playlists" class="btn">View Playlists</a>
+      <a href="#about" class="btn btn-outline">About Ustaz</a>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" data-tab="playlists">Playlists</div>
+    <div class="tab" data-tab="about">About</div>
+    <div class="tab" data-tab="resources">Resources</div>
+  </div>
+
+  <div class="container">
+    <!-- Playlists Tab -->
+    <div class="tab-content active" id="playlists-tab">
+      <h2 class="section-title"><i class="material-icons">playlist_play</i> Video Playlists</h2>
+      <div class="playlist-container">
+        <!-- Playlist cards will be populated by JavaScript -->
+      </div>
+    </div>
+
+    <!-- About Tab -->
+    <div class="tab-content" id="about-tab">
+      <div class="instructions">
+        <h2>About Ustaz Salman Ali</h2>
+        <p>Ustaz Salman Ali is a renowned Islamic scholar who specializes in Seerah (Prophet's biography), Hadith studies, and Islamic history. His teachings focus on providing a deep understanding of Islamic principles through the lens of the Prophet's life and the early Islamic period.</p>
+        
+        <h3 style="margin-top: 1.5rem;">Teaching Focus</h3>
+        <ul>
+          <li><strong>Seerah Nabawiyyah</strong> - Detailed study of the Prophet Muhammad's life</li>
+          <li><strong>Four Rightly Guided Caliphs</strong> - Their lives and leadership</li>
+          <li><strong>Hadith Studies</strong> - Focusing on Imam Nawawi's 40 Hadith</li>
+          <li><strong>Islamic Theology</strong> - Uluhiyah, Rububiyah, and Divine Attributes</li>
+          <li><strong>General Islamic History</strong> - Historical perspectives on Islamic development</li>
+        </ul>
+        
+        <h3 style="margin-top: 1.5rem;">Methodology</h3>
+        <p>Ustaz Salman employs a comprehensive approach that combines classical Islamic scholarship with contemporary understanding, making the teachings accessible to modern audiences while maintaining authenticity.</p>
+      </div>
+    </div>
+
+    <!-- Resources Tab -->
+    <div class="tab-content" id="resources-tab">
+      <div class="instructions">
+        <h2>Resources</h2>
+        <p>Additional resources and materials from Ustaz Salman Ali's teachings will be available here.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Promedia Tajdid</h3>
+        <p>Bringing authentic Islamic knowledge to your fingertips.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#playlists">Playlists</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Ustaz Collection</h3>
+        <ul>
+          <li><a href="qarni.html">Ustaz Qarni Edrus</a></li>
+          <li><a href="fadzil.html">Ustaz Fadzil Kamaruddin</a></li>
+          <li><a href="halim.html">Ustaz Halim Hassan</a></li>
+          <li><a href="adli.html">Ustaz Adli Mohd Saad</a></li>
+          <li><a href="salman.html">Ustaz Salman Ali</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Promedia Tajdid. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Tab switching functionality
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs and tab contents
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+        
+        // Add active class to clicked tab
+        tab.classList.add('active');
+        
+        // Show corresponding tab content
+        const tabId = tab.getAttribute('data-tab') + '-tab';
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+
+    // Playlist data mapping
+    const playlistData = {
+      'kitab_seerah_nabawiyyah': {
+        name: 'Kitab Seerah Nabawiyyah Ar Raheeq Al Makhtum',
+        color: '#e3f2fd',
+        icon: 'menu_book',
+        videoCount: 24
+      },
+      'empat_khalifah_rasul': {
+        name: 'Kitab Perjalanan Hidup Empat Khalifah Rasul Yang Agung',
+        color: '#e8f5e9',
+        icon: 'history',
+        videoCount: 37
+      },
+      'pengenalan_uluhayah': {
+        name: 'Pengenalan ULUHIYAH, RUBUBIYAH & ASMA’ WA SIFAT',
+        color: '#fff3e0',
+        icon: 'psychology',
+        videoCount: 11
+      },
+      'hadis_40_imam_nawawi': {
+        name: 'Hadis 40 Imam Nawawi',
+        color: '#e0f2f1',
+        icon: 'format_quote',
+        videoCount: 41
+      },
+      'sejarah_islam_general': {
+        name: 'Sejarah Islam - General',
+        color: '#f3e5f5',
+        icon: 'history_edu',
+        videoCount: 7
+      },
+      'general_khutbah': {
+        name: 'General (khutbah/Debat/Others)',
+        color: '#fbe9e7',
+        icon: 'record_voice_over',
+        videoCount: 127
+      }
+    };
+
+    // Populate playlist cards
+    function populatePlaylists() {
+      const container = document.querySelector('.playlist-container');
+      container.innerHTML = '';
+      
+      for (const [key, data] of Object.entries(playlistData)) {
+        const card = document.createElement('div');
+        card.className = 'playlist-card';
+        card.onclick = () => window.location.href = `ustaz/salman/${key}/${key}_embedded.html`;
+        
+        card.innerHTML = `
+          <div class="card-image" style="background-color: ${data.color};">
+            <i class="material-icons" style="font-size: 4rem; color: ${getContrastColor(data.color)};">${data.icon}</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">${data.name}</h3>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>${data.videoCount} Videos</span>
+              </div>
+            </div>
+          </div>
+        `;
+        
+        container.appendChild(card);
+      }
+    }
+
+    // Helper function to get contrast color for playlist backgrounds
+    function getContrastColor(hexColor) {
+      // Convert hex to RGB
+      const r = parseInt(hexColor.substr(1, 2), 16);
+      const g = parseInt(hexColor.substr(3, 2), 16);
+      const b = parseInt(hexColor.substr(5, 2), 16);
+      
+      // Calculate brightness
+      const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+      
+      // Return black for light backgrounds and white for dark backgrounds
+      return brightness > 128 ? '#000000' : '#ffffff';
+    }
+
+    // Initialize when the page loads
+    document.addEventListener('DOMContentLoaded', populatePlaylists);
+  </script>
+</body>
+</html>

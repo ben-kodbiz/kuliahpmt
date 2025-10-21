@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[SIRI 3] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus - Ustaz Qarni Session</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1976d2;
+            --primary-dark: #1565c0;
+            --secondary-color: #f5f5f5;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --divider-color: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif; 
+            background: #f5f7fa; 
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .header { 
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: var(--white); 
+            padding: 20px; 
+            border-radius: 8px; 
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .header h1 { 
+            margin: 0; 
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .header p { 
+            margin: 5px 0 0 0; 
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .video-container {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .video-embed { 
+            position: relative; 
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0; 
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .video-embed iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: none;
+        }
+
+        .video-info {
+            display: flex;
+            justify-content: space-between;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            padding: 10px 0;
+            border-top: 1px solid var(--divider-color);
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        .session-nav {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-btn {
+            padding: 8px 16px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nav-btn:hover {
+            background: var(--primary-dark);
+        }
+
+        .nav-btn:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 4px;
+            background: rgba(25, 118, 210, 0.05);
+        }
+
+        .back-link:hover {
+            background: rgba(25, 118, 210, 0.1);
+        }
+
+        .video-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-link">
+        <i class="material-icons" style="vertical-align: middle; font-size: 18px;">arrow_back</i>
+        Back to Qarni Collections
+    </a>
+    
+    <div class="header">
+        <h1>Session 3</h1>
+        <p>Ustaz Qarni Edrus</p>
+    </div>
+    
+    <div class="video-container">
+        <h2 class="video-title">[SIRI 3] Kitab Mukhtasar Minhajul Qasidin | Ustaz Ahmad Al-Qarni Edrus</h2>
+        
+        <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/PHgFsGzxh1M" allowfullscreen></iframe>
+        </div>
+        
+        <div class="video-info">
+            <span><i class="material-icons" style="font-size: 16px; vertical-align: middle;">access_time</i> Duration: 55:45</span>
+            <span><i class="material-icons" style="font-size: 16px; vertical-align: middle;">calendar_today</i> Date: N/A</span>
+        </div>
+    </div>
+    
+    <div class="session-nav">
+        <span>
+        <a href="session2.html" class="nav-btn"><i class="material-icons">arrow_back</i> Previous</a>
+        </span>
+        
+        <span>
+        <a href="session4.html" class="nav-btn">Next <i class="material-icons">arrow_forward</i></a>
+        </span>
+    </div>
+</body>
+</html>

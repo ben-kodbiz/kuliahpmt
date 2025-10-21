@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ustaz Qarni Edrus - Promedia Tajdid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #1976d2;
+      --primary-dark: #1565c0;
+      --secondary-color: #f5f5f5;
+      --text-primary: #212121;
+      --text-secondary: #757575;
+      --divider-color: #e0e0e0;
+      --success-color: #4caf50;
+      --warning-color: #ff9800;
+      --error-color: #f44336;
+      --white: #ffffff;
+      --shadow: 0 2px 4px rgba(0,0,0,0.1);
+      --shadow-hover: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdf6ee;
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      color: var(--white);
+      padding: 1rem;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-icon {
+      font-size: 2rem;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .back-button {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-button:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .ustaz-header {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .ustaz-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 3rem;
+    }
+
+    .ustaz-info {
+      flex: 1;
+    }
+
+    .ustaz-name {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .ustaz-specialization {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .ustaz-stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--primary-color);
+    }
+
+    .stat-label {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .tabs {
+      display: flex;
+      background: var(--white);
+      border-bottom: 1px solid var(--divider-color);
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .tab {
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: all 0.3s ease;
+      border-bottom: 3px solid transparent;
+    }
+
+    .tab:hover {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+    }
+
+    .tab.active {
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-image {
+      height: 160px;
+      background-color: var(--secondary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      font-size: 3rem;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .card-description {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .card-stats {
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--divider-color);
+      padding-top: 1rem;
+      margin-top: auto;
+    }
+
+    .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .search-container {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .search-box {
+      display: flex;
+      gap: 1rem;
+    }
+
+    #search {
+      flex: 1;
+      padding: 0.75rem;
+      border: 1px solid var(--divider-color);
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    #search:focus {
+      outline: none;
+      border-color: var(--primary-color);
+    }
+
+    .filter-button {
+      background: var(--primary-color);
+      color: var(--white);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .filter-button:hover {
+      background: var(--primary-dark);
+    }
+
+    .video-list {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .video-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--divider-color);
+    }
+
+    .video-item:last-child {
+      border-bottom: none;
+    }
+
+    .video-thumbnail {
+      width: 120px;
+      height: 90px;
+      background-color: var(--secondary-color);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      flex-shrink: 0;
+    }
+
+    .video-info {
+      flex: 1;
+    }
+
+    .video-title {
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .video-meta {
+      display: flex;
+      gap: 1rem;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .video-duration {
+      background: var(--secondary-color);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+      .ustaz-header {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .ustaz-stats {
+        justify-content: center;
+      }
+      
+      .tabs {
+        flex-wrap: wrap;
+      }
+      
+      .tab {
+        flex: 1;
+        min-width: 33%;
+        padding: 0.8rem 0.5rem;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+      
+      .video-item {
+        flex-direction: column;
+      }
+      
+      .video-thumbnail {
+        width: 100%;
+        height: 160px;
+      }
+      
+      .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+      
+      .card-content {
+        padding: 1rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .header-content {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .tabs {
+        flex-direction: column;
+      }
+      
+      .tab {
+        padding: 1rem;
+        border-bottom: 1px solid var(--divider-color);
+        border-radius: 0;
+      }
+      
+      .tab.active {
+        border-bottom: 3px solid var(--primary-color);
+      }
+      
+      .ustaz-header {
+        padding: 1.5rem;
+      }
+      
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .container {
+        padding: 0 0.5rem;
+      }
+    }
+  </style>
+</head>
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <i class="material-icons logo-icon">play_circle_filled</i>
+        <span class="logo-text">Promedia Tajdid</span>
+      </div>
+      <a href="index.html" class="back-button">
+        <i class="material-icons">arrow_back</i>
+        Back to Ustaz
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="ustaz-header">
+      <div class="ustaz-avatar">
+        <i class="material-icons">person</i>
+      </div>
+      <div class="ustaz-info">
+        <h1 class="ustaz-name">Ustaz Qarni Edrus</h1>
+        <p class="ustaz-specialization">Specializing in daily sunnah practices and Quranic reflection</p>
+        <div class="ustaz-stats">
+          <div class="stat">
+            <span class="stat-value">14</span>
+            <span class="stat-label">Playlists</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">400+</span>
+            <span class="stat-label">Videos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">40K+</span>
+            <span class="stat-label">Views</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="playlists">Playlists</div>
+      <div class="tab" data-tab="videos">All Videos</div>
+      <div class="tab" data-tab="about">About</div>
+    </div>
+
+    <!-- Playlists Tab -->
+    <div class="tab-content active" id="playlists-tab">
+      <h2 class="section-title"><i class="material-icons">playlist_play</i> Video Playlists</h2>
+      <div class="grid-container">
+        <!-- Official PROmediaTAJDID Channel Playlists -->
+        <div class="card" onclick="window.location.href='ustaz/qarni/1000_amalan_sunnah/1000_amalan_sunnah_embedded.html'">
+          <div class="card-image" style="background-color: #e3f2fd;">
+            <i class="material-icons" style="font-size: 4rem; color: #1976d2;">wb_sunny</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">1000 Amalan Sunnah Sehari-Hari</h3>
+            <p class="card-description">Daily practices from the sunnah of Prophet Muhammad ﷺ</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>32 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>24h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/qarni/bacaan_pelik_ganjil/bacaan_pelik_ganjil_embedded.html'">
+          <div class="card-image" style="background-color: #e8f5e9;">
+            <i class="material-icons" style="font-size: 4rem; color: #4caf50;">record_voice_over</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Bacaan Pelik & Ganjil Dalam Solat</h3>
+            <p class="card-description">Unusual recitations in prayer that are still valid and correct</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>20 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>15h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/qarni/30_teknik_tadabbur/30_teknik_tadabbur_embedded.html'">
+          <div class="card-image" style="background-color: #fff3e0;">
+            <i class="material-icons" style="font-size: 4rem; color: #ff9800;">menu_book</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">30 Teknik Tepat Tadabbur Al-Quran</h3>
+            <p class="card-description">Effective techniques for proper Quranic reflection</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>19 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>14h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="card" onclick="window.location.href='ustaz/qarni/77_cabang_iman/77_cabang_iman_embedded.html'">
+          <div class="card-image" style="background-color: #f3e5f5;">
+            <i class="material-icons" style="font-size: 4rem; color: #9c27b0;">stars</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">77 Cabang Iman</h3>
+            <p class="card-description">Comprehensive series on the branches of faith</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>69 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>52h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/qarni/40_hadis_aspirasi/40_hadis_aspirasi_embedded.html'">
+          <div class="card-image" style="background-color: #e0f2f1;">
+            <i class="material-icons" style="font-size: 4rem; color: #009688;">format_quote</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">40 Hadis Aspirasi Kejayaan</h3>
+            <p class="card-description">Prophet's success aspirations hadith series</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>63 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>48h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/qarni/dosa_muamalat/dosa_muamalat_embedded.html'">
+          <div class="card-image" style="background-color: #fbe9e7;">
+            <i class="material-icons" style="font-size: 4rem; color: #ff5722;">money_off</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">40 Hadith Dosa Muamalat</h3>
+            <p class="card-description">Ignored Islamic transaction and finance sins</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>32 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>24h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/qarni/minhajul_qasidin/minhajul_qasidin_embedded.html'">
+          <div class="card-image" style="background-color: #f1f8e9;">
+            <i class="material-icons" style="font-size: 4rem; color: #8bc34a;">school</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Kitab Mukhtasar Minhajul Qasidin</h3>
+            <p class="card-description">Study of \"Mukhtasar Minhajul Qasidin\"</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>32 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>24h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/qarni/manhaj_aqidah/manhaj_aqidah_embedded.html'">
+          <div class="card-image" style="background-color: #fff8e1;">
+            <i class="material-icons" style="font-size: 4rem; color: #ffc107;">psychology</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Manhaj Aqidah Imam Syafie</h3>
+            <p class="card-description">Methodology of Imam Syafie's creed</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>50 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>38h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/qarni/72_kisah_hujah/72_kisah_hujah_embedded.html'">
+          <div class="card-image" style="background-color: #ffebee;">
+            <i class="material-icons" style="font-size: 4rem; color: #f44336;">block</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">72 Kisah Yang Tidak Boleh Dijadikan Hujah</h3>
+            <p class="card-description">Stories that should not be used as evidence</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>24 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>18h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/qarni/talbis_iblis/talbis_iblis_embedded.html'">
+          <div class="card-image" style="background-color: #e1f5fe;">
+            <i class="material-icons" style="font-size: 4rem; color: #03a9f4;">visibility_off</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Kitab Talbis Iblis</h3>
+            <p class="card-description">Study of "Talbis Iblis" by Ibn Al-Jawzi</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>62 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>46h</span>
+              </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/qarni/ibn_abi_jamrah/ibn_abi_jamrah_embedded.html'">
+          <div class="card-image" style="background-color: #eceff1;">
+            <i class="material-icons" style="font-size: 4rem; color: #607d8b;">library_books</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Kitab Mukhtasar Ibn Abi Jamrah</h3>
+            <p class="card-description">Study of "Mukhtasar Ibn Abi Jamrah"</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>27 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>20h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" onclick="window.location.href='ustaz/qarni/fiqh_sirah/fiqh_sirah_embedded.html'">
+          <div class="card-image" style="background-color: #f3e5f5;">
+            <i class="material-icons" style="font-size: 4rem; color: #e91e63;">history</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Fiqh Sirah</h3>
+            <p class="card-description">Jurisprudence of the Prophet's biography</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>23 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>17h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Playlists -->
+        <div class="card" onclick="window.location.href='ustaz/qarni/penawar_penyakit_hati/penawar_penyakit_hati_embedded.html'">
+          <div class="card-image" style="background-color: #fce4ec;">
+            <i class="material-icons" style="font-size: 4rem; color: #e91e63;">favorite</i>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Penawar Penyakit Hati</h3>
+            <p class="card-description">Remedies for spiritual and heart diseases</p>
+            <div class="card-stats">
+              <div class="stat-item">
+                <i class="material-icons">video_library</i>
+                <span>32 Videos</span>
+              </div>
+              <div class="stat-item">
+                <i class="material-icons">access_time</i>
+                <span>24h</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- Videos Tab -->
+    <div class="tab-content" id="videos-tab">
+      <div class="search-container">
+        <div class="search-box">
+          <input type="text" id="search" placeholder="Search videos...">
+          <button class="filter-button">Filter</button>
+        </div>
+      </div>
+
+      <h2 class="section-title"><i class="material-icons">video_library</i> All Videos</h2>
+      <div class="video-list">
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">18-05-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 1)</h3>
+            <div class="video-meta">
+              <span>2 days ago</span>
+              <span>•</span>
+              <span class="video-duration">58:25</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">16-05-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 2)</h3>
+            <div class="video-meta">
+              <span>4 days ago</span>
+              <span>•</span>
+              <span class="video-duration">1:02:15</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">14-05-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 3)</h3>
+            <div class="video-meta">
+              <span>6 days ago</span>
+              <span>•</span>
+              <span class="video-duration">55:40</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">12-05-2024 Ustaz Qarni Edrus: Tafsir Surah Al-Fatihah</h3>
+            <div class="video-meta">
+              <span>1 week ago</span>
+              <span>•</span>
+              <span class="video-duration">1:15:30</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">10-05-2024 Ustaz Qarni Edrus: Fiqh Solat</h3>
+            <div class="video-meta">
+              <span>1 week ago</span>
+              <span>•</span>
+              <span class="video-duration">1:08:20</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">08-05-2024 Ustaz Qarni Edrus: Akidah Islam Manhaj Salaf</h3>
+            <div class="video-meta">
+              <span>1 week ago</span>
+              <span>•</span>
+              <span class="video-duration">1:22:10</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">06-05-2024 Ustaz Qarni Edrus: Sirah Nabawiyah - Awal Kehidupan</h3>
+            <div class="video-meta">
+              <span>2 weeks ago</span>
+              <span>•</span>
+              <span class="video-duration">1:10:45</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">04-05-2024 Ustaz Qarni Edrus: 1000 Amalan Sunnah Sehari-Hari (Siri 4)</h3>
+            <div class="video-meta">
+              <span>2 weeks ago</span>
+              <span>•</span>
+              <span class="video-duration">59:30</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">02-05-2024 Ustaz Qarni Edrus: Tafsir Surah Al-Baqarah Ayat 1-10</h3>
+            <div class="video-meta">
+              <span>2 weeks ago</span>
+              <span>•</span>
+              <span class="video-duration">1:18:20</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">30-04-2024 Ustaz Qarni Edrus: Fiqh Zakat</h3>
+            <div class="video-meta">
+              <span>2 weeks ago</span>
+              <span>•</span>
+              <span class="video-duration">1:05:15</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Tab -->
+    <div class="tab-content" id="about-tab">
+      <div class="video-list">
+        <h2 class="section-title"><i class="material-icons">person</i> About Ustaz Qarni Edrus</h2>
+        <p>Ustaz Qarni Edrus is a respected Islamic scholar who specializes in teaching daily sunnah practices and Quranic reflection. With over 15 years of experience in Islamic education, he has helped thousands of Muslims deepen their understanding of Islam through practical, everyday applications.</p>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Areas of Expertise</h3>
+        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+          <li>Daily Sunnah Practices</li>
+          <li>Quranic Exegesis (Tafsir)</li>
+          <li>Islamic Jurisprudence (Fiqh)</li>
+          <li>Islamic Creed (Akidah)</li>
+          <li>Prophet's Biography (Sirah)</li>
+        </ul>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Teaching Methodology</h3>
+        <p>Ustaz Qarni believes in making Islamic knowledge accessible to everyone. His approach combines classical scholarship with contemporary relevance, ensuring that learners can apply Islamic teachings in their daily lives. He emphasizes practical implementation of sunnah practices as a means to strengthen faith and character.</p>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Notable Contributions</h3>
+        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+          <li>"1000 Amalan Sunnah Sehari-Hari" Series</li>
+          <li>Regular Quranic Tafsir Sessions</li>
+          <li>Workshops on Practical Islam</li>
+          <li>Youth Islamic Education Programs</li>
+        </ul>
+        
+        <h3 style="margin-top: 1.5rem; color: var(--primary-color);">Extensive Playlist Collection</h3>
+        <p>Ustaz Qarni has produced an extensive collection of educational content across multiple platforms, with over 16 playlists totaling more than 500 videos. His content covers a wide range of Islamic topics including:</p>
+        <ul style="padding-left: 1.5rem; margin: 1rem 0;">
+          <li>Aqidah and Islamic creed</li>
+          <li>Hadith and Sunnah practices</li>
+          <li>Quranic exegesis and reflection</li>
+          <li>Prophetic biography and history</li>
+          <li>Islamic jurisprudence and ethics</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Tab switching functionality
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs and tab contents
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+        
+        // Add active class to clicked tab
+        tab.classList.add('active');
+        
+        // Show corresponding tab content
+        const tabId = tab.getAttribute('data-tab') + '-tab';
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+
+    // Function to show videos for a specific playlist
+    function showVideos(playlistId) {
+      // Map playlist IDs to their YouTube playlist URLs and metadata
+      const playlistMap = {
+        '1000-amalan-sunnah': {
+          url: 'https://www.youtube.com/playlist?list=PLv_xoi4FGsu8Y2CuKhUoRId0szziOz9He',
+          title: '1000 Amalan Sunnah Sehari-Hari',
+          videoCount: 32
+        },
+        'bacaan-pelik-ganjil': {
+          url: 'https://www.youtube.com/playlist?list=PLv_xoi4FGsu_VrsuNVH8VqQVbxYLt22wc',
+          title: 'Bacaan Pelik & Ganjil Dalam Solat Namun Sahih',
+          videoCount: 20
+        },
+        '30-teknik-tadabbur': {
+          url: 'https://www.youtube.com/playlist?list=PLv_xoi4FGsu_OrjOhwUltHg927qCs5U-1',
+          title: '30 Teknik Tepat Tadabbur Al-Quran',
+          videoCount: 19
+        },
+        'penawar-penyakit-hati': {
+          url: 'https://www.youtube.com/playlist?list=PLIUHcdhYBjuXgAa42cShgK_uIJKhx-oBS',
+          title: 'Penawar Penyakit Hati',
+          videoCount: 32
+        },
+        '77-cabang-iman': {
+          url: 'https://www.youtube.com/playlist?list=PLIUHcdhYBjuWos7NTDcn871IFZHwQcGBF',
+          title: '77 Cabang Iman',
+          videoCount: 69
+        },
+        '40-hadis-aspirasi': {
+          url: 'https://www.youtube.com/playlist?list=PLIUHcdhYBjuUzBbRghLECheoLDYpa8UlM',
+          title: '40 Hadis Aspirasi Kejayaan Rasullullah',
+          videoCount: 63
+        },
+        'dosa-muamalat': {
+          url: 'https://www.youtube.com/playlist?list=PLIUHcdhYBjuVVeGhw9miWT-v_udFhWk5N',
+          title: '40 Hadith Dosa Muamalat & Kewangan Islam',
+          videoCount: 32
+        },
+        'minhajul-qasidin': {
+          url: 'https://www.youtube.com/playlist?list=PL3KC99u4B5asCwvJ2ApJyuCAmwAK67ut-',
+          title: 'Kitab Mukhtasar Minhajul Qasidin',
+          videoCount: 32
+        },
+        'manhaj-aqidah': {
+          url: 'https://www.youtube.com/playlist?list=PLIUHcdhYBjuVmZWWmqrvxAVrcaAqzJMOz',
+          title: 'Manhaj Aqidah Imam Syafie',
+          videoCount: 50
+        },
+        '72-kisah-hujah': {
+          url: 'https://www.youtube.com/playlist?list=PLIUHcdhYBjuWRyiYEkKHecC-gOL1e1wWC',
+          title: '72 Kisah Yang Tidak Boleh Dijadikan Hujah',
+          videoCount: 24
+        },
+        'talbis-iblis': {
+          url: 'https://www.youtube.com/playlist?list=PL3KC99u4B5atqwisDvW6gaq-Iuwd3NKWi',
+          title: 'Kitab Talbis Iblis',
+          videoCount: 62
+        },
+        'minhajul-qasidin': {
+          url: 'https://www.youtube.com/playlist?list=PL3KC99u4B5asCwvJ2ApJyuCAmwAK67ut-',
+          title: 'Kitab Mukhtasar Minhajul Qasidin',
+          videoCount: 32
+        },
+        'dosa-muamalat': {
+          url: 'https://www.youtube.com/playlist?list=PLIUHcdhYBjuVVeGhw9miWT-v_udFhWk5N',
+          title: '40 Hadith Dosa Muamalat & Kewangan Islam',
+          videoCount: 32
+        },
+        'ibn-abi-jamrah': {
+          url: 'https://www.youtube.com/playlist?list=PLIvbf-3sue3i_aLeR0YIQ2Rc93gW7toH8',
+          title: 'Kitab Mukhtasar Ibn Abi Jamrah',
+          videoCount: 27
+        },
+        'fiqh-sirah': {
+          url: 'https://www.youtube.com/playlist?list=PLyulJewfQGbjEBI5dXU74ty8f8Ic80gEN',
+          title: 'Fiqh Sirah',
+          videoCount: 23
+        },
+        '1000-amalan-alt': {
+          url: 'https://www.youtube.com/playlist?list=PLIUHcdhYBjuUdD9PmLfNIhc2JTI3u7pdy',
+          title: '1000 Amalan Sunnah (Alt)',
+          videoCount: 34
+        }
+      };
+
+      // Get playlist info
+      const playlistInfo = playlistMap[playlistId];
+      if (!playlistInfo) {
+        alert(`Playlist not found: ${playlistId}`);
+        return;
+      }
+
+      // Switch to videos tab
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+      document.querySelector('.tab[data-tab="videos"]').classList.add('active');
+      document.getElementById('videos-tab').classList.add('active');
+
+      // Show loading message
+      const videosTab = document.getElementById('videos-tab');
+      videosTab.innerHTML = `
+        <div class="search-container">
+          <div class="search-box">
+            <input type="text" id="search" placeholder="Search videos in ${playlistInfo.title}...">
+            <button class="filter-button">Filter</button>
+          </div>
+        </div>
+        <h2 class="section-title"><i class="material-icons">video_library</i> Videos from "${playlistInfo.title}"</h2>
+        <div class="video-list">
+          <div class="loading">Loading videos from playlist: ${playlistInfo.title} (${playlistInfo.videoCount} videos)...</div>
+        </div>
+      `;
+
+      // In a real implementation, this would fetch actual video data from the playlist
+      // For now, we'll simulate with sample data
+      setTimeout(() => {
+        const videoList = document.querySelector('.video-list');
+        videoList.innerHTML = `
+          <div class="video-item">
+            <div class="video-thumbnail">
+              <i class="material-icons">play_arrow</i>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">01-01-2024 Ustaz Qarni Edrus: ${playlistInfo.title} (Episode 1)</h3>
+              <div class="video-meta">
+                <span>Recently added</span>
+                <span>•</span>
+                <span class="video-duration">58:25</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="video-item">
+            <div class="video-thumbnail">
+              <i class="material-icons">play_arrow</i>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">30-12-2023 Ustaz Qarni Edrus: ${playlistInfo.title} (Episode 2)</h3>
+              <div class="video-meta">
+                <span>2 weeks ago</span>
+                <span>•</span>
+                <span class="video-duration">1:02:15</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="video-item">
+            <div class="video-thumbnail">
+              <i class="material-icons">play_arrow</i>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">28-12-2023 Ustaz Qarni Edrus: ${playlistInfo.title} (Episode 3)</h3>
+              <div class="video-meta">
+                <span>3 weeks ago</span>
+                <span>•</span>
+                <span class="video-duration">55:40</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="video-item">
+            <div class="video-thumbnail">
+              <i class="material-icons">play_arrow</i>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">25-12-2023 Ustaz Qarni Edrus: ${playlistInfo.title} (Episode 4)</h3>
+              <div class="video-meta">
+                <span>1 month ago</span>
+                <span>•</span>
+                <span class="video-duration">1:15:30</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="video-item">
+            <div class="video-thumbnail">
+              <i class="material-icons">play_arrow</i>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">20-12-2023 Ustaz Qarni Edrus: ${playlistInfo.title} (Episode 5)</h3>
+              <div class="video-meta">
+                <span>1 month ago</span>
+                <span>•</span>
+                <span class="video-duration">1:08:20</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="video-item">
+            <div class="video-thumbnail">
+              <i class="material-icons">play_arrow</i>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">15-12-2023 Ustaz Qarni Edrus: ${playlistInfo.title} (Episode 6)</h3>
+              <div class="video-meta">
+                <span>1 month ago</span>
+                <span>•</span>
+                <span class="video-duration">1:22:10</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="video-item">
+            <div class="video-thumbnail">
+              <i class="material-icons">play_arrow</i>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">10-12-2023 Ustaz Qarni Edrus: ${playlistInfo.title} (Episode 7)</h3>
+              <div class="video-meta">
+                <span>2 months ago</span>
+                <span>•</span>
+                <span class="video-duration">1:10:45</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="video-item">
+            <div class="video-thumbnail">
+              <i class="material-icons">play_arrow</i>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">05-12-2023 Ustaz Qarni Edrus: ${playlistInfo.title} (Episode 8)</h3>
+              <div class="video-meta">
+                <span>2 months ago</span>
+                <span>•</span>
+                <span class="video-duration">59:30</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="video-item">
+            <div class="video-thumbnail">
+              <i class="material-icons">play_arrow</i>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">01-12-2023 Ustaz Qarni Edrus: ${playlistInfo.title} (Episode 9)</h3>
+              <div class="video-meta">
+                <span>2 months ago</span>
+                <span>•</span>
+                <span class="video-duration">1:18:20</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="video-item">
+            <div class="video-thumbnail">
+              <i class="material-icons">play_arrow</i>
+            </div>
+            <div class="video-info">
+              <h3 class="video-title">25-11-2023 Ustaz Qarni Edrus: ${playlistInfo.title} (Episode 10)</h3>
+              <div class="video-meta">
+                <span>3 months ago</span>
+                <span>•</span>
+                <span class="video-duration">1:05:15</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }, 1000);
+    }
+
+    // Search functionality
+    document.getElementById('search').addEventListener('input', function(e) {
+      const searchTerm = e.target.value.toLowerCase();
+      // In a real implementation, this would filter videos based on search term
+      console.log('Searching for:', searchTerm);
+    });
+  </script>
+</body>
+</html>
